@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: Brief CV
+title: cv
 nav: true
 nav_order: 4
 ---
