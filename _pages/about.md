@@ -2,25 +2,28 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+#subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Room No. 531</p>
+    <p>Max Planck Institute for Software Systems</p>
+    <p>Campus E1 5, 66123 Saarbrücken, germany</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+ I am a Postdoctoral researcher at the [Facets of Complexity](http://www.facetsofcomplexity.de/) and [Institut für Mathematik, TU Berlin](https://www.math.tu-berlin.de/) with [Prof. Dr. Peter Bürgisser](https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fachgebiet_algorithmische_algebra/v_menue/members/prof_dr_peter_buergisser/)
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before this,  I was a Postdoctoral researcher at [Department of Computer Science, Aalto University](https://www.aalto.fi/department-of-computer-science) with [Prof. Parinya Chalermsook](https://sites.google.com/site/parinyachalermsook/home).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+ Earlier,  I was a PhD student at the [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/departments/algorithms-complexity/) under the supervision of [Prof. Markus Bläser](https://www-cc.cs.uni-saarland.de/mblaeser/).    Before that, I completed my Masters studies from [Saarland University](https://www-cc.cs.uni-saarland.de/). 
+
+ I did my bachelor studies from [Department of Computer Science and Engineering, IIT Delhi](http://www.cse.iitd.ernet.in/). A brief [CV](/cv/) can be found here. My proudest achievement can be found [here](https://www.strava.com/activities/1109380107).
+
