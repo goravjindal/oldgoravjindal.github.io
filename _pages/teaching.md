@@ -1,12 +1,48 @@
 ---
 layout: page
+title: Teaching
 permalink: /teaching/
-title: teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: true
-nav_order: 5
+description: Some courses I taught/tutored.
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+{% for teaching in site.teachings %}
 
-Organize your courses by years, topics, or universities, however you like!
+{% if teaching.redirect %}
+<div class="project">
+    <div class="thumbnail">
+        <a href="{{ teaching.redirect }}" target="_blank">
+        {% if teaching.img %}
+        <img class="thumbnail" src="{{ teaching.img | prepend: site.baseurl | prepend: site.url }}"/>
+        {% else %}
+        <div class="thumbnail blankbox"></div>
+        {% endif %}    
+         <span>
+            <h1>{{ teaching.title }}</h1>
+            <br/>
+            <p>{{ teaching.description }}</p>
+        </span>
+        </a>
+    </div>
+</div>
+{% else %}
+
+<div class="project ">
+    <div class="thumbnail">
+        <a href="{{ teaching.url | prepend: site.baseurl | prepend: site.url }}">
+        {% if teaching.img %}
+        <img class="thumbnail" src="{{ teaching.img | prepend: site.baseurl | prepend: site.url }}"/>
+        {% else %}
+        <div class="thumbnail blankbox"></div>
+        {% endif %}    
+        <span>
+            <h1>{{ teaching.title }}</h1>
+            <br/>
+            <p>{{ teaching.description }}</p>
+        </span>
+        </a>
+    </div>
+</div>
+
+{% endif %}
+
+{% endfor %}
