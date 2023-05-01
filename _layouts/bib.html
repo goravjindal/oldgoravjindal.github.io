@@ -181,6 +181,12 @@
                 [<a href="{{ entry.slides  | prepend: '/' |  prepend: entry.year | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" target="_blank"><i class="fas fa-file-powerpoint"></i>SLIDES</a>]
             {%- endif %}
           {%- endif %}
+          {%- if entry.video %}
+    [<a href="{{ entry.video  }}" target="_blank"><i class="fas fa-video"></i>Video</a>]
+          {%- endif %}
+            {% if entry.url %}
+    [<a href="{{ entry.url  }}" target="_blank"><i class="fas fa-external-link-alt"></i>URL</a>]
+  {% endif %}
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
