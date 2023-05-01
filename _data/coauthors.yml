@@ -1,53 +1,34 @@
-Kolev:
-  url: http://people.mpi-inf.mpg.de/~pkolev/
+"Adams":
+  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
+    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
 
-Saranurak:
-  url: https://sites.google.com/site/thsaranurak/
+"Podolsky":
+  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+    url: https://en.wikipedia.org/wiki/Boris_Podolsky
 
-Bläser:
-  url: https://www-cc.cs.uni-saarland.de/mblaeser/
+"Rosen":
+  - firstname: ["Nathan", "N."]
+    url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
-Pandey:
-  url: http://people.mpi-inf.mpg.de/~apandey/
+"Bach": 
+  - firstname: ["Johann Sebastian", "J. S."]
+    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
-Jindal:
-  url: https://goravjindal.github.io/
+  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 
-Peng:
-   url: https://www.cc.gatech.edu/~rpeng/
+"Przibram":
+  - firstname: ["Karl"]
+    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
 
-Sawlani:
-  url: https://www.cc.gatech.edu/~ssawlani3/
+"Schrödinger":
+  - firstname: ["Erwin"]
+    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
 
-Sagraloff:
-  url: http://people.mpi-inf.mpg.de/~msagralo/
+"Lorentz":
+  - firstname: ["Hendrik Antoon"]
+    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
 
-Bhargava:
-  url: https://sites.google.com/view/vishwas
-
-Ikenmeyer:
-   url: http://pcwww.liv.ac.uk/~iken/
-
-Lysikov:
-   url: https://www.math.ku.dk/english/about/news/new-names/vladimir-lysikov-postdoc/ 
-Zisopoulos:
-  url: https://www-cc.cs.uni-saarland.de/
-Shukla:
-  url: http://home.iitk.ac.in/~hishukla/
-Dutta:
-  url: https://sites.google.com/view/pduttashomepage
-Sinhababu:
-  url: https://www.cse.iitk.ac.in/users/amitks/
-Gaillard:
-  url: http://www.ens-lyon.fr/lecole/nous-connaitre/annuaire/louis-gaillard
-
-    
-
-
-[ccc2017]: https://computationalcomplexity.org/Archive/2017/program.php
-[approx17]: http://cui.unige.ch/tcs/random-approx/2017/
-[pavelkolev]: http://people.mpi-inf.mpg.de/~pkolev/
-[stoc18]: http://acm-stoc.org/stoc2018/
-[soda19]: https://www.siam.org/Conferences/CM/Conference/soda19
-[itcs19]: http://cseweb.ucsd.edu/~slovett/conferences/itcs2019/
-
+"Planck":
+  - firstname: ["Max"]
+    url: https://en.wikipedia.org/wiki/Max_Planck
