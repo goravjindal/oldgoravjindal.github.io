@@ -32,7 +32,8 @@ from the wellknown resultant matrix of $f(x)$ and $f^{\prime}(x)$.
 Given a polynomial with general symbolic coefficients,
 $$f(x)=a_{0}x^{n}+a_{1}x^{n-1}+\ldots+a_{n},$$ the following
 $(2n+1)\times(2n+1)$ matrix in terms of the coefficients,
-$$\left[\begin{array}{ccccccccc}
+$$
+\left[\begin{array}{ccccccccc}
 a_{0} & a_{1} & a_{2} & \cdots & a_{n}\\
 0 & na_{0} & (n-1)a_{1} & \cdots & a_{n-1}\\
  & a_{0} & a_{1} & \cdots & a_{n-1} & a_{n}\\
@@ -42,13 +43,19 @@ a_{0} & a_{1} & a_{2} & \cdots & a_{n}\\
  &  &  &  & a_{0} & a_{1} & \cdots & a_{n}\\
  &  &  &  & 0 & na_{0} & \cdots & a_{n-1}\\
  &  &  &  &  & a_{0} & a_{1} & \cdots & a_{n}
-\end{array}\right]$$ is called the discrimination matrix of $f(x)$, and
+\end{array}\right]
+$$ is called the discrimination matrix of $f(x)$, and
 denoted by $$\operatorname{Discr}(f)$$.
 
 By $d_{k}$ or $d_{k}(f)$ denote the determinant of the submatrix of
 $\operatorname{Discr}(f)$ formed by the first $k$ rows and the first $k$
 columns, for $k=1,\ldots,2n+1$. The principal minor sequence of the
-discrimination matrix, $$\left\{ d_{1},d_{2},\ldots,d_{2n+1}\right\}$$
+discrimination matrix, 
+
+$$
+\{ d_{1},d_{2},\ldots,d_{2n+1}\}
+$$
+
 plays a very important role in this paper.
 
 Let $D_{k}=d_{2k}$ for $k=1,\ldots,n$. We called the $n$-tuple
