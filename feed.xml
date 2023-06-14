@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://goravjindal.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://goravjindal.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-14T10:54:16+00:00</updated><id>https://goravjindal.github.io/feed.xml</id><title type="html">blank</title><subtitle>Gorav Jindal&apos;s personal and academic webpage
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://goravjindal.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://goravjindal.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-06-14T11:10:11+00:00</updated><id>https://goravjindal.github.io/feed.xml</id><title type="html">blank</title><subtitle>Gorav Jindal&apos;s personal and academic webpage
 </subtitle><entry><title type="html">Checking if a polynomial has real roots</title><link href="https://goravjindal.github.io/blog/2023/realrootstoposlp/" rel="alternate" type="text/html" title="Checking if a polynomial has real roots" /><published>2023-06-13T15:12:00+00:00</published><updated>2023-06-13T15:12:00+00:00</updated><id>https://goravjindal.github.io/blog/2023/realrootstoposlp</id><content type="html" xml:base="https://goravjindal.github.io/blog/2023/realrootstoposlp/"><![CDATA[<p>This theme supports rendering beautiful math in inline and display modes using <a href="https://www.mathjax.org/">MathJax 3</a> engine. You just need to surround your math expression with <code class="language-plaintext highlighter-rouge">$$</code>, like <code class="language-plaintext highlighter-rouge">$$ E = mc^2 $$</code>. If you leave it inside a paragraph, it will produce an inline expression, just like \(E = mc^2\).</p>
 
 <p>To use display mode, again surround your expression with <code class="language-plaintext highlighter-rouge">$$</code> and place it as a separate paragraph. Here is an example:</p>
@@ -39,9 +39,12 @@ denoted by \(\operatorname{Discr}(f)\).</p>
 <p>By $d_{k}$ or $d_{k}(f)$ denote the determinant of the submatrix of
 $\operatorname{Discr}(f)$ formed by the first $k$ rows and the first $k$
 columns, for $k=1,\ldots,2n+1$. The principal minor sequence of the
-discrimination matrix, \(\left\{ d_{1},d_{2},\ldots,d_{2n+1}\right\}\)
-plays a very important role in this paper.</p>
+discrimination matrix,</p>
+
+\[\{ d_{1},d_{2},\ldots,d_{2n+1}\}\]
+
+<p>plays a very important role in this paper.</p>
 
 <p>Let $D_{k}=d_{2k}$ for $k=1,\ldots,n$. We called the $n$-tuple
 \(\left\{ D_{1},D_{2},\ldots,D_{n}\right\}\) the discriminant sequence
-of polynomial $f(x)$.</p>]]></content><author><name></name></author><category term="math" /><summary type="html"><![CDATA[Checking if a polynomial has real roots]]></summary></entry><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="https://goravjindal.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog" /><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>https://goravjindal.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="https://goravjindal.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry></feed>
+of polynomial $f(x)$.</p>]]></content><author><name></name></author><category term="math" /><summary type="html"><![CDATA[Checking if a polynomial has real roots]]></summary></entry></feed>
