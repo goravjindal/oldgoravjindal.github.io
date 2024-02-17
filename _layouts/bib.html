@@ -157,6 +157,15 @@
             <a href="{{ entry.pdf  | prepend: '/' |  prepend: entry.year | prepend: '/assets/pdf/' | prepend: site.baseurl | prepend: site.url }}" class="btn btn-sm z-depth-0"><i class="fas fa-file-pdf fa-2x"></i>  <font size="+0"></font></a>
             {%- endif %}
           {%- endif %}
+
+           {%- if entry.image %}
+            {% if entry.image contains '://' -%}
+            <a href="{{ entry.image }}" class="btn btn-sm z-depth-0" role="button">IMAGE</a>
+            {%- else -%}
+            <a href="{{ entry.image  | prepend: '/' |  prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" class="btn btn-sm z-depth-0"><i class="fas fa-images fa-2x"></i>  <font size="+0"></font></a>
+            {%- endif %}
+          {%- endif %}
+
           {%- if entry.supp %}
             {% if entry.supp contains '://' -%}
             <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>

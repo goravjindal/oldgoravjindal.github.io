@@ -1,10 +1,56 @@
 % Encoding: UTF-8
+@InProceedings{deborderwaring24,
+author =	{ Pranjal Dutta and Fulvio Gesmundo and Christian Ikenmeyer and Gorav Jindal and Vladimir Lysikov},
+  title =	{Fixed-parameter debordering of Waring rank (To appear in STACS 2024)},
+  booktitle =	{41th International Symposium on Theoretical Aspects of Computer Science,{STACS} 2024},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  abbr={STACS},
+  conf={STACS},
+  year={2024},
+  abstract={Border complexity measures are defined via limits (or topological closures), so that any function which can approximated arbitrarily closely by low complexity functions itself has low border complexity.
+De-bordering is the task of proving an upper bound on some non-border complexity measure in terms of a border complexity measure, thus getting rid of limits.
+
+De-bordering is at the heart of understanding the difference between Valiant's determinant vs permanent conjecture, and Mulmuley and Sohoni's variation which uses border determinantal complexity.
+The de-bordering of matrix multiplication tensors by Bini played a pivotal role in the development of efficient matrix multiplication algorithms. Consequently, de-bordering finds applications in both establishing computational complexity lower bounds and facilitating algorithm design.
+Currently, very few de-bordering results are known.
+
+In this work, we study the question of de-bordering the border Waring rank of polynomials.
+Waring and border Waring rank are very well studied measures in the context of invariant theory, algebraic geometry, and matrix multiplication algorithms.
+For the first time, we obtain a Waring rank upper bound that is exponential in the border Waring rank and only {\em linear} in the degree.
+All previous results were known to be exponential in the degree.
+For polynomials with constant border Waring rank, our results imply an upper bound on the Waring rank linear in degree, which previously was only known for polynomials with border Waring rank at most 5.},
+  publisher =	{Schloss Dagstuhl--Leibniz-Zentrum f\"ur Informatik}
+}
+
+
+@InProceedings{dutta2024homogeneous,
+  author =	{Dutta, Pranjal and Gesmundo, Fulvio and Ikenmeyer, Christian and Jindal, Gorav and Lysikov, Vladimir},
+  title =	{{Homogeneous Algebraic Complexity Theory and Algebraic Formulas}},
+  booktitle =	{15th Innovations in Theoretical Computer Science Conference (ITCS 2024)},
+  pages =	{43:1--43:23},
+  series =	{Leibniz International Proceedings in Informatics (LIPIcs)},
+  ISBN =	{978-3-95977-309-6},
+  ISSN =	{1868-8969},
+  year =	{2024},
+  volume =	{287},
+  abbr={ITCS},
+  pdf={itcs24-homogeneous.pdf},
+  editor =	{Guruswami, Venkatesan},
+  publisher =	{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  address =	{Dagstuhl, Germany},
+  URL =		{https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2024.43},
+  URN =		{urn:nbn:de:0030-drops-195713},
+  doi =		{10.4230/LIPIcs.ITCS.2024.43},
+  abstract = {We study algebraic complexity classes and their complete polynomials under homogeneous linear projections, not just under the usual affine linear projections that were originally introduced by Valiant in 1979. These reductions are weaker yet more natural from a geometric complexity theory (GCT) standpoint, because the corresponding orbit closure formulations do not require the padding of polynomials. We give the first complete polynomials for VF, the class of sequences of polynomials that admit small algebraic formulas, under homogeneous linear projections: The sum of the entries of the non-commutative elementary symmetric polynomial in 3 by 3 matrices of homogeneous linear forms. Even simpler variants of the elementary symmetric polynomial are hard for the topological closure of a large subclass of VF: the sum of the entries of the non-commutative elementary symmetric polynomial in 2 by 2 matrices of homogeneous linear forms, and homogeneous variants of the continuant polynomial (Bringmann, Ikenmeyer, Zuiddam, JACM '18). This requires a careful study of circuits with arity-3 product gates. },
+  annote =	{Keywords: Homogeneous polynomials, Waring rank, Arithmetic formulas, Border complexity, Geometric Complexity theory, Symmetric polynomials}
+}
 
 @misc{burgisser2023hardness,
-      title={On the Hardness of PosSLP}, 
+      title={On the Hardness of PosSLP (To appear in SODA 2024)}, 
       author={Peter Bürgisser and Gorav Jindal},
       year={2023},
       abbr={arXiv},
+      selected={true},
       pubstate = {unpublished},
       eprint={2307.08008},
       arxiv={2307.08008},
@@ -205,6 +251,7 @@ author = {Bl{\"a}ser, Markus and Jindal, Gorav and Pandey, Anurag},
       abbr={TOC},
  number = {3},
  pdf={bjptoc2018.pdf},
+ image={bjp-scanned-scaled.jpg},
  video={https://youtu.be/T4ui-gPPa2I},
  URL = {http://www.theoryofcomputing.org/articles/v014a003},
  abstract={
