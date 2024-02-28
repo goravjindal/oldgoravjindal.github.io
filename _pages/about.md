@@ -11,7 +11,7 @@ profile:
   address: >
     <p>Room No. 531</p>
     <p>Max Planck Institute for Software Systems</p>
-    <p>Campus E1 5, 66123 Saarbrücken, germany</p>
+    <p>Campus E1 5, 66123 Saarbrücken, Germany</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
