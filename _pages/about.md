@@ -19,15 +19,19 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a **Samuel Eilenberg Assistant Professor** at the **Institute of Informatics**, [Faculty of Mathematics, Informatics, and Mechanics](https://www.mimuw.edu.pl/en/), [University of Warsaw](https://en.uw.edu.pl/), since February 2025.  
+I am a Samuel Eilenberg Assistant Professor at the Institute of Informatics, [Faculty of Mathematics, Informatics, and Mechanics](https://www.mimuw.edu.pl/en/), [University of Warsaw](https://en.uw.edu.pl/), where I have been since February 2025.  
 
-Previously, I was a **Postdoctoral Researcher** at the [Max Planck Institute for Software Systems](https://www.mpi-sws.org/), working with [Joël Ouaknine](https://people.mpi-sws.org/~joel/). Prior to that, I was a **Postdoctoral Researcher** at [Facets of Complexity](http://www.facetsofcomplexity.de/) and the [Institut für Mathematik, TU Berlin](https://www.math.tu-berlin.de/), working with [Prof. Dr. Peter Bürgisser](https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fachgebiet_algorithmische_algebra/v_menue/members/prof_dr_peter_buergisser/).  
+My research focuses on algebraic complexity theory, which deals with the complexity of algebraic objects, such as polynomials. Additionally, I am also interested in computational complexity in general. Recently, I have also started pursuing several research directions in automata theory, with a particular interest in the computational aspects of formal power series and their rationality.  
 
-Before this, I was a **visiting doctoral candidate** at the [Department of Computer Science, Aalto University](https://www.aalto.fi/department-of-computer-science), working with [Prof. Parinya Chalermsook](https://sites.google.com/site/parinyachalermsook/home).  
+Previously, I was a Postdoctoral Researcher at the [Max Planck Institute for Software Systems (MPI-SWS)](https://www.mpi-sws.org/), working with [Joël Ouaknine](https://people.mpi-sws.org/~joel/), and at [Facets of Complexity](http://www.facetsofcomplexity.de/) and the [Institut für Mathematik, TU Berlin](https://www.math.tu-berlin.de/), collaborating with [Prof. Dr. Peter Bürgisser](https://www.math.tu-berlin.de/fachgebiete_ag_diskalg/fachgebiet_algorithmische_algebra/v_menue/members/prof_dr_peter_buergisser/).  
 
-I obtained my **PhD degree in 2019** from [Saarland University](https://www.uni-saarland.de/start.html), where I was advised by [Prof. Markus Bläser](https://www-cc.cs.uni-saarland.de/mblaeser/). During my doctoral studies, I was also a member of the [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/departments/algorithms-complexity/). Prior to that, I completed my **Master’s studies** at [Saarland University](https://www.uni-saarland.de/start.html).  
+I was also a visiting doctoral candidate at the [Department of Computer Science, Aalto University](https://www.aalto.fi/department-of-computer-science), under the supervision of [Prof. Parinya Chalermsook](https://sites.google.com/site/parinyachalermsook/home).  
 
-I did my **Bachelor’s studies** at the [Department of Computer Science and Engineering, IIT Delhi](http://www.cse.iitd.ernet.in/).  
+I earned my PhD in 2019 from [Saarland University](https://www.uni-saarland.de/start.html), where I had the fortune to be advised by [Prof. Markus Bläser](https://www-cc.cs.uni-saarland.de/mblaeser/) and was affiliated with the [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/departments/algorithms-complexity/). I also completed my Master’s studies at Saarland University.  
 
-A brief **[CV](/cv/)** can be found here. My proudest achievement can be found [here](https://www.strava.com/activities/1109380107).  
+My academic journey began with a Bachelor’s degree from the [Department of Computer Science and Engineering, IIT Delhi](http://www.cse.iitd.ernet.in/).  
+
+A brief [CV](/cv/) can be found here.
+
+#My proudest achievement can be found [here](https://www.strava.com/activities/1109380107).  
 
