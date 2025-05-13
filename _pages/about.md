@@ -33,5 +33,8 @@ My academic journey began with a Bachelor’s degree from the [Department of Com
 
 A brief [CV](/cv/) can be found here.
 
-#My proudest achievement can be found [here](https://www.strava.com/activities/1109380107).  
+<!---
+My proudest achievement can be found [here](https://www.strava.com/activities/1109380107).  
+-->
+
 
