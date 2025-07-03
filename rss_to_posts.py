@@ -8,7 +8,7 @@ import hashlib
 import re
 
 # --- CONFIGURATION ---
-RSS_FEED_URL = 'https://example.com/rss'  # Replace with your feed
+RSS_FEED_URL = 'https://theory.report/atom.xml'  # Replace with your feed
 POST_DIR = '_posts'
 
 def slugify(text):
