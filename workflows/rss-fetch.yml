@@ -2,7 +2,7 @@ name: Update Blog from RSS
 
 on:
   schedule:
-    - cron: '30 14 * * *'  # Runs at 14:30 UTC daily
+    - cron: '45 12 * * *'  # Runs at 14:30 UTC daily
   workflow_dispatch:
 
 jobs:
