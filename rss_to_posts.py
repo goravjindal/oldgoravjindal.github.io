@@ -1,66 +1,58 @@
-#!/usr/bin/env python3
-
-import feedparser
-from markdownify import markdownify as md
-from datetime import datetime
 import os
-import hashlib
-import re
+import feedparser
+from datetime import datetime, timedelta
+import markdownify
 
-# --- CONFIGURATION ---
-RSS_FEED_URL = 'https://theory.report/atom.xml'  # Replace with your feed
-POST_DIR = '_posts'
+RSS_URL = "https://theory.report/atom.xml"
+POSTS_DIR = "_posts/cstheoryrss"
+ONE_YEAR_AGO = datetime.utcnow() - timedelta(days=365)
 
-def slugify(text):
-    return re.sub(r'[^a-z0-9\-]+', '', re.sub(r'\s+', '-', text.lower()))
+os.makedirs(POSTS_DIR, exist_ok=True)
 
-def get_post_path(date, title):
-    slug = slugify(title)[:50]
-    return os.path.join(POST_DIR, f'{date.strftime("%Y-%m-%d")}-{slug}.md')
+def sanitize_filename(title):
+    # simple slugify: lowercase, replace spaces & special chars with hyphen
+    import re
+    slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+    return slug or "post"
 
-def entry_to_post(entry):
-    title = entry.title
-    link = entry.link
-    pub_date = entry.get('published', '') or entry.get('updated', '')
-    try:
-        date_obj = datetime(*entry.published_parsed[:6])
-    except:
-        date_obj = datetime.utcnow()
-
-    content = entry.get('summary', '') or entry.get('content', [{'value': ''}])[0]['value']
-    content_md = md(content)
-
-    post_filename = get_post_path(date_obj, title)
-
-    if os.path.exists(post_filename):
-        return None  # Skip duplicates
-
-    frontmatter = f"""---
-layout: post
-title: "{title.replace('"', '\\"')}"
-date: {date_obj.strftime("%Y-%m-%d %H:%M:%S %z")}
-categories: [rss]
-external_link: {link}
----
-
-"""
-    full_post = frontmatter + content_md + "\n"
-    with open(post_filename, 'w', encoding='utf-8') as f:
-        f.write(full_post)
-    return post_filename
-
-def main():
-    os.makedirs(POST_DIR, exist_ok=True)
-    feed = feedparser.parse(RSS_FEED_URL)
-    new_posts = []
+def fetch_and_save():
+    feed = feedparser.parse(RSS_URL)
+    count = 0
 
     for entry in feed.entries:
-        result = entry_to_post(entry)
-        if result:
-            new_posts.append(result)
+        published = None
+        if hasattr(entry, "published_parsed"):
+            published = datetime(*entry.published_parsed[:6])
+        elif hasattr(entry, "updated_parsed"):
+            published = datetime(*entry.updated_parsed[:6])
+        else:
+            continue
 
-    print(f"Added {len(new_posts)} new posts.")
+        if published < ONE_YEAR_AGO:
+            continue  # skip older than 1 year
 
-if __name__ == '__main__':
-    main()
+        date_prefix = published.strftime("%Y-%m-%d")
+        slug = sanitize_filename(entry.title)
+        filename = f"{date_prefix}-{slug}.md"
+        filepath = os.path.join(POSTS_DIR, filename)
+
+        # Skip if file exists to avoid rewriting
+        if os.path.exists(filepath):
+            continue
+
+        content_html = entry.summary if hasattr(entry, "summary") else ""
+        content_md = markdownify.markdownify(content_html, heading_style="ATX")
+
+        front_matter = f"---\nlayout: post\ncategory: cstheoryrss\ntitle: \"{entry.title}\"\ndate: {published.isoformat()}\n---\n\n"
+
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(front_matter)
+            f.write(content_md)
+
+        count += 1
+
+    print(f"Saved {count} posts from the last year.")
+
+if __name__ == "__main__":
+    fetch_and_save()
 
