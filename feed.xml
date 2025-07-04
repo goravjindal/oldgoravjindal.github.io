@@ -1,173 +1,643 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://goravjindal.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://goravjindal.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-07-04T13:09:15+00:00</updated><id>https://goravjindal.github.io/feed.xml</id><title type="html">blank</title><subtitle>Gorav Jindal&apos;s personal and academic webpage
-</subtitle><entry><title type="html">arXiv: Computational Complexity: Hardness of Quantum Distribution Learning and Quantum Cryptography</title><link href="https://goravjindal.github.io/blog/2025/arxiv-computational-complexity-hardness-of-quantum-distribution-learning-and-quantum-cryptography/" rel="alternate" type="text/html" title="arXiv: Computational Complexity: Hardness of Quantum Distribution Learning and Quantum Cryptography" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-computational-complexity-hardness-of-quantum-distribution-learning-and-quantum-cryptography</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-computational-complexity-hardness-of-quantum-distribution-learning-and-quantum-cryptography/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Taiga+Hiroka">Taiga Hiroka</a>, <a href="https://dblp.uni-trier.de/search?q=Min-Hsiu+Hsieh">Min-Hsiu Hsieh</a>, <a href="https://dblp.uni-trier.de/search?q=Tomoyuki+Morimae">Tomoyuki Morimae</a></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://goravjindal.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://goravjindal.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-07-04T13:16:44+00:00</updated><id>https://goravjindal.github.io/feed.xml</id><title type="html">blank</title><subtitle>Gorav Jindal&apos;s personal and academic webpage
+</subtitle><entry><title type="html">Sensitivity Conjecture Proof</title><link href="https://goravjindal.github.io/blog/2023/realrootstoposlp/" rel="alternate" type="text/html" title="Sensitivity Conjecture Proof" /><published>2023-06-17T21:38:00+00:00</published><updated>2023-06-17T21:38:00+00:00</updated><id>https://goravjindal.github.io/blog/2023/realrootstoposlp</id><content type="html" xml:base="https://goravjindal.github.io/blog/2023/realrootstoposlp/"><![CDATA[<p>Hao Huang recently presented a remarkably <a href="https://annals.math.princeton.edu/2019/190-3/p06">simple proof</a> of the long-standing Sensitivity Conjecture. Below, I provide an almost self-contained explanation of Huang’s proof. While originally intended for my personal understanding, it may also be helpful to others.</p>
 
-<p>The existence of one-way functions (OWFs) forms the minimal assumption in
-classical cryptography. However, this is not necessarily the case in quantum
-cryptography. One-way puzzles (OWPuzzs), introduced by Khurana and Tomer,
-provide a natural quantum analogue of OWFs. The existence of OWPuzzs implies
-$PP\neq BQP$, while the converse remains open. In classical cryptography, the
-analogous problem-whether OWFs can be constructed from $P \neq NP$-has long
-been studied from the viewpoint of hardness of learning. Hardness of learning
-in various frameworks (including PAC learning) has been connected to OWFs or to
-$P \neq NP$. In contrast, no such characterization previously existed for
-OWPuzzs. In this paper, we establish the first complete characterization of
-OWPuzzs based on the hardness of a well-studied learning model: distribution
-learning. Specifically, we prove that OWPuzzs exist if and only if proper
-quantum distribution learning is hard on average. A natural question that
-follows is whether the worst-case hardness of proper quantum distribution
-learning can be derived from $PP \neq BQP$. If so, and a worst-case to
-average-case hardness reduction is achieved, it would imply OWPuzzs solely from
-$PP \neq BQP$. However, we show that this would be extremely difficult: if
-worst-case hardness is PP-hard (in a black-box reduction), then $SampBQP \neq
-SampBPP$ follows from the infiniteness of the polynomial hierarchy. Despite
-that, we show that $PP \neq BQP$ is equivalent to another standard notion of
-hardness of learning: agnostic. We prove that $PP \neq BQP$ if and only if
-agnostic quantum distribution learning with respect to KL divergence is hard.
-As a byproduct, we show that hardness of agnostic quantum distribution learning
-with respect to statistical distance against $PPT^{\Sigma_3^P}$ learners
-implies $SampBQP \neq SampBPP$.</p>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Taiga Hiroka, Min-Hsiu Hsieh, Tomoyuki Morimae]]></summary></entry><entry><title type="html">arXiv: Computational Complexity: PCPP-Based Reconfiguration Inapproximability: Query Complexity vs. Soundness Gap Trade-offs</title><link href="https://goravjindal.github.io/blog/2025/arxiv-computational-complexity-pcpp-based-reconfiguration-inapproximability-query-complexity-vs-soundness-gap-trade-offs/" rel="alternate" type="text/html" title="arXiv: Computational Complexity: PCPP-Based Reconfiguration Inapproximability: Query Complexity vs. Soundness Gap Trade-offs" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-computational-complexity-pcpp-based-reconfiguration-inapproximability-query-complexity-vs-soundness-gap-trade-offs</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-computational-complexity-pcpp-based-reconfiguration-inapproximability-query-complexity-vs-soundness-gap-trade-offs/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Venkatesan+Guruswami">Venkatesan Guruswami</a>, <a href="https://dblp.uni-trier.de/search?q=Xuandi+Ren">Xuandi Ren</a>, <a href="https://dblp.uni-trier.de/search?q=Kewen+Wu">Kewen Wu</a></p>
+<p><a href="../../../assets/pdf/writeups/SensConj.pdf">Sensitivity Conjecture Proof</a>.</p>]]></content><author><name></name></author><category term="math" /><summary type="html"><![CDATA[Sensitivity Conjecture Proof]]></summary></entry><entry><title type="html">DSSB syllabus</title><link href="https://goravjindal.github.io/blog/2023/dssb/" rel="alternate" type="text/html" title="DSSB syllabus" /><published>2023-06-06T21:38:00+00:00</published><updated>2023-06-06T21:38:00+00:00</updated><id>https://goravjindal.github.io/blog/2023/dssb</id><content type="html" xml:base="https://goravjindal.github.io/blog/2023/dssb/"><![CDATA[<h1 id="dsssb-syllabus---dsssb-tgt-mathematics">DSSSB Syllabus - DSSSB TGT Mathematics</h1>
 
-<p>The Reconfiguration Inapproximability Hypothesis (RIH), recently established
-by Hirahara-Ohsaka (STOC’24) and Karthik-Manurangsi (ECCC’24), studies the
-hardness of reconfiguring one solution into another in constraint satisfaction
-problems (CSP) when restricted to approximate intermediate solutions. In this
-work, we make a tighter connection between RIH’s soundness gap and that of
-probabilistically checkable proofs of proximity (PCPP). Consequently, we
-achieve an improved trade-off between soundness and query complexity in Gap CSP
-Reconfiguration. Our approach leverages a parallelization framework, which also
-appears in some recent parameterized inapproximability results.</p>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Venkatesan Guruswami, Xuandi Ren, Kewen Wu]]></summary></entry><entry><title type="html">arXiv: Computational Complexity: Symport/Antiport P Systems with Membrane Separation Characterize P^(#P)</title><link href="https://goravjindal.github.io/blog/2025/arxiv-computational-complexity-symport-antiport-p-systems-with-membrane-separation-characterize-p-p/" rel="alternate" type="text/html" title="arXiv: Computational Complexity: Symport/Antiport P Systems with Membrane Separation Characterize P^(#P)" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-computational-complexity-symport-antiport-p-systems-with-membrane-separation-characterize-p-p</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-computational-complexity-symport-antiport-p-systems-with-membrane-separation-characterize-p-p/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Vivien+Ducros">Vivien Ducros</a>, <a href="https://dblp.uni-trier.de/search?q=Claudio+Zandron">Claudio Zandron</a></p>
+<h2 id="topic-undergraduate-ug">Topic: Undergraduate (UG)</h2>
+<hr style="border:2px solid blue" />
 
-<p>Membrane systems represent a computational model that operates in a
-distributed and parallel manner, inspired by the behavior of biological cells.
-These systems feature objects that transform within a nested membrane
-structure. This research concentrates on a specific type of these systems,
-based on cellular symport/antiport communication of chemicals.
-Results in the literature show that systems of this type that also allow cell
-division can solve PSPACE problems. In our study, we investigate systems that
-use membrane separation instead of cell division, for which only limited
-results are available. Notably, it has been shown that any problem solvable by
-such systems in polynomial time falls within the complexity class P^(#P).
-By implementing a system solving MIDSAT, a P^(#P)-complete problem, we
-demonstrate that the reverse inclusion is true as well, thus providing an exact
-characterization of the problem class solvable by P systems with
-symport/antiport and membrane separation.
-Moreover, our implementation uses rules of length at most three. With this
-limit, systems were known to be able to solve NP-complete problems, whereas
-limiting the rules by length two, they characterize P.</p>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Vivien Ducros, Claudio Zandron]]></summary></entry><entry><title type="html">arXiv: Computational Geometry: A Stable and Theoretically Grounded Gromov-Wasserstein Distance for Reeb Graph Comparison using Persistence Images</title><link href="https://goravjindal.github.io/blog/2025/arxiv-computational-geometry-a-stable-and-theoretically-grounded-gromov-wasserstein-distance-for-reeb-graph-comparison-using-persistence-images/" rel="alternate" type="text/html" title="arXiv: Computational Geometry: A Stable and Theoretically Grounded Gromov-Wasserstein Distance for Reeb Graph Comparison using Persistence Images" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-computational-geometry-a-stable-and-theoretically-grounded-gromov-wasserstein-distance-for-reeb-graph-comparison-using-persistence-images</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-computational-geometry-a-stable-and-theoretically-grounded-gromov-wasserstein-distance-for-reeb-graph-comparison-using-persistence-images/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Erin+W.+Chambers">Erin W. Chambers</a>, <a href="https://dblp.uni-trier.de/search?q=Guangyu+Meng">Guangyu Meng</a></p>
+<h3 id="calculus">Calculus:</h3>
+<h4 id="unit-1-derivatives-for-graphing-and-applications">Unit 1: Derivatives for Graphing and Applications</h4>
+<ul>
+  <li>The first-derivative test for relative extrema <a href="https://www.youtube.com/watch?v=Jl2Qp5ziLdY">Video</a></li>
+  <li>Concavity and inflection points <a href="https://www.youtube.com/watch?v=WuI1_iQLJvI">Video</a></li>
+  <li>Second derivative test for relative extrema <a href="https://www.youtube.com/watch?v=9_86Zgj_McU">Video</a></li>
+  <li>Curve sketching using first and second derivative tests <a href="https://www.youtube.com/watch?v=k7yJDzImDEA">Video</a></li>
+  <li>Limits to infinity and infinite limits <a href="https://www.youtube.com/watch?v=TIBUH8WJMTc">Video</a></li>
+  <li>Graphs with asymptotes<a href="https://www.youtube.com/watch?v=bsdCPEIrj4E">Video</a></li>
+  <li>L’Hôpital’s rule <a href="https://www.youtube.com/watch?v=NVE_XrjlX_o">Video</a></li>
+  <li>Applications in business, economics and life sciences</li>
+  <li>Higher order derivatives <a href="https://www.youtube.com/watch?v=vP6tKhv1ijE">Video</a></li>
+  <li>Leibniz rule <a href="https://www.youtube.com/watch?v=LT_10p_eu88">Video</a></li>
+</ul>
 
-<p>Reeb graphs are a fundamental structure for analyzing the topological and
-geometric properties of scalar fields. Comparing Reeb graphs is crucial for
-advancing research in this domain, yet existing metrics are often
-computationally prohibitive or fail to capture essential topological features
-effectively. In this paper, we explore the application of the
-Gromov-Wasserstein distance, a versatile metric for comparing metric measure
-spaces, to Reeb graphs. We propose a framework integrating a symmetric variant
-of the Reeb radius for robust geometric comparison, and a novel probabilistic
-weighting scheme based on Persistence Images derived from extended persistence
-diagrams to effectively incorporate topological significance. A key
-contribution of this work is the rigorous theoretical proof of the stability of
-our proposed Reeb Gromov-Wasserstein distance with respect to perturbations in
-the underlying scalar fields. This ensures that small changes in the input data
-lead to small changes in the computed distance between Reeb graphs, a critical
-property for reliable analysis. We demonstrate the advantages of our approach,
-including its enhanced ability to capture topological features and its proven
-stability, through comparisons with other alternatives on several datasets,
-showcasing its practical utility and theoretical soundness.</p>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Erin W. Chambers, Guangyu Meng]]></summary></entry><entry><title type="html">arXiv: Computational Geometry: Multiple Watchman Routes in Staircase Polygons</title><link href="https://goravjindal.github.io/blog/2025/arxiv-computational-geometry-multiple-watchman-routes-in-staircase-polygons/" rel="alternate" type="text/html" title="arXiv: Computational Geometry: Multiple Watchman Routes in Staircase Polygons" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-computational-geometry-multiple-watchman-routes-in-staircase-polygons</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-computational-geometry-multiple-watchman-routes-in-staircase-polygons/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Anna+Br%C3%B6tzner">Anna Brötzner</a>, <a href="https://dblp.uni-trier.de/search?q=Bengt+J.+Nilsson">Bengt J. Nilsson</a>, <a href="https://dblp.uni-trier.de/search?q=Christiane+Schmidt">Christiane Schmidt</a></p>
+<h4 id="unit-2-sketching-and-tracing-of-curves">Unit 2: Sketching and Tracing of Curves</h4>
+<ul>
+  <li>Parametric representation of curves and tracing of parametric curves (except lines in \(\mathbb{R}^3\)) <a href="https://www.youtube.com/watch?v=SPM3Tq-F57w">Video</a></li>
+  <li>Polar coordinates and tracing of curves in polar coordinates <a href="https://www.youtube.com/watch?v=zLQE8tO5G90&amp;t=56s">Video</a></li>
+  <li>Techniques of sketching conics <a href="https://youtu.be/UnF_Nk1-dAM?list=PLU6SqdYcYsfJSObgIS6fGfDdV-NQivnYS">Video</a></li>
+  <li>Reflection properties of conics</li>
+  <li>Rotation of axes and second-degree equations</li>
+  <li>Classification into conics using the discriminant</li>
+</ul>
 
-<p>We consider the watchman route problem for multiple watchmen in staircase
-polygons, which are rectilinear $x$- and $y$-monotone polygons. For two
-watchmen, we propose an algorithm to find an optimal solution that takes
-quadratic time, improving on the cubic time of a trivial solution. For $m \geq
-3$ watchmen, we explain where this approach fails, and present an approximation
-algorithm for the min-max criterion with only an additive error.</p>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Anna Brötzner, Bengt J. Nilsson, Christiane Schmidt]]></summary></entry><entry><title type="html">arXiv: Computational Geometry: Search-Based Robot Motion Planning With Distance-Based Adaptive Motion Primitives</title><link href="https://goravjindal.github.io/blog/2025/arxiv-computational-geometry-search-based-robot-motion-planning-with-distance-based-adaptive-motion-primitives/" rel="alternate" type="text/html" title="arXiv: Computational Geometry: Search-Based Robot Motion Planning With Distance-Based Adaptive Motion Primitives" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-computational-geometry-search-based-robot-motion-planning-with-distance-based-adaptive-motion-primitives</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-computational-geometry-search-based-robot-motion-planning-with-distance-based-adaptive-motion-primitives/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Benjamin+Kraljusic">Benjamin Kraljusic</a>, <a href="https://dblp.uni-trier.de/search?q=Zlatan+Ajanovic">Zlatan Ajanovic</a>, <a href="https://dblp.uni-trier.de/search?q=Nermin+Covic">Nermin Covic</a>, <a href="https://dblp.uni-trier.de/search?q=Bakir+Lacevic">Bakir Lacevic</a></p>
+<h4 id="unit-3-volume-and-area-of-surfaces">Unit 3: Volume and Area of Surfaces</h4>
+<ul>
+  <li>Volumes by slicing disks and method of washers</li>
+  <li>Volumes by cylindrical shells</li>
+  <li>Arc length</li>
+  <li>Arc length of parametric curves</li>
+  <li>Area of surface of revolution</li>
+  <li>Hyperbolic functions</li>
+  <li>Reduction formulae</li>
+</ul>
 
-<p>This work proposes a motion planning algorithm for robotic manipulators that
-combines sampling-based and search-based planning methods. The core
-contribution of the proposed approach is the usage of burs of free
-configuration space (C-space) as adaptive motion primitives within the graph
-search algorithm. Due to their feature to adaptively expand in free C-space,
-burs enable more efficient exploration of the configuration space compared to
-fixed-sized motion primitives, significantly reducing the time to find a valid
-path and the number of required expansions. The algorithm is implemented within
-the existing SMPL (Search-Based Motion Planning Library) library and evaluated
-through a series of different scenarios involving manipulators with varying
-number of degrees-of-freedom (DoF) and environment complexity. Results
-demonstrate that the bur-based approach outperforms fixed-primitive planning in
-complex scenarios, particularly for high DoF manipulators, while achieving
-comparable performance in simpler scenarios.</p>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Benjamin Kraljusic, Zlatan Ajanovic, Nermin Covic, Bakir Lacevic]]></summary></entry><entry><title type="html">arXiv: Data Structures and Algorithms: A Deterministic Partition Tree and Applications</title><link href="https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-a-deterministic-partition-tree-and-applications/" rel="alternate" type="text/html" title="arXiv: Data Structures and Algorithms: A Deterministic Partition Tree and Applications" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-a-deterministic-partition-tree-and-applications</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-a-deterministic-partition-tree-and-applications/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Haitao+Wang">Haitao Wang</a></p>
+<h4 id="unit-4-vector-calculus-and-its-applications">Unit 4: Vector Calculus and its Applications</h4>
+<ul>
+  <li>Introduction to vector functions and their graphs</li>
+  <li>Operations with vector functions</li>
+  <li>Limits and continuity of vector functions</li>
+  <li>Differentiation and integration of vector functions</li>
+  <li>Modeling ballistics and planetary motion</li>
+  <li>Kepler’s second law</li>
+  <li>Unit tangent, Normal and binormal vectors</li>
+  <li>Curvature</li>
+</ul>
+<hr style="border:2px solid blue" />
 
-<p>In this paper, we present a deterministic variant of Chan’s randomized
-partition tree [Discret. Comput. Geom., 2012]. This result leads to numerous
-applications. In particular, for $d$-dimensional simplex range counting (for
-any constant $d \ge 2$), we construct a data structure using $O(n)$ space and
-$O(n^{1+\epsilon})$ preprocessing time, such that each query can be answered in
-$o(n^{1-1/d})$ time (specifically, $O(n^{1-1/d} / \log^{\Omega(1)} n)$ time),
-thereby breaking an $\Omega(n^{1-1/d})$ lower bound known for the semigroup
-setting. Notably, our approach does not rely on any bit-packing techniques. We
-also obtain deterministic improvements for several other classical problems,
-including simplex range stabbing counting and reporting, segment intersection
-detection, counting and reporting, ray-shooting among segments, and more.
-Similar to Chan’s original randomized partition tree, we expect that additional
-applications will emerge in the future, especially in situations where
-deterministic results are preferred.</p>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Haitao Wang]]></summary></entry><entry><title type="html">arXiv: Data Structures and Algorithms: Breaking the $n^{1.5}$ Additive Error Barrier for Private and Efficient Graph Sparsification via Private Expander Decomposition</title><link href="https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-breaking-the-n-1-5-additive-error-barrier-for-private-and-efficient-graph-sparsification-via-private-expander-decomposition/" rel="alternate" type="text/html" title="arXiv: Data Structures and Algorithms: Breaking the $n^{1.5}$ Additive Error Barrier for Private and Efficient Graph Sparsification via Private Expander Decomposition" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-breaking-the-n-1-5-additive-error-barrier-for-private-and-efficient-graph-sparsification-via-private-expander-decomposition</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-breaking-the-n-1-5-additive-error-barrier-for-private-and-efficient-graph-sparsification-via-private-expander-decomposition/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Anders+Aamand">Anders Aamand</a>, <a href="https://dblp.uni-trier.de/search?q=Justin+Y.+Chen">Justin Y. Chen</a>, <a href="https://dblp.uni-trier.de/search?q=Mina+Dalirrooyfard">Mina Dalirrooyfard</a>, <a href="https://dblp.uni-trier.de/search?q=Slobodan+Mitrovi%C4%87">Slobodan Mitrović</a>, <a href="https://dblp.uni-trier.de/search?q=Yuriy+Nevmyvaka">Yuriy Nevmyvaka</a>, <a href="https://dblp.uni-trier.de/search?q=Sandeep+Silwal">Sandeep Silwal</a>, <a href="https://dblp.uni-trier.de/search?q=Yinzhan+Xu">Yinzhan Xu</a></p>
+<h3 id="algebra">Algebra</h3>
+<h4 id="unit-1-theory-of-equations-and-complex-numbers">Unit 1: Theory of Equations and Complex numbers</h4>
+<ul>
+  <li>Polynomials</li>
+  <li>The remainder and factor theorem</li>
+  <li>Synthetic division</li>
+  <li>Factored form of a polynomial</li>
+  <li>Fundamental theorem of algebra</li>
+  <li>Relations between the roots and the coefficients of polynomial equations</li>
+  <li>Theorems on imaginary, integral and rational roots</li>
+  <li>Polar representation of complex numbers</li>
+  <li>De Moivre’s theorem for integer and rational indices and their applications</li>
+  <li>The nth roots of unity</li>
+</ul>
 
-<p>We study differentially private algorithms for graph cut sparsification, a
-fundamental problem in algorithms, privacy, and machine learning. While
-significant progress has been made, the best-known private and efficient cut
-sparsifiers on $n$-node graphs approximate each cut within
-$\widetilde{O}(n^{1.5})$ additive error and $1+\gamma$ multiplicative error for
-any $\gamma &gt; 0$ [Gupta, Roth, Ullman TCC’12]. In contrast, “inefficient”
-algorithms, i.e., those requiring exponential time, can achieve an
-$\widetilde{O}(n)$ additive error and $1+\gamma$ multiplicative error
-[Eli{'a}{\v{s}}, Kapralov, Kulkarni, Lee SODA’20]. In this work, we break the
-$n^{1.5}$ additive error barrier for private and efficient cut sparsification.
-We present an $(\varepsilon,\delta)$-DP polynomial time algorithm that, given a
-non-negative weighted graph, outputs a private synthetic graph approximating
-all cuts with multiplicative error $1+\gamma$ and additive error $n^{1.25 +
-o(1)}$ (ignoring dependencies on $\varepsilon, \delta, \gamma$).
-At the heart of our approach lies a private algorithm for expander
-decomposition, a popular and powerful technique in (non-private) graph
-algorithms.</p>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Anders Aamand, Justin Y. Chen, Mina Dalirrooyfard, Slobodan Mitrović, Yuriy Nevmyvaka, Sandeep Silwal, Yinzhan Xu]]></summary></entry><entry><title type="html">arXiv: Data Structures and Algorithms: Dynamic Similarity Graph Construction with Kernel Density Estimation</title><link href="https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-dynamic-similarity-graph-construction-with-kernel-density-estimation/" rel="alternate" type="text/html" title="arXiv: Data Structures and Algorithms: Dynamic Similarity Graph Construction with Kernel Density Estimation" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-dynamic-similarity-graph-construction-with-kernel-density-estimation</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-dynamic-similarity-graph-construction-with-kernel-density-estimation/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Steinar+Laenen">Steinar Laenen</a>, <a href="https://dblp.uni-trier.de/search?q=Peter+Macgregor">Peter Macgregor</a>, <a href="https://dblp.uni-trier.de/search?q=He+Sun">He Sun</a></p>
+<h4 id="unit-2-equivalence-relations-and-functions">Unit 2: Equivalence Relations and Functions</h4>
+<ul>
+  <li>Equivalence relations</li>
+  <li>Functions</li>
+  <li>Composition of functions</li>
+  <li>Invertibility and inverse of functions</li>
+  <li>One-to-one correspondence and the cardinality of a set</li>
+</ul>
 
-<p>In the kernel density estimation (KDE) problem, we are given a set $X$ of
-data points in $\mathbb{R}^d$, a kernel function $k: \mathbb{R}^d \times
-\mathbb{R}^d \rightarrow \mathbb{R}$, and a query point $\mathbf{q} \in
-\mathbb{R}^d$, and the objective is to quickly output an estimate of
-$\sum_{\mathbf{x} \in X} k(\mathbf{q}, \mathbf{x})$. In this paper, we consider
-$\textsf{KDE}$ in the dynamic setting, and introduce a data structure that
-efficiently maintains the estimates for a set of query points as data points
-are added to $X$ over time. Based on this, we design a dynamic data structure
-that maintains a sparse approximation of the fully connected similarity graph
-on $X$, and develop a fast dynamic spectral clustering algorithm. We further
-evaluate the effectiveness of our algorithms on both synthetic and real-world
-datasets.</p>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Steinar Laenen, Peter Macgregor, He Sun]]></summary></entry><entry><title type="html">arXiv: Data Structures and Algorithms: Faster Algorithm for Second (s,t)-mincut and Breaking Quadratic barrier for Dual Edge Sensitivity for (s,t)-mincut</title><link href="https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-faster-algorithm-for-second-s-t-mincut-and-breaking-quadratic-barrier-for-dual-edge-sensitivity-for-s-t-mincut/" rel="alternate" type="text/html" title="arXiv: Data Structures and Algorithms: Faster Algorithm for Second (s,t)-mincut and Breaking Quadratic barrier for Dual Edge Sensitivity for (s,t)-mincut" /><published>2025-07-03T00:00:00+00:00</published><updated>2025-07-03T00:00:00+00:00</updated><id>https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-faster-algorithm-for-second-s-t-mincut-and-breaking-quadratic-barrier-for-dual-edge-sensitivity-for-s-t-mincut</id><content type="html" xml:base="https://goravjindal.github.io/blog/2025/arxiv-data-structures-and-algorithms-faster-algorithm-for-second-s-t-mincut-and-breaking-quadratic-barrier-for-dual-edge-sensitivity-for-s-t-mincut/"><![CDATA[<p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Surender+Baswana">Surender Baswana</a>, <a href="https://dblp.uni-trier.de/search?q=Koustav+Bhanja">Koustav Bhanja</a>, <a href="https://dblp.uni-trier.de/search?q=Anupam+Roy">Anupam Roy</a></p>
+<h4 id="unit-3-basic-number-theory">Unit 3: Basic number Theory</h4>
+<ul>
+  <li>Well ordering principle</li>
+  <li>The division algorithm in ℤ</li>
+  <li>Divisibility and the Euclidean algorithm</li>
+  <li>Fundamental theorem of arithmetic</li>
+  <li>Modular arithmetic and basic properties of congruences</li>
+  <li>Principle of mathematical induction</li>
+</ul>
 
-<p>We study (s,t)-cuts of second minimum capacity and present the following
-algorithmic and graph-theoretic results.</p>
-<ol>
-  <li>Vazirani and Yannakakis [ICALP 1992] designed the first algorithm for
-computing an (s,t)-cut of second minimum capacity using $O(n^2)$ maximum
-(s,t)-flow computations. For directed integer-weighted graphs, we significantly
-improve this bound by designing an algorithm that computes an $(s,t)$-cut of
-second minimum capacity using $O(\sqrt{n})$ maximum (s,t)-flow computations
-w.h.p. To achieve this result, a close relationship of independent interest is
-established between $(s,t)$-cuts of second minimum capacity and global mincuts
-in directed weighted graphs.</li>
-  <li>Minimum+1 (s,t)-cuts have been studied quite well recently [Baswana,
-Bhanja, and Pandey, ICALP 2022], which is a special case of second
-(s,t)-mincut.
-(a) For directed multi-graphs, we design an algorithm that, given any maximum
-(s,t)-flow, computes a minimum+1 (s,t)-cut, if it exists, in $O(m)$ time.
-(b) The existing structures for storing and characterizing all minimum+1
-(s,t)-cuts occupy $O(mn)$ space. For undirected multi-graphs, we design a DAG
-occupying only $O(m)$ space that stores and characterizes all minimum+1
-(s,t)-cuts.</li>
-  <li>The study of minimum+1 (s,t)-cuts often turns out to be useful in
-designing dual edge sensitivity oracles – a compact data structure for
-efficiently reporting an (s,t)-mincut after insertion/failure of any given pair
-of query edges. It has been shown recently [Bhanja, ICALP 2025] that any dual
-edge sensitivity oracle for (s,t)-mincut in undirected multi-graphs must occupy
-${\Omega}(n^2)$ space in the worst-case, irrespective of the query time. For
-simple graphs, we break this quadratic barrier while achieving a non-trivial
-query time.</li>
-</ol>]]></content><author><name></name></author><category term="cstheoryrss" /><summary type="html"><![CDATA[Authors: Surender Baswana, Koustav Bhanja, Anupam Roy]]></summary></entry></feed>
+<h4 id="unit-4-row-echelon-form-of-matrices-and-applications">Unit 4: Row Echelon Form of Matrices and Applications</h4>
+<ul>
+  <li>Systems of linear equations</li>
+  <li>Row reduction and echelon forms</li>
+  <li>Vector equations</li>
+  <li>The matrix equation \(Ax = b\)</li>
+  <li>Solution sets of linear systems</li>
+  <li>The inverse of a matrix</li>
+  <li>Subspaces</li>
+  <li>Linear independence</li>
+  <li>Basis and dimension</li>
+  <li>The rank of a matrix and applications</li>
+  <li>Introduction to linear transformations</li>
+  <li>The matrix of a linear transformation</li>
+  <li>Applications to computer graphics</li>
+  <li>Eigenvalues and eigenvectors</li>
+  <li>The characteristic equation</li>
+  <li>Cayley−Hamilton theorem</li>
+</ul>
+<hr style="border:2px solid blue" />
+
+<h3 id="real-analysis">Real Analysis:</h3>
+<h4 id="unit-1-real-number-system-mathbbr">Unit 1: Real number System \(\mathbb{R}\)</h4>
+<ul>
+  <li>Algebraic and order properties of \(\mathbb{R}\)</li>
+  <li>Absolute value of a real number</li>
+  <li>Bounded above and bounded below sets</li>
+  <li>Supremum and infimum of a nonempty subset of \(\mathbb{R}\)</li>
+</ul>
+
+<h4 id="unit-2-properties-of-mathbbr">Unit 2: Properties of \(\mathbb{R}\)</h4>
+<ul>
+  <li>The completeness property of \(\mathbb{R}\)</li>
+  <li>Archimedean property</li>
+  <li>Density of rational numbers in \(\mathbb{R}\)</li>
+  <li>Definition and types of intervals</li>
+  <li>Nested intervals property</li>
+  <li>Neighborhood of a point in \(\mathbb{R}\)</li>
+  <li>Open and closed sets in \(\mathbb{R}\)</li>
+</ul>
+
+<h4 id="unit-3-sequences-in-mathbbr">Unit 3: Sequences in \(\mathbb{R}\)</h4>
+
+<ul>
+  <li>Convergent sequence</li>
+  <li>Limit of a sequence</li>
+  <li>Bounded sequence</li>
+  <li>Limit theorems</li>
+  <li>Monotone sequences</li>
+  <li>Monotone convergence theorem</li>
+  <li>Subsequences</li>
+  <li>Bolzano−Weierstrass theorem for sequences</li>
+  <li>Limit superior and limit inferior for bounded sequence</li>
+  <li>Cauchy sequence</li>
+  <li>Cauchy’s convergence criterion</li>
+</ul>
+
+<h4 id="unit-4-infinite-series">Unit 4: Infinite Series</h4>
+<ul>
+  <li>Convergence and divergence of infinite series of real numbers</li>
+  <li>Necessary condition for convergence</li>
+  <li>Cauchy criterion for convergence</li>
+  <li>Tests for convergence of positive term series: Integral test, Basic comparison test, Limit comparison test, D’Alembert’s ratio test, Cauchy’s nth root test</li>
+  <li>Alternating series</li>
+  <li>Leibniz test</li>
+  <li>Absolute and conditional convergence</li>
+</ul>
+<hr style="border:2px solid blue" />
+
+<h3 id="differential-equation">Differential Equation:</h3>
+<h4 id="unit-1-differential-equations-and-mathematical-modeling">Unit 1: Differential Equations and Mathematical Modeling</h4>
+<ul>
+  <li>Differential equations and mathematical models</li>
+  <li>Order and degree of a differential equation</li>
+  <li>Exact differential equations and integrating factors of first order differential equations</li>
+  <li>Reducible second order differential equations</li>
+  <li>Applications of first order differential equations to acceleration-velocity model</li>
+  <li>Growth and decay model</li>
+</ul>
+
+<h4 id="unit-2-population-growth-models">Unit 2: Population Growth Models</h4>
+<ul>
+  <li>Introduction to compartmental models</li>
+  <li>Lake pollution model (with case study of Lake Burley Griffin)</li>
+  <li>Drug assimilation into the blood (case of a single cold pill, case of a course of cold pills, case study of alcohol in the bloodstream)</li>
+  <li>Exponential growth of population</li>
+  <li>Limited growth of population</li>
+  <li>Limited growth with harvesting</li>
+</ul>
+
+<h4 id="unit-3-second-and-higher-order-differential-equations">Unit 3: Second and Higher Order Differential Equations</h4>
+<ul>
+  <li>General solution of homogeneous equation of second order</li>
+  <li>Principle of superposition for a homogeneous equation</li>
+  <li>Wronskian, its properties and applications</li>
+  <li>Linear homogeneous and non-homogeneous equations of higher order with constant coefficients</li>
+  <li>Euler’s equation</li>
+  <li>Method of undetermined coefficients</li>
+  <li>Method of variation of parameters</li>
+  <li>Applications of second order differential equations to mechanical vibrations</li>
+</ul>
+
+<h4 id="unit-4-analysis-of-mathematical-models">Unit 4: Analysis of Mathematical Models</h4>
+<ul>
+  <li>Interacting population models</li>
+  <li>Epidemic model of influenza and its analysis</li>
+  <li>Predator-prey model and its analysis</li>
+  <li>Equilibrium points</li>
+  <li>Interpretation of the phase plane</li>
+  <li>Battle model and its analysis</li>
+</ul>
+<hr style="border:2px solid blue" />
+
+<h3 id="theory-of-real-function">Theory of Real Function:</h3>
+<h4 id="unit-1-limits-of-functions">Unit 1: Limits of Functions</h4>
+<ul>
+  <li>Limits of functions (ε δ − approach)</li>
+  <li>Sequential criterion for limits</li>
+  <li>Divergence criteria</li>
+  <li>Limit theorems</li>
+  <li>One-sided limits</li>
+  <li>Infinite limits and limits at infinity</li>
+</ul>
+
+<h4 id="unit-2-continuous-functions-and-their-properties">Unit 2: Continuous Functions and their Properties</h4>
+<ul>
+  <li>Continuous functions</li>
+  <li>Sequential criterion for continuity and discontinuity</li>
+  <li>Algebra of continuous functions</li>
+  <li>Properties of continuous functions on closed and bounded intervals</li>
+  <li>Uniform continuity</li>
+  <li>Non-uniform continuity criteria</li>
+  <li>Uniform continuity theorem</li>
+</ul>
+
+<h4 id="unit-3-derivability-and-its-applications">Unit 3: Derivability and its Applications</h4>
+<ul>
+  <li>Differentiability of a function</li>
+  <li>Algebra of differentiable functions</li>
+  <li>Carathéodory’s theorem</li>
+  <li>Chain rule</li>
+  <li>Relative extrema</li>
+  <li>Interior extremum theorem</li>
+  <li>Rolle’s theorem</li>
+  <li>Mean-value theorem and applications</li>
+  <li>Intermediate value property of derivatives</li>
+  <li>Darboux’s theorem</li>
+</ul>
+
+<h4 id="unit-4-taylors-theorem-and-its-applications">Unit 4: Taylor’s Theorem and its Applications</h4>
+<ul>
+  <li>Taylor polynomial</li>
+  <li>Taylor’s theorem with Lagrange form of remainder</li>
+  <li>Application of Taylor’s theorem in error estimation</li>
+  <li>Relative extrema</li>
+  <li>Criterion for convexity</li>
+  <li>Taylor’s series expansions of e^x, sin x, and cos x</li>
+</ul>
+<hr style="border:2px solid blue" />
+
+<h3 id="multivariate-calculus">Multivariate Calculus:</h3>
+<h4 id="unit-1-calculus-of-functions-of-several-variables">Unit 1: Calculus of Functions of Several Variables</h4>
+<ul>
+  <li>Functions of several variables</li>
+  <li>Level curves and surfaces</li>
+  <li>Limits and continuity</li>
+  <li>Partial differentiation</li>
+  <li>Higher order partial derivative</li>
+  <li>Tangent planes</li>
+  <li>Total differential and differentiability</li>
+  <li>Chain rule</li>
+  <li>Directional derivatives</li>
+  <li>The gradient</li>
+  <li>Maximal and normal property of the gradient</li>
+  <li>Tangent planes and normal lines</li>
+</ul>
+
+<h4 id="unit-2-extrema-of-functions-of-two-variables-and-properties-of-vector-field">Unit 2: Extrema of Functions of Two Variables and Properties of Vector Field</h4>
+<ul>
+  <li>Extrema of functions of two variables</li>
+  <li>Method of Lagrange multipliers</li>
+  <li>Constrained optimization problems</li>
+  <li>Definition of vector field</li>
+  <li>Divergence and curl</li>
+</ul>
+
+<h4 id="unit-3-double-and-triple-integrals">Unit 3: Double and Triple Integrals</h4>
+<ul>
+  <li>Double integration over rectangular and nonrectangular regions</li>
+  <li>Double integrals in polar coordinates</li>
+  <li>Triple integral over a parallelopiped and solid regions</li>
+  <li>Volume by triple integrals</li>
+  <li>Triple integration in cylindrical and spherical coordinates</li>
+  <li>Change of variables in double and triple integrals</li>
+</ul>
+
+<h4 id="unit-4-greens-stokes-and-gauss-divergence-theorem">Unit 4: Green’s, Stokes’ and Gauss Divergence Theorem</h4>
+<ul>
+  <li>Line integrals</li>
+  <li>Applications of line integrals: Mass and Work</li>
+  <li>Fundamental theorem for line integrals</li>
+  <li>Conservative vector fields</li>
+  <li>Green’s theorem</li>
+  <li>Area as a line integral</li>
+  <li>Surface integrals</li>
+  <li>Stokes’ theorem</li>
+  <li>Gauss divergence theorem</li>
+</ul>
+<hr style="border:2px solid blue" />
+
+<h3 id="partial-differential-equations">Partial Differential Equations:</h3>
+<h4 id="unit-1-first-order-pde-and-method-of-characteristics">Unit 1: First Order PDE and Method of Characteristics</h4>
+<ul>
+  <li>Introduction</li>
+  <li>Classification</li>
+  <li>Construction and geometrical interpretation of first order partial differential equations (PDE)</li>
+  <li>Method of characteristic and general solution of first order PDE</li>
+  <li>Canonical form of first order PDE</li>
+  <li>Method of separation of variables for first order PDE</li>
+</ul>
+
+<h4 id="unit-2-mathematical-models-and-classification-of-2nd-order-linear-pde">Unit 2: Mathematical Models and Classification of 2nd Order Linear PDE</h4>
+<ul>
+  <li>Gravitational potential</li>
+  <li>Conservation laws and Burger’s equations</li>
+  <li>Classification of second order PDE</li>
+  <li>Reduction to canonical forms</li>
+  <li>Equations with constant coefficients</li>
+  <li>General solution</li>
+</ul>
+
+<h4 id="unit-3-the-cauchy-problem-and-wave-equations">Unit 3: The Cauchy Problem and Wave Equations</h4>
+<ul>
+  <li>Mathematical modeling of vibrating string and vibrating membrane</li>
+  <li>Cauchy problem for second order PDE</li>
+  <li>Homogeneous wave equation</li>
+  <li>Initial boundary value problems</li>
+  <li>Nonhomogeneous boundary conditions</li>
+  <li>Finite strings with fixed ends</li>
+  <li>Non-homogeneous wave equation</li>
+  <li>Goursat problem</li>
+</ul>
+
+<h4 id="unit-4-method-of-separation-of-variables">Unit 4: Method of Separation of Variables</h4>
+<ul>
+  <li>Method of separation of variables for second order PDE</li>
+  <li>Vibrating string problem</li>
+  <li>Existence and uniqueness of solution of vibrating string problem</li>
+  <li>Heat conduction problem</li>
+  <li>Existence and uniqueness of solution of heat conduction problem</li>
+  <li>Non-homogeneous problem</li>
+</ul>
+
+<hr style="border:2px solid blue" />
+
+<h3 id="riemann-integration-and-series-of-functions">Riemann Integration and Series of Functions</h3>
+<h4 id="unit-1-riemann-integration">Unit 1: Riemann Integration</h4>
+<ul>
+  <li>Definition of Riemann integration</li>
+  <li>Inequalities for upper and lower Darboux sums</li>
+  <li>Necessary and sufficient conditions for Riemann integrability</li>
+  <li>Definition of Riemann integration by Riemann sum and equivalence of the two definitions</li>
+  <li>Riemann integrability of monotone functions and continuous functions</li>
+  <li>Properties of Riemann integrable functions</li>
+  <li>Definitions of piecewise continuous and piecewise monotone functions and their Riemann integrability</li>
+  <li>Intermediate value theorem for integrals</li>
+  <li>Fundamental theorems (I and II) of calculus</li>
+  <li>Integration by parts</li>
+</ul>
+
+<h4 id="unit-2-improper-integral">Unit 2: Improper Integral</h4>
+<ul>
+  <li>Improper integrals of Type-I, Type-II and mixed type</li>
+  <li>Convergence of beta and gamma functions, and their properties</li>
+</ul>
+
+<h4 id="unit-3-sequence-and-series-of-functions">Unit 3: Sequence and Series of Functions</h4>
+<ul>
+  <li>Pointwise and uniform convergence of sequence of functions</li>
+  <li>Theorem on the continuity of the limit function of a sequence of functions</li>
+  <li>Theorems on the interchange of the limit and derivative, and the interchange of the limit and integrability of a sequence of functions</li>
+  <li>Pointwise and uniform convergence of series of functions</li>
+  <li>Theorems on the continuity, derivability and integrability of the sum function of a series of functions</li>
+  <li>Cauchy criterion and the Weierstrass M-test for uniform convergence</li>
+</ul>
+
+<h4 id="unit-4-power-series">Unit 4: Power Series</h4>
+<ul>
+  <li>Definition of a power series</li>
+  <li>Radius of convergence</li>
+  <li>Absolute convergence (Cauchy−Hadamard theorem)</li>
+  <li>Uniform convergence</li>
+  <li>Differentiation and integration of power series</li>
+  <li>Abel’s theorem</li>
+</ul>
+
+<hr style="border:2px solid blue" />
+
+<h3 id="ring-theory-and-linear-algebra-i">Ring Theory and Linear Algebra-I</h3>
+<h4 id="unit-1-introduction-of-rings">Unit 1: Introduction of Rings</h4>
+<ul>
+  <li>Definition and examples of rings</li>
+  <li>Properties of rings</li>
+  <li>Subrings</li>
+  <li>Integral domains and fields</li>
+  <li>Characteristic of a ring</li>
+  <li>Ideals, Ideal generated by a subset of a ring</li>
+  <li>Factor rings</li>
+  <li>Operations on ideals</li>
+  <li>Prime and maximal ideals</li>
+</ul>
+
+<h4 id="unit-2-ring-homomorphisms">Unit 2: Ring Homomorphisms</h4>
+<ul>
+  <li>Ring homomorphisms</li>
+  <li>Properties of ring homomorphisms</li>
+  <li>First, Second and Third Isomorphism theorems for rings</li>
+  <li>The Field of quotients</li>
+</ul>
+
+<h4 id="unit-3-introduction-of-vector-spaces">Unit 3: Introduction of Vector Spaces</h4>
+<ul>
+  <li>Vector spaces</li>
+  <li>Subspaces</li>
+  <li>Algebra of subspaces</li>
+  <li>Quotient spaces</li>
+  <li>Linear combination of vectors</li>
+  <li>Linear span</li>
+  <li>Linear independence</li>
+  <li>Basis and dimension</li>
+  <li>Dimension of subspaces</li>
+</ul>
+
+<h4 id="unit-4-linear-transformations">Unit 4: Linear Transformations</h4>
+<ul>
+  <li>Linear transformations</li>
+  <li>Null space</li>
+  <li>Range</li>
+  <li>Rank and nullity of a linear transformation</li>
+  <li>Matrix representation of a linear transformation</li>
+  <li>Algebra of linear transformations</li>
+  <li>Isomorphisms</li>
+  <li>Isomorphism theorems</li>
+  <li>Invertibility and the change of coordinate matrix</li>
+</ul>
+
+<hr style="border:2px solid blue" />
+
+<h3 id="metric-spaces">Metric Spaces</h3>
+
+<h4 id="unit-1-basic-concepts">Unit 1: Basic Concepts</h4>
+<ul>
+  <li>Definition and examples of metric spaces</li>
+  <li>Sequences in metric spaces</li>
+  <li>Cauchy sequences</li>
+  <li>Complete metric space</li>
+</ul>
+
+<h4 id="unit-2-topology-of-metric-spaces">Unit 2: Topology of Metric Spaces</h4>
+<ul>
+  <li>Open and closed ball</li>
+  <li>Neighborhood</li>
+  <li>Open set</li>
+  <li>Interior of a set</li>
+  <li>Limit point of a set</li>
+  <li>Derived set</li>
+  <li>Closed set</li>
+  <li>Closure of a set</li>
+  <li>Diameter of a set</li>
+  <li>Cantor’s theorem</li>
+  <li>Subspaces</li>
+  <li>Dense set</li>
+</ul>
+
+<h4 id="unit-3-continuity--uniform-continuity">Unit 3: Continuity &amp; Uniform Continuity</h4>
+<ul>
+  <li>Continuous mappings</li>
+  <li>Sequential criterion and other characterizations of continuity</li>
+  <li>Uniform continuity</li>
+  <li>Homeomorphism</li>
+  <li>Contraction mapping</li>
+  <li>Banach fixed point theorem</li>
+</ul>
+
+<h4 id="unit-4-connectedness-and-compactness">Unit 4: Connectedness and Compactness</h4>
+<ul>
+  <li>Connectedness</li>
+  <li>Connected subsets of ℝ</li>
+  <li>Connectedness and continuous mappings</li>
+  <li>Compactness</li>
+  <li>Compactness and boundedness</li>
+  <li>Continuous functions on compact spaces</li>
+</ul>
+
+<hr style="border:2px solid blue" />
+
+<h3 id="group-theory-ii">Group Theory-II</h3>
+
+<h4 id="unit-1-automorphisms-and-properties">Unit 1: Automorphisms and Properties</h4>
+<ul>
+  <li>Automorphism</li>
+  <li>Inner automorphism</li>
+  <li>Automorphism groups</li>
+  <li>Automorphism groups of finite and infinite cyclic groups</li>
+  <li>Characteristic subgroups</li>
+  <li>Commutator subgroup and its properties</li>
+  <li>Applications of factor groups to automorphism groups</li>
+</ul>
+
+<h4 id="unit-2-external-and-internal-direct-products-of-groups">Unit 2: External and Internal Direct Products of Groups</h4>
+<ul>
+  <li>External direct products of groups and its properties</li>
+  <li>The group of units modulo ( n ) as an external direct product</li>
+  <li>Applications to data security and electric circuits</li>
+  <li>Internal direct products</li>
+  <li>Classification of groups of order ( p^n ), where ( p ) is a prime</li>
+  <li>Fundamental theorem of finite abelian groups and its isomorphism classes</li>
+</ul>
+
+<h4 id="unit-3-group-action">Unit 3: Group Action</h4>
+<ul>
+  <li>Group actions and permutation representations</li>
+  <li>Stabilizers and kernels of group actions</li>
+  <li>Groups acting on themselves by left multiplication and consequences</li>
+  <li>Conjugacy in ( S_n )</li>
+</ul>
+
+<h4 id="unit-4-sylow-theorems-and-applications">Unit 4: Sylow Theorems and Applications</h4>
+<ul>
+  <li>Conjugacy classes</li>
+  <li>Class equation</li>
+  <li>( p )-groups</li>
+  <li>Sylow theorems and consequences</li>
+  <li>Applications of Sylow theorems</li>
+  <li>Finite simple groups</li>
+  <li>Nonsimplicity tests</li>
+  <li>Generalized Cayley’s theorem</li>
+  <li>Index theorem</li>
+  <li>Embedding theorem and applications</li>
+  <li>Simplicity of ( A_n )</li>
+</ul>
+<hr style="border:2px solid blue" />
+
+<h3 id="complex-analysis">Complex Analysis</h3>
+
+<h4 id="unit-1-analytic-functions-and-cauchy-riemann-equations">Unit 1: Analytic Functions and Cauchy-Riemann Equations</h4>
+<ul>
+  <li>Functions of complex variable</li>
+  <li>Mappings by the exponential function</li>
+  <li>Limits</li>
+  <li>Theorems on limits</li>
+  <li>Limits involving the point at infinity</li>
+  <li>Continuity</li>
+  <li>Derivatives</li>
+  <li>Differentiation formulae</li>
+  <li>Cauchy-Riemann equations</li>
+  <li>Sufficient conditions for differentiability</li>
+  <li>Analytic functions and their examples</li>
+</ul>
+
+<h4 id="unit-2-elementary-functions-and-integrals">Unit 2: Elementary Functions and Integrals</h4>
+<ul>
+  <li>Exponential function</li>
+  <li>Logarithmic function</li>
+  <li>Branches and derivatives of logarithms</li>
+  <li>Trigonometric function</li>
+  <li>Derivatives of functions</li>
+  <li>Definite integrals of functions</li>
+  <li>Contours</li>
+  <li>Contour integrals and its examples</li>
+  <li>Upper bounds for moduli of contour integrals</li>
+</ul>
+
+<h4 id="unit-3-cauchys-theorems-and-fundamental-theorem-of-algebra">Unit 3: Cauchy’s Theorems and Fundamental Theorem of Algebra</h4>
+<ul>
+  <li>Antiderivatives</li>
+  <li>Proof of antiderivative theorem</li>
+  <li>Cauchy-Goursat theorem</li>
+  <li>Cauchy integral formula</li>
+  <li>An extension of Cauchy integral formula</li>
+  <li>Consequences of Cauchy integral formula</li>
+  <li>Liouville’s theorem</li>
+  <li>Fundamental theorem of algebra</li>
+</ul>
+
+<h4 id="unit-4-series-and-residues">Unit 4: Series and Residues</h4>
+<ul>
+  <li>Convergence of sequences and series</li>
+  <li>Taylor series and its examples</li>
+  <li>Laurent series and its examples</li>
+  <li>Absolute and uniform convergence of power series</li>
+  <li>Uniqueness of series representations of power series</li>
+  <li>Isolated singular points</li>
+  <li>Residues</li>
+  <li>Cauchy’s residue theorem</li>
+  <li>Residue at infinity</li>
+  <li>Types of isolated singular points</li>
+  <li>Residues at poles and its examples</li>
+</ul>
+<hr style="border:2px solid blue" />
+
+<h3 id="group-theory--linear-algebra-ii">Group Theory &amp; Linear Algebra-II</h3>
+
+<h4 id="unit-1-polynomial-rings-and-unique-factorization-domain-ufd">Unit 1: Polynomial Rings and Unique Factorization Domain (UFD)</h4>
+<ul>
+  <li>Polynomial rings over commutative rings</li>
+  <li>Division algorithm and consequences</li>
+  <li>Principal ideal domains</li>
+  <li>Factorization of polynomials</li>
+  <li>Reducibility tests</li>
+  <li>Irreducibility tests</li>
+  <li>Eisenstein’s criterion</li>
+  <li>Unique factorization in ( \mathbb{Z}[x] )</li>
+  <li>Divisibility in integral domains</li>
+  <li>Irreducibles</li>
+  <li>Primes</li>
+  <li>Unique factorization domains</li>
+  <li>Euclidean domains</li>
+</ul>
+
+<h4 id="unit-2-dual-spaces-and-diagonalizable-operators">Unit 2: Dual Spaces and Diagonalizable Operators</h4>
+<ul>
+  <li>Dual spaces</li>
+  <li>Double dual</li>
+  <li>Dual basis</li>
+  <li>Transpose of a linear transformation and its matrix in the dual basis</li>
+  <li>Annihilators</li>
+  <li>Eigenvalues</li>
+  <li>Eigenvectors</li>
+  <li>Eigenspaces and characteristic polynomial of a linear operator</li>
+  <li>Diagonalizability</li>
+  <li>Invariant subspaces</li>
+  <li>Cayley-Hamilton theorem</li>
+  <li>Minimal polynomial for a linear operator</li>
+</ul>
+
+<h4 id="unit-3-inner-product-spaces">Unit 3: Inner Product Spaces</h4>
+<ul>
+  <li>Inner product spaces and norms</li>
+  <li>Orthonormal basis</li>
+  <li>Gram-Schmidt orthogonalization process</li>
+  <li>Orthogonal complements</li>
+  <li>Bessel’s inequality</li>
+</ul>
+
+<h4 id="unit-4-adjoint-operators-and-their-properties">Unit 4: Adjoint Operators and Their Properties</h4>
+<ul>
+  <li>Adjoint of a linear operator</li>
+  <li>Least squares approximation</li>
+  <li>Minimal solutions to systems of linear equations</li>
+  <li>Normal, self-adjoint, unitary and orthogonal operators and their properties</li>
+</ul>]]></content><author><name></name></author><category term="math" /><summary type="html"><![CDATA[DSSB syllabus]]></summary></entry></feed>
