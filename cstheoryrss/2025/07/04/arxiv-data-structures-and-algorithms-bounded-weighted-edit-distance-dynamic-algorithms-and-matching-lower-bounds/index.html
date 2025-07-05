@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>arXiv: Data Structures and Algorithms: Bounded Weighted Edit Distance: Dynamic Algorithms and Matching Lower Bounds | Gorav  Jindal</title>
+    <meta name="author" content="Gorav  Jindal">
+    <meta name="description" content="Gorav Jindal's personal and academic webpage
+">
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://goravjindal.github.io/cstheoryrss/2025/07/04/arxiv-data-structures-and-algorithms-bounded-weighted-edit-distance-dynamic-algorithms-and-matching-lower-bounds/">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+    
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Gorav </span>Jindal</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">About</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-arxiv-computational-complexity-a-graph-width-perspective-on-partially-ordered-hamiltonian-paths-and-cycles-i-treewidth-pathwidth-and-grid-graphs.html">arXiv: Computational Complexity: A Graph Width Perspective on Partially Ordered Hamiltonian Paths and Cycles I: Treewidth, Pathwidth, and Grid Graphs</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-arxiv-computational-complexity-characterizing-small-circuit-classes-from-fac-0-to-fac-1-via-discrete-ordinary-differential-equations.html">arXiv: Computational Complexity: Characterizing Small Circuit Classes from FAC^0 to FAC^1 via Discrete Ordinary Differential Equations</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-arxiv-computational-complexity-constant-depth-circuits-for-polynomial-gcd-over-any-characteristic.html">arXiv: Computational Complexity: Constant-depth circuits for polynomial GCD over any characteristic</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-arxiv-computational-complexity-dominating-set-knapsack-profit-optimization-on-dominating-sets.html">arXiv: Computational Complexity: Dominating Set Knapsack: Profit Optimization on Dominating Sets</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-arxiv-computational-complexity-factorization-norms-and-an-inverse-theorem-for-maxcut.html">arXiv: Computational Complexity: Factorization norms and an inverse theorem for MaxCut</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-arxiv-computational-complexity-fantastic-flips-and-where-to-find-them-a-general-framework-for-parameterized-local-search-on-partitioning-problem.html">arXiv: Computational Complexity: Fantastic Flips and Where to Find Them: A General Framework for Parameterized Local Search on Partitioning Problem</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-arxiv-computational-complexity-parameterized-critical-node-cut-revisited.html">arXiv: Computational Complexity: Parameterized Critical Node Cut Revisited</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-arxiv-computational-complexity-segmented-operations-using-matrix-multiplications.html">arXiv: Computational Complexity: Segmented Operations using Matrix Multiplications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-ben-recht-two-years-of-substacking.html">Ben Recht: Two years of substacking</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-01-david-eppstein-geometric-street-art-in-kanazawa.html">David Eppstein: Geometric street art in Kanazawa</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-computational-complexity-hamiltonicity-parameterized-by-mim-width-is-indeed-para-np-hard.html">arXiv: Computational Complexity: Hamiltonicity Parameterized by Mim-Width is (Indeed) Para-NP-Hard</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-computational-complexity-logarithmic-depth-decomposition-of-approximate-multi-controlled-single-qubit-gates-without-ancilla-qubits.html">arXiv: Computational Complexity: Logarithmic Depth Decomposition of Approximate Multi-Controlled Single-Qubit Gates Without Ancilla Qubits</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-computational-complexity-on-the-in-approximability-of-the-monitoring-edge-geodetic-set-problem.html">arXiv: Computational Complexity: On the (In)Approximability of the Monitoring Edge Geodetic Set Problem</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-computational-complexity-sensitivity-and-query-complexity-under-uncertainty.html">arXiv: Computational Complexity: Sensitivity and Query Complexity under Uncertainty</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-computational-geometry-analyzing-time-varying-scalar-fields-using-piecewise-linear-morse-cerf-theory.html">arXiv: Computational Geometry: Analyzing Time-Varying Scalar Fields using Piecewise-Linear Morse-Cerf Theory</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-computational-geometry-compact-representation-of-semilinear-and-terrain-like-graphs.html">arXiv: Computational Geometry: Compact Representation of Semilinear and Terrain-like Graphs</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-computational-geometry-empirical-analysis-of-heuristic-and-approximation-algorithms-for-the-the-mutual-visibility-problem.html">arXiv: Computational Geometry: Empirical Analysis Of Heuristic and Approximation Algorithms for the The Mutual-Visibility Problem</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-data-structures-and-algorithms-a-simple-algorithm-for-trimmed-multipoint-evaluation.html">arXiv: Data Structures and Algorithms: A Simple Algorithm for Trimmed Multipoint Evaluation</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-data-structures-and-algorithms-best-agent-identification-for-general-game-playing.html">arXiv: Data Structures and Algorithms: Best Agent Identification for General Game Playing</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-data-structures-and-algorithms-lazy-b-trees.html">arXiv: Data Structures and Algorithms: Lazy B-Trees</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-arxiv-data-structures-and-algorithms-quantum-speedups-for-polynomial-time-dynamic-programming-algorithms.html">arXiv: Data Structures and Algorithms: Quantum Speedups for Polynomial-Time Dynamic Programming Algorithms</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-computational-complexity-a-professor-again.html">Computational Complexity: A Professor Again</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-02-gil-kalai-some-events.html">Gil Kalai: Some Events</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-computational-complexity-hardness-of-quantum-distribution-learning-and-quantum-cryptography.html">arXiv: Computational Complexity: Hardness of Quantum Distribution Learning and Quantum Cryptography</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-computational-complexity-pcpp-based-reconfiguration-inapproximability-query-complexity-vs-soundness-gap-trade-offs.html">arXiv: Computational Complexity: PCPP-Based Reconfiguration Inapproximability: Query Complexity vs. Soundness Gap Trade-offs</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-computational-complexity-symport-antiport-p-systems-with-membrane-separation-characterize-p-p.html">arXiv: Computational Complexity: Symport/Antiport P Systems with Membrane Separation Characterize P^(#P)</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-computational-geometry-a-stable-and-theoretically-grounded-gromov-wasserstein-distance-for-reeb-graph-comparison-using-persistence-images.html">arXiv: Computational Geometry: A Stable and Theoretically Grounded Gromov-Wasserstein Distance for Reeb Graph Comparison using Persistence Images</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-computational-geometry-multiple-watchman-routes-in-staircase-polygons.html">arXiv: Computational Geometry: Multiple Watchman Routes in Staircase Polygons</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-computational-geometry-search-based-robot-motion-planning-with-distance-based-adaptive-motion-primitives.html">arXiv: Computational Geometry: Search-Based Robot Motion Planning With Distance-Based Adaptive Motion Primitives</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-data-structures-and-algorithms-a-deterministic-partition-tree-and-applications.html">arXiv: Data Structures and Algorithms: A Deterministic Partition Tree and Applications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-data-structures-and-algorithms-breaking-the-n-1-5-additive-error-barrier-for-private-and-efficient-graph-sparsification-via-private-expander-decomposition.html">arXiv: Data Structures and Algorithms: Breaking the $n^{1.5}$ Additive Error Barrier for Private and Efficient Graph Sparsification via Private Expander Decomposition</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-data-structures-and-algorithms-dynamic-similarity-graph-construction-with-kernel-density-estimation.html">arXiv: Data Structures and Algorithms: Dynamic Similarity Graph Construction with Kernel Density Estimation</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-data-structures-and-algorithms-faster-algorithm-for-second-s-t-mincut-and-breaking-quadratic-barrier-for-dual-edge-sensitivity-for-s-t-mincut.html">arXiv: Data Structures and Algorithms: Faster Algorithm for Second (s,t)-mincut and Breaking Quadratic barrier for Dual Edge Sensitivity for (s,t)-mincut</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-data-structures-and-algorithms-optimal-dispersion-under-asynchrony.html">arXiv: Data Structures and Algorithms: Optimal Dispersion Under Asynchrony</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-arxiv-data-structures-and-algorithms-sparse-pivot-dynamic-correlation-clustering-for-node-insertions.html">arXiv: Data Structures and Algorithms: SPARSE-PIVOT: Dynamic correlation clustering for node insertions</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-03-ben-recht-standard-error-of-what-now.html">Ben Recht: Standard error of what now?</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-computational-complexity-stiefel-optimization-is-np-hard.html">arXiv: Computational Complexity: Stiefel optimization is NP-hard</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-computational-geometry-a-linear-time-algorithm-for-finding-minimum-flip-sequences-between-plane-spanning-paths-in-convex-point-sets.html">arXiv: Computational Geometry: A Linear Time Algorithm for Finding Minimum Flip Sequences between Plane Spanning Paths in Convex Point Sets</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-a-computational-proof-of-the-highest-scoring-boggle-board.html">arXiv: Data Structures and Algorithms: A Computational Proof of the Highest-Scoring Boggle Board</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-an-easy-proof-of-a-weak-version-of-chernoff-inequality.html">arXiv: Data Structures and Algorithms: An Easy Proof of a Weak Version of Chernoff inequality</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-bounded-weighted-edit-distance-dynamic-algorithms-and-matching-lower-bounds.html">arXiv: Data Structures and Algorithms: Bounded Weighted Edit Distance: Dynamic Algorithms and Matching Lower Bounds<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-connected-k-median-with-disjoint-and-non-disjoint-clusters.html">arXiv: Data Structures and Algorithms: Connected k-Median with Disjoint and Non-disjoint Clusters</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-faster-algorithm-for-bounded-tree-edit-distance-in-the-low-distance-regime.html">arXiv: Data Structures and Algorithms: Faster Algorithm for Bounded Tree Edit Distance in the Low-Distance Regime</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-indexing-tries-within-entropy-bounded-space.html">arXiv: Data Structures and Algorithms: Indexing Tries within Entropy-Bounded Space</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-new-algorithms-for-girth-and-cycle-detection.html">arXiv: Data Structures and Algorithms: New algorithms for girth and cycle detection</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-numerical-linear-algebra-in-linear-space.html">arXiv: Data Structures and Algorithms: Numerical Linear Algebra in Linear Space</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-on-the-adversarial-robustness-of-online-importance-sampling.html">arXiv: Data Structures and Algorithms: On the Adversarial Robustness of Online Importance Sampling</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-on-the-complexity-of-knapsack-under-explorable-uncertainty-hardness-and-algorithms.html">arXiv: Data Structures and Algorithms: On the Complexity of Knapsack under Explorable Uncertainty: Hardness and Algorithms</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-on-the-structure-of-replicable-hypothesis-testers.html">arXiv: Data Structures and Algorithms: On the Structure of Replicable Hypothesis Testers</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/_cstheoryrss/2025-07-04-arxiv-data-structures-and-algorithms-online-conformal-prediction-with-efficiency-guarantees.html">arXiv: Data Structures and Algorithms: Online Conformal Prediction with Efficiency Guarantees</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cv/">CV</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">Teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cstheoryrss/">CS Theory RSS</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">arXiv: Data Structures and Algorithms: Bounded Weighted Edit Distance: Dynamic Algorithms and Matching Lower Bounds</h1>
+    <p class="post-meta">July 4, 2025</p>
+    <p class="post-tags">
+      <a href="/blog/2025"> <i class="fas fa-calendar fa-sm"></i> 2025 </a>
+        ·  
+        <a href="/blog/category/cstheoryrss">
+          <i class="fas fa-tag fa-sm"></i> cstheoryrss</a>  
+          
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p><strong>Authors:</strong> <a href="https://dblp.uni-trier.de/search?q=Itai+Boneh" rel="external nofollow noopener" target="_blank">Itai Boneh</a>, <a href="https://dblp.uni-trier.de/search?q=Egor+Gorbachev" rel="external nofollow noopener" target="_blank">Egor Gorbachev</a>, <a href="https://dblp.uni-trier.de/search?q=Tomasz+Kociumaka" rel="external nofollow noopener" target="_blank">Tomasz Kociumaka</a></p>
+
+<p>The edit distance $ed(X,Y)$ of two strings $X,Y\in \Sigma^*$ is the minimum
+number of character edits (insertions, deletions, and substitutions) needed to
+transform $X$ into $Y$. Its weighted counterpart $ed^w(X,Y)$ minimizes the
+total cost of edits, which are specified using a function $w$, normalized so
+that each edit costs at least one. The textbook dynamic-programming procedure,
+given strings $X,Y\in \Sigma^{\le n}$ and oracle access to $w$, computes
+$ed^w(X,Y)$ in $O(n^2)$ time. Nevertheless, one can achieve better running
+times if the computed distance, denoted $k$, is small: $O(n+k^2)$ for unit
+weights [Landau and Vishkin; JCSS’88] and $\tilde{O}(n+\sqrt{nk^3})$ for
+arbitrary weights [Cassis, Kociumaka, Wellnitz; FOCS’23].
+In this paper, we study the dynamic version of the weighted edit distance
+problem, where the goal is to maintain $ed^w(X,Y)$ for strings $X,Y\in
+\Sigma^{\le n}$ that change over time, with each update specified as an edit in
+$X$ or $Y$. Very recently, Gorbachev and Kociumaka [STOC’25] showed that the
+unweighted distance $ed(X,Y)$ can be maintained in $\tilde{O}(k)$ time per
+update after $\tilde{O}(n+k^2)$-time preprocessing; here, $k$ denotes the
+current value of $ed(X,Y)$. Their algorithm generalizes to small integer
+weights, but the underlying approach is incompatible with large weights.
+Our main result is a dynamic algorithm that maintains $ed^w(X,Y)$ in
+$\tilde{O}(k^{3-\gamma})$ time per update after $\tilde{O}(nk^\gamma)$-time
+preprocessing. Here, $\gamma\in [0,1]$ is a real trade-off parameter and $k\ge
+1$ is an integer threshold fixed at preprocessing time, with $\infty$ returned
+whenever $ed^w(X,Y)&gt;k$. We complement our algorithm with conditional lower
+bounds showing fine-grained optimality of our trade-off for $\gamma \in
+[0.5,1)$ and justifying our choice to fix $k$.</p>
+
+<p><a href="http://arxiv.org/abs/2507.02548v1" rel="external nofollow noopener" target="_blank">Read original post</a></p>
+
+    </div>
+  </article>
+
+
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2025 Gorav  Jindal. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
