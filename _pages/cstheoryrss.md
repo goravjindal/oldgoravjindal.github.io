@@ -6,6 +6,8 @@ nav_order: 6
 permalink: /cstheoryrss/
 ---
 
+{% if page.title == "CS Theory RSS" %}
+
 # CS Theory RSS Posts (last 6 months), from [https://theory.report/atom.xml](https://theory.report/atom.xml)
 
 <input type="text" id="search-box" placeholder="Search posts..." style="margin-bottom: 1em; width: 100%; padding: 0.5em; font-size: 1em;">
@@ -56,12 +58,9 @@ permalink: /cstheoryrss/
       return;
     }
     postsList.innerHTML = postsArray.map(p => {
-      // p could be a post object or a search result ref
       if (p.url) {
-        // full post object
         return `<li><a href="${p.url}">${p.title}</a> — <small></small></li>`;
       } else {
-        // search result ref (with ref)
         const post = posts.find(post => post.url === p.ref);
         if (post) {
           return `<li><a href="${post.url}">${post.title}</a></li>`;
@@ -71,7 +70,6 @@ permalink: /cstheoryrss/
     }).join('');
   }
 
-  // Initially show all posts:
   renderPosts(posts);
 
   searchBox.addEventListener('input', function () {
@@ -84,7 +82,6 @@ permalink: /cstheoryrss/
 
     let results = idx.search(query);
     if (results.length === 0) {
-      // Try wildcard fallback
       const wildcardQuery = query.split(/\s+/).map(term => term + '*').join(' ');
       results = idx.search(wildcardQuery);
     }
@@ -92,4 +89,6 @@ permalink: /cstheoryrss/
     renderPosts(results);
   });
 </script>
+
+{% endif %}
 
