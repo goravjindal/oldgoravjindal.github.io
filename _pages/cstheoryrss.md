@@ -25,7 +25,7 @@ permalink: /cstheoryrss/
     {% endfor %}
   </ul>
 {% else %}
-  <p>No posts found in _cstheoryrss.</p>
+  <p>No posts found in CS Theory RSS.</p>
 {% endif %}
 
 <script src="https://unpkg.com/lunr/lunr.js"></script>
