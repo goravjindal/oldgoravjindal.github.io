@@ -55,7 +55,6 @@ def fetch_and_save():
         front_matter = (
             f"---\n"
             f"layout: post\n"
-            f"nav: true\n"
             f"category: cstheoryrss\n"
             f"title: \"{entry.title}\"\n"
             f"date: {published.isoformat()}\n"
