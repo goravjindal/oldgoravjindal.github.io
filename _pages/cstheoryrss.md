@@ -14,6 +14,7 @@ permalink: /cstheoryrss/
 
 {% assign sorted_posts = site.cstheoryrss | sort: 'date' | reverse %}
 
+
 {% if sorted_posts.size > 0 %}
   <ul id="posts-list">
     {% for post in sorted_posts %}
