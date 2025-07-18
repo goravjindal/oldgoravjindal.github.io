@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ben Recht: Metascience of pull requests | Gorav  Jindal</title>
+    <meta name="author" content="Gorav  Jindal">
+    <meta name="description" content="Gorav Jindal's personal and academic webpage
+">
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://goravjindal.github.io/_cstheoryrss/2025-07-15-ben-recht-metascience-of-pull-requests.html">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+    
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Gorav </span>Jindal</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">About</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/cv/">CV</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">Teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cstheoryrss/">CS Theory RSS</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Ben Recht: Metascience of pull requests</h1>
+    <p class="post-meta">July 15, 2025</p>
+    <p class="post-tags">
+      <a href="/blog/2025"> <i class="fas fa-calendar fa-sm"></i> 2025 </a>
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p><a href="https://substackcdn.com/image/fetch/$s_!l7uc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb56681ca-3f69-437d-8d94-eb4ddb9920d2_1100x219.jpeg" rel="external nofollow noopener" target="_blank"><img src="https://substackcdn.com/image/fetch/$s_!l7uc!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb56681ca-3f69-437d-8d94-eb4ddb9920d2_1100x219.jpeg" alt=""></a></p>
+
+<p>Last week, I wrote two posts on a related theme, but didn’t fully connect them to my earlier thoughts on the topic. I have a particular drum I’ve been beating consistently on this blog since I moved to Substack (and I have even <a href="http://archives.argmin.net" rel="external nofollow noopener" target="_blank">older posts</a> on it, too):</p>
+
+<ol>
+  <li>Though machine learning is statistical prediction, <a href="https://www.argmin.net/p/i-dont-know-what-ive-been-trying" rel="external nofollow noopener" target="_blank">classical inferential statistics has nothing interesting to say about the field</a>.</li>
+  <li>In fact, lessons from classical inferential statistics have <a href="https://www.argmin.net/p/thou-shalt-not-overfit" rel="external nofollow noopener" target="_blank">historically provided poor, misleading guidance</a> for machine learning practice.</li>
+  <li>A culture of frictionless reproducibility has been the primary driver of <a href="https://hdsr.mitpress.mit.edu/pub/g9mau4m0/release/2" rel="external nofollow noopener" target="_blank">machine learning progress.</a>
+</li>
+</ol>
+
+<p>I use the term classical inferential statistics loosely here, and Siva Balakrishnan is going to get mad at me about it. He and I cannot agree on a term to describe the narrow statistical subfield that I want to call out: frequentist claims about out-of-sample behavior derived from laws of large numbers and the union bound. This includes statistical significance, null hypothesis significance testing, and error bars.<a href="https://theory.report/atom.xml#footnote-1" rel="external nofollow noopener" target="_blank">1</a></p>
+
+<p>I’ve decided to try out “classical” because Jessica Hullman used it in her <a href="https://statmodeling.stat.columbia.edu/2025/07/11/opportunities-for-interpretable-statistics-for-large-language-models" rel="external nofollow noopener" target="_blank">blog post advocating for more statistics in machine learning.</a> I always find Jessica thought-provoking, and she links to me and asks at the end of the post.</p>
+
+<blockquote>
+  <p>“But others refer to attempts to incentivize more thorough reporting of uncertainty in ML evaluation as “a weird obsession with statistics. What’s up with that, I wonder?”</p>
+</blockquote>
+
+<p>I’ll reply here, though most of what I wanted to say was already written in the comments under Jessica’s post by frequent stat modeling interlocutor Anoneuoid:</p>
+
+<ul>
+  <li>Mandating null hypothesis significance testing and related ideas is a fast way to stifle progress.</li>
+  <li>Systematic errors are more important than sampling errors.</li>
+  <li>Since everyone started deep learning, machine learning papers have been reduced to advertisements of pull requests.</li>
+  <li>You don’t need 90 pages of robustness checks or proofs, since you can simply try the code and decide for yourself whether to accept it.</li>
+</ul>
+
+<p>I swear I am not Anoneuoid. We just happen to strongly agree about everything.</p>
+
+<p>But yes, I have made the same arguments on the blog many times. If the machine learning community had listened to the guidelines from classical inferential statistics, nothing would have ever gotten built. Machine learning was largely developed without the use of classical inferential statistics. In fact, the influence has gone in the opposite direction: since 1960, statistically minded researchers have been trying to bootstrap a “statistical learning theory” by chasing practice.</p>
+
+<p>The problem is that theories derived by shoe-horning practice into classical statistical footwear haven’t been productive. Every time this narrow view of classical statistics is applied, it gives the wrong advice! It’s been actively harmful to the field. It makes incorrect predictions and obsesses about the wrong type of error.</p>
+
+<p>The part of practice that most resembles classical statistics is the train-test paradigm.<a href="https://theory.report/atom.xml#footnote-2" rel="external nofollow noopener" target="_blank">2</a> <a href="https://www.argmin.net/p/the-adaptivity-paradox" rel="external nofollow noopener" target="_blank">Statistics doesn’t explain why this is successful at all!</a> If anything, this has polarized me against other conclusions drawn from statistical theory. Indeed, it makes me believe that claims about the scientific detriment of p-hacking and uncorrected multiple hypothesis testing are wildly overstated.</p>
+
+<p>Another post critiquing statistics is all well and good, but I have a more important point to make here about what we might consider doing instead. Jessica writes to Anoneuoid:</p>
+
+<blockquote>
+  <p>“But I guess part of what I find confusing about dismissing attempts to hold people accountable for what they are claiming (like the crazy long NeurIPS checklist that the linked post complains about) is that in the absence of suggesting an alternative way to better align the claims and the evidence, it reads as though we’re saying all is ok as is and uncertainty can continue to be an afterthought when presenting evaluation results.”</p>
+</blockquote>
+
+<p>I often feel like the solutionist burden placed on critics is an easy way to wave off critique. But on this issue, I am actually proposing an alternative! Open models, open data, and open code are a clear, feasible alternative requirement. These are not major asks. As I said in a previous post, the only reason we don’t require these is that there are still a lot of corporate interests at the big machine learning conferences, and these places always have some argument for why they can’t release code and data. David Pfau noted on Twitter that this is rapidly changing with the LLM arms race, with the companies moving towards abandoning publishing altogether. He might be right, but that doesn’t mean we have to encourage their nefarious behavior by embracing their move to proprietary secrecy.</p>
+
+<p>Jessica admits the problem herself in her review of Weijie Su’s argument for more statistics in machine learning research.</p>
+
+<blockquote>
+  <p>“Something a bit cringey that becomes clearer when you see the various statistical challenges laid out like this is that sometimes they arise not just because LLMs are too complex for us to understand, but also because they are proprietary objects.”</p>
+</blockquote>
+
+<p>The frustration with most modern published LLM papers is industrial closedness reduces open research to ephemeral flailing. If you are taking a proprietary, closed model and doing some prompt engineering to elicit funny answers, you are doing HCI research on proprietary software. If you train a transformer model from scratch on the orbits of planets and don’t use all of the language on the internet, your result says <em>nothing</em> about LLMs. Even if you are fine-tuning an open weights model, there’s only so much we can learn because you have no idea what the training corpus is.</p>
+
+<p>Machine learning has thrived in its embrace of frictionless reproducibility— Open, shareable data. The ability to re-execute code. Competitive Testing. These are powerful tools to mitigate uncertainty. <a href="https://hdsr.mitpress.mit.edu/pub/8dqgwqiu" rel="external nofollow noopener" target="_blank">I’ve written some thoughts about why this is</a>, drawing analogies to distributed optimization. I still think this is an excellent direction for meta-scientific study. But for whatever reason, many in the orbit of machine learning seem more interested in developing more statistical tests than in understanding why exactly this practice works so well.</p>
+
+<p>Let me close with quoting Andrew Gelman, who replied to Jessica,</p>
+
+<blockquote>
+  <p>“On the other side, Recht presents a very reasonable engineering perspective that is anti-bureaucratic: we’ve already made a lot of progress and continue to do so, so don’t tell us what to do. Or, to put it more carefully, you can tell us what to do for safety or public policy reasons, but it seems like a mistake to try to restrict researchers’ freedom in the belief that this will improve research progress. This general position makes sense to me, and it is similar to many things I’ve said and written regarding science reform: I don’t want to tell people what to do, and I also don’t want criticism to be suppressed. That doesn’t mean that science-reform proposals are necessarily bad. For example, I find preregistration to be valuable (for the science, not the p-values), but I wouldn’t want it to be a requirement.”</p>
+</blockquote>
+
+<p>I agree strongly here with Andrew. Our mandates should be few and far between. I advocate for only one: stronger norms about openness in code, data, and models.</p>
+
+<p><a href="https://www.argmin.net/subscribe" rel="external nofollow noopener" target="_blank">Subscribe now</a></p>
+
+<p><a href="https://theory.report/atom.xml#footnote-anchor-1" rel="external nofollow noopener" target="_blank">1</a></p>
+
+<p>I’ll leave the Bayesians alone today because no one is yet proposing LDA to be on the NeurIPS checklist yet.</p>
+
+<p><a href="https://theory.report/atom.xml#footnote-anchor-2" rel="external nofollow noopener" target="_blank">2</a></p>
+
+<p>Though the train test paradigm was <a href="https://www.argmin.net/p/holding-out-for-an-explanation" rel="external nofollow noopener" target="_blank">invented by practice</a>, not by a careful application of statistics.</p>
+
+<p>By Ben Recht</p>
+
+<p><a href="https://www.argmin.net/p/metascience-of-pull-requests" rel="external nofollow noopener" target="_blank">Read original post</a></p>
+
+    </div>
+  </article>
+
+
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2025 Gorav  Jindal. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
