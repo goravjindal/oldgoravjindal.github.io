@@ -3,7 +3,6 @@ name: Update CSTheory RSS Posts
 on:
   schedule:
     - cron: '0 4 * * *'   # 06:00 Warsaw time
-    - cron: '0 16 * * *'  # 18:00 Warsaw time
   workflow_dispatch:
 
 jobs:
