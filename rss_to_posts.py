@@ -3,6 +3,7 @@ import feedparser
 from datetime import datetime, timedelta
 import markdownify
 import re
+import string
 
 RSS_URL = "https://theory.report/atom.xml"
 POSTS_DIR = "_cstheoryrss"
@@ -14,6 +15,22 @@ def sanitize_filename(title):
     # simple slugify: lowercase, replace spaces & special chars with hyphen
     slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
     return slug or "post"
+
+def sanitize_title(title):
+    # Take only first line
+    title = title.splitlines()[0]
+
+    # Allowed chars on standard QWERTY keyboard (printable ASCII + space)
+    allowed_chars = set(string.ascii_letters + string.digits + string.punctuation + " ")
+    # Explicit chars to remove even if in punctuation, like $ \ etc.
+    unwanted_chars = set(['$', '\\', '`', '^', '"'])
+
+    # Filter characters
+    sanitized = ''.join(c for c in title if c in allowed_chars and c not in unwanted_chars)
+    # Normalize whitespace
+    sanitized = re.sub(r'\s+', ' ', sanitized).strip()
+
+    return sanitized
 
 def delete_old_posts():
     for fname in os.listdir(POSTS_DIR):
@@ -42,7 +59,8 @@ def fetch_and_save():
             continue  # skip older than 6 months
 
         date_prefix = published.strftime("%Y-%m-%d")
-        slug = sanitize_filename(entry.title)
+        sanitized_title = sanitize_title(entry.title)
+        slug = sanitize_filename(sanitized_title)
         filename = f"{date_prefix}-{slug}.md"
         filepath = os.path.join(POSTS_DIR, filename)
 
@@ -56,7 +74,7 @@ def fetch_and_save():
             f"---\n"
             f"layout: post\n"
             f"category: cstheoryrss\n"
-            f"title: \"{entry.title}\"\n"
+            f"title: \"{sanitized_title}\"\n"
             f"date: {published.isoformat()}\n"
             f"---\n\n"
         )
@@ -73,4 +91,3 @@ def fetch_and_save():
 if __name__ == "__main__":
     delete_old_posts()
     fetch_and_save()
-
