@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful
-  Numbers"
+title: "arXiv: Data Structures and Algorithms: Explicit Bounds and Parallel Algorithms for Counting Multiply Gleeful"
 date: 2025-07-15T00:00:00
 ---
 

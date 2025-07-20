@@ -1,11 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-092 |  Complexity-Theoretic Inductive Inference | 
-
-	Shuichi Hirahara, 
-
-	Mikito Nanashima"
+title: "ECCC Papers: TR25-092 | Complexity-Theoretic Inductive Inference |"
 date: 2025-07-12T13:10:18
 ---
 

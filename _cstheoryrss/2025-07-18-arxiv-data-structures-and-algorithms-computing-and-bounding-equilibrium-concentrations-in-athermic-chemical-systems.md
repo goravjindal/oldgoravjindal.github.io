@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Computing and Bounding Equilibrium Concentrations in Athermic Chemical
-  Systems"
+title: "arXiv: Data Structures and Algorithms: Computing and Bounding Equilibrium Concentrations in Athermic Chemical"
 date: 2025-07-18T00:00:00
 ---
 

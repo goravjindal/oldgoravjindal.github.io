@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Bicriteria approximation for $k$-edge-connectivity"
+title: "arXiv: Data Structures and Algorithms: Bicriteria approximation for k-edge-connectivity"
 date: 2025-07-08T00:00:00
 ---
 

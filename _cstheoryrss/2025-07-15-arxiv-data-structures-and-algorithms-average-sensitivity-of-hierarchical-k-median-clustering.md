@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Average Sensitivity of Hierarchical $k$-Median Clustering"
+title: "arXiv: Data Structures and Algorithms: Average Sensitivity of Hierarchical k-Median Clustering"
 date: 2025-07-15T00:00:00
 ---
 

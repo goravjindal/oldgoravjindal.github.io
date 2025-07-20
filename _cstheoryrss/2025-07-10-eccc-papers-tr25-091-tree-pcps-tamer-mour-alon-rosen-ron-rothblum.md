@@ -1,13 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-091 |  Tree PCPs | 
-
-	Tamer Mour, 
-
-	Alon Rosen, 
-
-	Ron Rothblum"
+title: "ECCC Papers: TR25-091 | Tree PCPs |"
 date: 2025-07-10T12:25:38
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: A Robust Approach to Detect Intersections between Triangles with
-  Different Numerical Representations"
+title: "arXiv: Computational Geometry: A Robust Approach to Detect Intersections between Triangles with"
 date: 2025-07-14T00:00:00
 ---
 

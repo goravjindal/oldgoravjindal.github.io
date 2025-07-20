@@ -1,15 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-099 |  The Algebraic Cost of a Boolean Sum | 
-
-	Ian Orzel, 
-
-	Srikanth Srinivasan, 
-
-	Sébastien Tavenas, 
-
-	Amir Yehudayoff"
+title: "ECCC Papers: TR25-099 | The Algebraic Cost of a Boolean Sum |"
 date: 2025-07-18T16:40:57
 ---
 

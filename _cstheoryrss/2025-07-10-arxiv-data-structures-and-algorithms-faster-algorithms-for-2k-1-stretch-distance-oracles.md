@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Faster Algorithms for $(2k-1)$-Stretch Distance Oracles"
+title: "arXiv: Data Structures and Algorithms: Faster Algorithms for 2k-1-Stretch Distance Oracles"
 date: 2025-07-10T00:00:00
 ---
 

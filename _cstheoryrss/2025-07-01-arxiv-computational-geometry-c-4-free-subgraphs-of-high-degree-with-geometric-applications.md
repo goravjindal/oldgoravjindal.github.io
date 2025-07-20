@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: $C_4$-free subgraphs of high degree with geometric applications"
+title: "arXiv: Computational Geometry: C_4-free subgraphs of high degree with geometric applications"
 date: 2025-07-01T00:00:00
 ---
 

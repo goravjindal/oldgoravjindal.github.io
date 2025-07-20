@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Color Distance Oracles and Snippets: Separation Between Exact and
-  Approximate Solutions"
+title: "arXiv: Data Structures and Algorithms: Color Distance Oracles and Snippets: Separation Between Exact and"
 date: 2025-07-08T00:00:00
 ---
 

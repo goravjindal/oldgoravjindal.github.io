@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: Search-Based Robot Motion Planning With Distance-Based Adaptive Motion
-  Primitives"
+title: "arXiv: Computational Geometry: Search-Based Robot Motion Planning With Distance-Based Adaptive Motion"
 date: 2025-07-03T00:00:00
 ---
 

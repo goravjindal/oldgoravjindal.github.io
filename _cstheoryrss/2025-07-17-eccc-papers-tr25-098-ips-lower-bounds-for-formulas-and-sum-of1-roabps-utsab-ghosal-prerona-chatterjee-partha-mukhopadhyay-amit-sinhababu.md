@@ -1,15 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-098 |  IPS Lower Bounds for Formulas and Sum of1 ROABPs | 
-
-	Utsab Ghosal, 
-
-	Prerona Chatterjee, 
-
-	Partha Mukhopadhyay, 
-
-	Amit Sinhababu"
+title: "ECCC Papers: TR25-098 | IPS Lower Bounds for Formulas and Sum of1 ROABPs |"
 date: 2025-07-17T04:19:20
 ---
 

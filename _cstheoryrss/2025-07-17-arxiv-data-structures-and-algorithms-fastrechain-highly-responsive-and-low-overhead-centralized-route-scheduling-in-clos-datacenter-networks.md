@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: FastReChain: Highly Responsive and Low-Overhead Centralized Route
-  Scheduling in Clos Datacenter Networks"
+title: "arXiv: Data Structures and Algorithms: FastReChain: Highly Responsive and Low-Overhead Centralized Route"
 date: 2025-07-17T00:00:00
 ---
 

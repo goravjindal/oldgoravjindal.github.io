@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: PCPP-Based Reconfiguration Inapproximability: Query Complexity vs.
-  Soundness Gap Trade-offs"
+title: "arXiv: Computational Complexity: PCPP-Based Reconfiguration Inapproximability: Query Complexity vs."
 date: 2025-07-03T00:00:00
 ---
 

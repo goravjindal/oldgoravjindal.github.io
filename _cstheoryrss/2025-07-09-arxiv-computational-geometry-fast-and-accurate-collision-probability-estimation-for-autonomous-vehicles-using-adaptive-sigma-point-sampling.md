@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: Fast and Accurate Collision Probability Estimation for Autonomous
-  Vehicles using Adaptive Sigma-Point Sampling"
+title: "arXiv: Computational Geometry: Fast and Accurate Collision Probability Estimation for Autonomous"
 date: 2025-07-09T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Efficient Branch-and-Bound for Submodular Function Maximization under
-  Knapsack Constraint"
+title: "arXiv: Data Structures and Algorithms: Efficient Branch-and-Bound for Submodular Function Maximization under"
 date: 2025-07-16T00:00:00
 ---
 

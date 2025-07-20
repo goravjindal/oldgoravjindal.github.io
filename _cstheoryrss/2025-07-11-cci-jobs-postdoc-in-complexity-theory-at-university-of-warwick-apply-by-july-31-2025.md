@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "CCI: jobs: Postdoc in Complexity Theory at University of Warwick (apply by July 31, 2025)"
+title: "CCI: jobs: Postdoc in Complexity Theory at University of Warwick apply by July 31, 2025"
 date: 2025-07-11T09:59:54
 ---
 

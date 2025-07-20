@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: HiPerMotif: Novel Parallel Subgraph Isomorphism in Large-Scale Property
-  Graphs"
+title: "arXiv: Data Structures and Algorithms: HiPerMotif: Novel Parallel Subgraph Isomorphism in Large-Scale Property"
 date: 2025-07-08T00:00:00
 ---
 

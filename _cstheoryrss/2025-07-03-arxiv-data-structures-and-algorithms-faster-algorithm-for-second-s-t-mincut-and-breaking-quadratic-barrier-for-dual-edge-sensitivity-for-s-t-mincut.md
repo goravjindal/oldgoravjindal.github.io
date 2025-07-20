@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Faster Algorithm for Second (s,t)-mincut and Breaking Quadratic barrier
-  for Dual Edge Sensitivity for (s,t)-mincut"
+title: "arXiv: Data Structures and Algorithms: Faster Algorithm for Second s,t-mincut and Breaking Quadratic barrier"
 date: 2025-07-03T00:00:00
 ---
 

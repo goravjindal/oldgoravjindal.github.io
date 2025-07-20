@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: $k$-means considered harmful: On arbitrary topological changes in Mapper
-  complexes"
+title: "arXiv: Computational Geometry: k-means considered harmful: On arbitrary topological changes in Mapper"
 date: 2025-07-09T00:00:00
 ---
 

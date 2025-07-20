@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: On the Complexity of Knapsack under Explorable Uncertainty: Hardness and
-  Algorithms"
+title: "arXiv: Data Structures and Algorithms: On the Complexity of Knapsack under Explorable Uncertainty: Hardness and"
 date: 2025-07-04T00:00:00
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: On the (In)Approximability of the Monitoring Edge Geodetic Set Problem"
+title: "arXiv: Data Structures and Algorithms: On the InApproximability of the Monitoring Edge Geodetic Set Problem"
 date: 2025-07-02T00:00:00
 ---
 

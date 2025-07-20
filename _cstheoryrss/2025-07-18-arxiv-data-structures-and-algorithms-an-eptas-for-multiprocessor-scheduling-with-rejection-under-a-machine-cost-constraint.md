@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: An EPTAS for multiprocessor scheduling with rejection under a machine
-  cost constraint"
+title: "arXiv: Data Structures and Algorithms: An EPTAS for multiprocessor scheduling with rejection under a machine"
 date: 2025-07-18T00:00:00
 ---
 

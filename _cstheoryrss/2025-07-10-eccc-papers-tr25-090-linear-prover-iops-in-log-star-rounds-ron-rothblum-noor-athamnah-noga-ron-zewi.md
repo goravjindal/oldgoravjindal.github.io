@@ -1,13 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-090 |  Linear Prover IOPs in Log Star Rounds | 
-
-	Ron Rothblum, 
-
-	Noor Athamnah, 
-
-	Noga Ron-Zewi"
+title: "ECCC Papers: TR25-090 | Linear Prover IOPs in Log Star Rounds |"
 date: 2025-07-10T12:23:56
 ---
 

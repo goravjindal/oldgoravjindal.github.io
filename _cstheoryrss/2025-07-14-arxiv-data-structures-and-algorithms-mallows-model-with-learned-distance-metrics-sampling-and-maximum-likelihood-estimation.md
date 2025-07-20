@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Mallows Model with Learned Distance Metrics: Sampling and Maximum
-  Likelihood Estimation"
+title: "arXiv: Data Structures and Algorithms: Mallows Model with Learned Distance Metrics: Sampling and Maximum"
 date: 2025-07-14T00:00:00
 ---
 

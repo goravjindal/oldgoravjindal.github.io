@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Finding sparse induced subgraphs on graphs of bounded induced matching
-  treewidth"
+title: "arXiv: Data Structures and Algorithms: Finding sparse induced subgraphs on graphs of bounded induced matching"
 date: 2025-07-11T00:00:00
 ---
 

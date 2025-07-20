@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Solving Random Planted CSPs below the $n^{k/2}$ Threshold"
+title: "arXiv: Data Structures and Algorithms: Solving Random Planted CSPs below the n{k/2} Threshold"
 date: 2025-07-16T00:00:00
 ---
 

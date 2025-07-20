@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: Analyzing Time-Varying Scalar Fields using Piecewise-Linear Morse-Cerf
-  Theory"
+title: "arXiv: Computational Geometry: Analyzing Time-Varying Scalar Fields using Piecewise-Linear Morse-Cerf"
 date: 2025-07-02T00:00:00
 ---
 

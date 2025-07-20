@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: Quantum Computation with Correlated Measurements: Implications for the
-  Complexity Landscape"
+title: "arXiv: Computational Complexity: Quantum Computation with Correlated Measurements: Implications for the"
 date: 2025-07-07T00:00:00
 ---
 

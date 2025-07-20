@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: On the Complexity of Hyperpath and Minimal Separator Enumeration in
-  Directed Hypergraphs"
+title: "arXiv: Computational Complexity: On the Complexity of Hyperpath and Minimal Separator Enumeration in"
 date: 2025-07-11T00:00:00
 ---
 

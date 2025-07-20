@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Deterministic Lower Bounds for $k$-Edge Connectivity in the Distributed
-  Sketching Model"
+title: "arXiv: Data Structures and Algorithms: Deterministic Lower Bounds for k-Edge Connectivity in the Distributed"
 date: 2025-07-16T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: On the Constant-Factor Approximability of Minimum Cost Constraint
-  Satisfaction Problems"
+title: "arXiv: Computational Complexity: On the Constant-Factor Approximability of Minimum Cost Constraint"
 date: 2025-07-14T00:00:00
 ---
 

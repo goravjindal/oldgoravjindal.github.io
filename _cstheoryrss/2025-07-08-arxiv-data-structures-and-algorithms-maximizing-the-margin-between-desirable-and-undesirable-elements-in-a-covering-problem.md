@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Maximizing the Margin between Desirable and Undesirable Elements in a
-  Covering Problem"
+title: "arXiv: Data Structures and Algorithms: Maximizing the Margin between Desirable and Undesirable Elements in a"
 date: 2025-07-08T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: On the Approximability of Train Routing and the Min-Max Disjoint Paths
-  Problem"
+title: "arXiv: Data Structures and Algorithms: On the Approximability of Train Routing and the Min-Max Disjoint Paths"
 date: 2025-07-07T00:00:00
 ---
 

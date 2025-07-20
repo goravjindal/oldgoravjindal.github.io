@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: FormulaOne: Measuring the Depth of Algorithmic Reasoning Beyond
-  Competitive Programming"
+title: "arXiv: Computational Complexity: FormulaOne: Measuring the Depth of Algorithmic Reasoning Beyond"
 date: 2025-07-18T00:00:00
 ---
 

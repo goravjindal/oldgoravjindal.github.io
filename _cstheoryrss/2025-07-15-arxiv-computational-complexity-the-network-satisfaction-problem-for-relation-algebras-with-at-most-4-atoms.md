@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: The Network Satisfaction Problem for Relation Algebras with at most 4
-  Atoms"
+title: "arXiv: Computational Complexity: The Network Satisfaction Problem for Relation Algebras with at most 4"
 date: 2025-07-15T00:00:00
 ---
 

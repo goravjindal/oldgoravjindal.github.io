@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: A simple proof of a $(p,2)$-theorem for non-piercing regions"
+title: "arXiv: Computational Geometry: A simple proof of a p,2-theorem for non-piercing regions"
 date: 2025-07-11T00:00:00
 ---
 

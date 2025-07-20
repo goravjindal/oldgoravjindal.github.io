@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Approximating Maximum Cut on Interval Graphs and Split Graphs beyond
-  Goemans-Williamson"
+title: "arXiv: Data Structures and Algorithms: Approximating Maximum Cut on Interval Graphs and Split Graphs beyond"
 date: 2025-07-15T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Bounded Weighted Edit Distance: Dynamic Algorithms and Matching Lower
-  Bounds"
+title: "arXiv: Data Structures and Algorithms: Bounded Weighted Edit Distance: Dynamic Algorithms and Matching Lower"
 date: 2025-07-04T00:00:00
 ---
 

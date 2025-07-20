@@ -1,11 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-089 |  Chain Rules  for Time-Bounded Kolmogorov Complexity | 
-
-	Valentine Kabanets, 
-
-	Antonina Kolokolova"
+title: "ECCC Papers: TR25-089 | Chain Rules for Time-Bounded Kolmogorov Complexity |"
 date: 2025-07-09T22:47:16
 ---
 

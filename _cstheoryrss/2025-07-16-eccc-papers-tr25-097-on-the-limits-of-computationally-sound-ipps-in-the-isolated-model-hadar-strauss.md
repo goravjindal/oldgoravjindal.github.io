@@ -1,9 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-097 |  On the Limits of Computationally Sound IPPs in the Isolated Model | 
-
-	Hadar Strauss"
+title: "ECCC Papers: TR25-097 | On the Limits of Computationally Sound IPPs in the Isolated Model |"
 date: 2025-07-16T20:26:32
 ---
 

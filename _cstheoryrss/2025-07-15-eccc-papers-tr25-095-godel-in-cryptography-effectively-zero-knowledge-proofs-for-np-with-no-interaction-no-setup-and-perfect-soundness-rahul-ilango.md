@@ -1,9 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-095 |  Godel in Cryptography: Effectively Zero-Knowledge Proofs for NP with No Interaction, No Setup, and Perfect Soundness | 
-
-	Rahul Ilango"
+title: "ECCC Papers: TR25-095 | Godel in Cryptography: Effectively Zero-Knowledge Proofs for NP with No Interaction, No Setup, and Perfect Soundness |"
 date: 2025-07-15T18:51:51
 ---
 

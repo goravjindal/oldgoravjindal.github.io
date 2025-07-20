@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Faster Estimation of the Average Degree of a Graph Using Random Edges
-  and Structural Queries"
+title: "arXiv: Data Structures and Algorithms: Faster Estimation of the Average Degree of a Graph Using Random Edges"
 date: 2025-07-10T00:00:00
 ---
 

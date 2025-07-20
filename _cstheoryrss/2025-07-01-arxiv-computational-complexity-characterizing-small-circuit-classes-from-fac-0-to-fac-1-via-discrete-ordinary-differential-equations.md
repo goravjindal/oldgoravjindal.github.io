@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: Characterizing Small Circuit Classes from FAC^0 to FAC^1 via Discrete
-  Ordinary Differential Equations"
+title: "arXiv: Computational Complexity: Characterizing Small Circuit Classes from FAC0 to FAC1 via Discrete"
 date: 2025-07-01T00:00:00
 ---
 

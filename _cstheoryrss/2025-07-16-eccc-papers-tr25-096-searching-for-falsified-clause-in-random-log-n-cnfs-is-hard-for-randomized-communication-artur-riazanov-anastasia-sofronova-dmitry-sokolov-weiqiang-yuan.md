@@ -1,15 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-096 |  Searching for Falsified Clause in Random $(\log{n})$-CNFs is Hard for Randomized Communication | 
-
-	Artur Riazanov, 
-
-	Anastasia Sofronova, 
-
-	Dmitry Sokolov, 
-
-	Weiqiang Yuan"
+title: "ECCC Papers: TR25-096 | Searching for Falsified Clause in Random log{n}-CNFs is Hard for Randomized Communication |"
 date: 2025-07-16T12:14:06
 ---
 

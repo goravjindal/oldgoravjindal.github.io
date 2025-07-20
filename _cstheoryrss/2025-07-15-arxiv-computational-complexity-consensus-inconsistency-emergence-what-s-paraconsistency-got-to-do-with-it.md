@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: Consensus, Inconsistency, Emergence: what's paraconsistency got to do
-  with it?"
+title: "arXiv: Computational Complexity: Consensus, Inconsistency, Emergence: what's paraconsistency got to do"
 date: 2025-07-15T00:00:00
 ---
 

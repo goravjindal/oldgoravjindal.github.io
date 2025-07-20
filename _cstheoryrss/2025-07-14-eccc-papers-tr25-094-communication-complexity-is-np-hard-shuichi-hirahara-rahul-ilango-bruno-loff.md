@@ -1,13 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-094 |  Communication Complexity is NP-hard | 
-
-	Shuichi Hirahara, 
-
-	Rahul Ilango, 
-
-	Bruno Loff"
+title: "ECCC Papers: TR25-094 | Communication Complexity is NP-hard |"
 date: 2025-07-14T18:55:30
 ---
 

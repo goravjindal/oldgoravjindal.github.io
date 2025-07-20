@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Tight Guarantees for Cut-Relative Survivable Network Design via a
-  Decomposition Technique"
+title: "arXiv: Data Structures and Algorithms: Tight Guarantees for Cut-Relative Survivable Network Design via a"
 date: 2025-07-08T00:00:00
 ---
 

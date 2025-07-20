@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: The Smooth Power of the "Neandertal Method""
+title: "arXiv: Computational Geometry: The Smooth Power of the Neandertal Method"
 date: 2025-07-11T00:00:00
 ---
 

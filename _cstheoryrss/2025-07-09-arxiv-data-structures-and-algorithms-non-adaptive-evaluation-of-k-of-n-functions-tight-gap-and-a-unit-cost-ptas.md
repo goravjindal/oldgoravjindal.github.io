@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Non-Adaptive Evaluation of $k$-of-$n$ Functions: Tight Gap and a
-  Unit-Cost PTAS"
+title: "arXiv: Data Structures and Algorithms: Non-Adaptive Evaluation of k-of-n Functions: Tight Gap and a"
 date: 2025-07-09T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: A note on finding long directed cycles above the minimum degree bound in
-  2-connected digraphs"
+title: "arXiv: Data Structures and Algorithms: A note on finding long directed cycles above the minimum degree bound in"
 date: 2025-07-08T00:00:00
 ---
 

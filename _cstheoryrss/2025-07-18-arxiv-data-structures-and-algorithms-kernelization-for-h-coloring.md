@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Kernelization for $H$-Coloring"
+title: "arXiv: Data Structures and Algorithms: Kernelization for H-Coloring"
 date: 2025-07-18T00:00:00
 ---
 

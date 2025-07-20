@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: A Fixed Parameter Tractable Approach for Solving the Vertex Cover
-  Problem in Polynomial Time Complexity"
+title: "arXiv: Data Structures and Algorithms: A Fixed Parameter Tractable Approach for Solving the Vertex Cover"
 date: 2025-07-15T00:00:00
 ---
 

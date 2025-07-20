@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Truthful, Credible, and Optimal Auctions for Matroids via Blockchains
-  and Commitments"
+title: "arXiv: Data Structures and Algorithms: Truthful, Credible, and Optimal Auctions for Matroids via Blockchains"
 date: 2025-07-08T00:00:00
 ---
 

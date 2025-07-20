@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Fast and Efficient Merge of Sorted Input Lists in Hardware Using List
-  Offset Merge Sorters"
+title: "arXiv: Data Structures and Algorithms: Fast and Efficient Merge of Sorted Input Lists in Hardware Using List"
 date: 2025-07-14T00:00:00
 ---
 

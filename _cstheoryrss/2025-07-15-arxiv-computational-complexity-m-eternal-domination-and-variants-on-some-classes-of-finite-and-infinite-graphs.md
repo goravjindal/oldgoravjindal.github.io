@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: m-Eternal Domination and Variants on Some Classes of Finite and Infinite
-  Graphs"
+title: "arXiv: Computational Complexity: m-Eternal Domination and Variants on Some Classes of Finite and Infinite"
 date: 2025-07-15T00:00:00
 ---
 

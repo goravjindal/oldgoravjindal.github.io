@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: On Tight Robust Coresets for $k$-Medians Clustering"
+title: "arXiv: Computational Geometry: On Tight Robust Coresets for k-Medians Clustering"
 date: 2025-07-16T00:00:00
 ---
 

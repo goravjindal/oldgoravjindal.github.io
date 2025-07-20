@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Approaching Optimality for Solving Dense Linear Systems with Low-Rank
-  Structure"
+title: "arXiv: Data Structures and Algorithms: Approaching Optimality for Solving Dense Linear Systems with Low-Rank"
 date: 2025-07-17T00:00:00
 ---
 

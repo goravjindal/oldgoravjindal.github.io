@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: Computing Largest Subsets of Points Whose Convex Hulls have Bounded Area
-  and Diameter"
+title: "arXiv: Computational Geometry: Computing Largest Subsets of Points Whose Convex Hulls have Bounded Area"
 date: 2025-07-08T00:00:00
 ---
 

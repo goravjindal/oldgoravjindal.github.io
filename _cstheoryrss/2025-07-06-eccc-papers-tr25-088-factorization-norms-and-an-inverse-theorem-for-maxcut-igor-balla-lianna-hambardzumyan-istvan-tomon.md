@@ -1,13 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-088 |  Factorization norms and an inverse theorem for MaxCut | 
-
-	Igor Balla, 
-
-	Lianna Hambardzumyan, 
-
-	Istvan Tomon"
+title: "ECCC Papers: TR25-088 | Factorization norms and an inverse theorem for MaxCut |"
 date: 2025-07-06T08:32:36
 ---
 

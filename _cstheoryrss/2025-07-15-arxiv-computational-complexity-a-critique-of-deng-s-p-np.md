@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: A Critique of Deng's "P=NP""
+title: "arXiv: Computational Complexity: A Critique of Deng's P=NP"
 date: 2025-07-15T00:00:00
 ---
 

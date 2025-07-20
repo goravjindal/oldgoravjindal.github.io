@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: Symport/Antiport P Systems with Membrane Separation Characterize P^(#P)"
+title: "arXiv: Computational Complexity: Symport/Antiport P Systems with Membrane Separation Characterize P#P"
 date: 2025-07-03T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: Moving Matter: Using a Single, Simple Robot to Reconfigure a Connected
-  Set of Building Blocks"
+title: "arXiv: Computational Geometry: Moving Matter: Using a Single, Simple Robot to Reconfigure a Connected"
 date: 2025-07-01T00:00:00
 ---
 

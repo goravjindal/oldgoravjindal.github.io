@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: A near-complete resolution of the exponential-time complexity of k-opt
-  for the traveling salesman problem"
+title: "arXiv: Data Structures and Algorithms: A near-complete resolution of the exponential-time complexity of k-opt"
 date: 2025-07-17T00:00:00
 ---
 

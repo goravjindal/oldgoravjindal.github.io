@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Scheduling on Identical Machines with Setup Time and Unknown Execution
-  Time"
+title: "arXiv: Data Structures and Algorithms: Scheduling on Identical Machines with Setup Time and Unknown Execution"
 date: 2025-07-16T00:00:00
 ---
 

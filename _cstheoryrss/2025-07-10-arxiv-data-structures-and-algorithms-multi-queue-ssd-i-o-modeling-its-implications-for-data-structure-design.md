@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Multi-Queue SSD I/O Modeling & Its Implications for Data Structure
-  Design"
+title: "arXiv: Data Structures and Algorithms: Multi-Queue SSD I/O Modeling & Its Implications for Data Structure"
 date: 2025-07-10T00:00:00
 ---
 

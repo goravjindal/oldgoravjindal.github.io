@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: A simple algorithm for Combinatorial n-fold ILPs using the Steinitz
-  Lemma"
+title: "arXiv: Data Structures and Algorithms: A simple algorithm for Combinatorial n-fold ILPs using the Steinitz"
 date: 2025-07-08T00:00:00
 ---
 

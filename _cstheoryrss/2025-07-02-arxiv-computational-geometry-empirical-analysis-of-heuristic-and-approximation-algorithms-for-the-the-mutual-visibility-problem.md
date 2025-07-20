@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: Empirical Analysis Of Heuristic and Approximation Algorithms for the The
-  Mutual-Visibility Problem"
+title: "arXiv: Computational Geometry: Empirical Analysis Of Heuristic and Approximation Algorithms for the The"
 date: 2025-07-02T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Distributed Approximation Algorithms for Minimum Dominating Set in
-  Locally Nice Graphs"
+title: "arXiv: Data Structures and Algorithms: Distributed Approximation Algorithms for Minimum Dominating Set in"
 date: 2025-07-08T00:00:00
 ---
 

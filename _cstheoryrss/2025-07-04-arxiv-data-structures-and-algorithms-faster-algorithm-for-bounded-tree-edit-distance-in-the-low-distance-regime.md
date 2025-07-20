@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Faster Algorithm for Bounded Tree Edit Distance in the Low-Distance
-  Regime"
+title: "arXiv: Data Structures and Algorithms: Faster Algorithm for Bounded Tree Edit Distance in the Low-Distance"
 date: 2025-07-04T00:00:00
 ---
 

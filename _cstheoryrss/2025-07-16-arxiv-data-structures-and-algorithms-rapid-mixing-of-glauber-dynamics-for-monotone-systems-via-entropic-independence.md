@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Rapid Mixing of Glauber Dynamics for Monotone Systems via Entropic
-  Independence"
+title: "arXiv: Data Structures and Algorithms: Rapid Mixing of Glauber Dynamics for Monotone Systems via Entropic"
 date: 2025-07-16T00:00:00
 ---
 

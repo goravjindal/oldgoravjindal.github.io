@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Online Convex Optimization with Switching Cost with Only One Single
-  Gradient Evaluation"
+title: "arXiv: Data Structures and Algorithms: Online Convex Optimization with Switching Cost with Only One Single"
 date: 2025-07-08T00:00:00
 ---
 

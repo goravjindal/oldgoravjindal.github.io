@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Kernelization for list $H$-coloring for graphs with small vertex cover"
+title: "arXiv: Data Structures and Algorithms: Kernelization for list H-coloring for graphs with small vertex cover"
 date: 2025-07-17T00:00:00
 ---
 

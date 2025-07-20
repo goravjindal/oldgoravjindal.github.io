@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: The planar edge-coloring theorem of Vizing in $O(n\log n)$ time"
+title: "arXiv: Data Structures and Algorithms: The planar edge-coloring theorem of Vizing in Onlog n time"
 date: 2025-07-08T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: 25 Additional Problems -- Extension to the Book "125 Problems in Text
-  Algorithms""
+title: "arXiv: Data Structures and Algorithms: 25 Additional Problems -- Extension to the Book 125 Problems in Text"
 date: 2025-07-09T00:00:00
 ---
 

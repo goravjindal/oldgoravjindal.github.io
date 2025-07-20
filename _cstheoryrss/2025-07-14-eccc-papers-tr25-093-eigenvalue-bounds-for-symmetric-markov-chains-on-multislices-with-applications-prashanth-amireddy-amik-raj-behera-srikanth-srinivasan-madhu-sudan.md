@@ -1,15 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "ECCC Papers: TR25-093 |  Eigenvalue Bounds for Symmetric Markov Chains on Multislices With Applications | 
-
-	Prashanth Amireddy, 
-
-	Amik Raj Behera, 
-
-	Srikanth Srinivasan, 
-
-	Madhu Sudan"
+title: "ECCC Papers: TR25-093 | Eigenvalue Bounds for Symmetric Markov Chains on Multislices With Applications |"
 date: 2025-07-14T18:28:13
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: Logarithmic Depth Decomposition of Approximate Multi-Controlled
-  Single-Qubit Gates Without Ancilla Qubits"
+title: "arXiv: Computational Complexity: Logarithmic Depth Decomposition of Approximate Multi-Controlled"
 date: 2025-07-02T00:00:00
 ---
 

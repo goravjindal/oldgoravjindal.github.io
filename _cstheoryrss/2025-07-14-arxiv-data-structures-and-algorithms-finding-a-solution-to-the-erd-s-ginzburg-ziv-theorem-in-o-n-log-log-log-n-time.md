@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Finding a solution to the Erdős-Ginzburg-Ziv theorem in
-  $O(n\log\log\log n)$ time"
+title: "arXiv: Data Structures and Algorithms: Finding a solution to the Erds-Ginzburg-Ziv theorem in"
 date: 2025-07-14T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: A Stable and Theoretically Grounded Gromov-Wasserstein Distance for Reeb
-  Graph Comparison using Persistence Images"
+title: "arXiv: Computational Geometry: A Stable and Theoretically Grounded Gromov-Wasserstein Distance for Reeb"
 date: 2025-07-03T00:00:00
 ---
 

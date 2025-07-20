@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Approximation Algorithms for the Cumulative Vehicle Routing Problem with
-  Stochastic Demands"
+title: "arXiv: Data Structures and Algorithms: Approximation Algorithms for the Cumulative Vehicle Routing Problem with"
 date: 2025-07-14T00:00:00
 ---
 

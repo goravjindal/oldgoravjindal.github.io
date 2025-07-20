@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Quantum Algorithms for Bandits with Knapsacks with Improved Regret and
-  Time Complexities"
+title: "arXiv: Data Structures and Algorithms: Quantum Algorithms for Bandits with Knapsacks with Improved Regret and"
 date: 2025-07-08T00:00:00
 ---
 

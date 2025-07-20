@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "Gil Kalai: Joram’s seminar 2025: Hypercontractivity, Groups and Representations"
+title: "Gil Kalai: Jorams seminar 2025: Hypercontractivity, Groups and Representations"
 date: 2025-07-15T15:34:21
 ---
 

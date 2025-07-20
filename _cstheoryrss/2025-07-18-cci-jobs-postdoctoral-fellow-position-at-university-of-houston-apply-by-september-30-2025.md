@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "CCI: jobs: Postdoctoral fellow position  at University of Houston (apply by September 30, 2025)"
+title: "CCI: jobs: Postdoctoral fellow position at University of Houston apply by September 30, 2025"
 date: 2025-07-18T21:10:04
 ---
 

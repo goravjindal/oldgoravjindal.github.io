@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Hamiltonicity Parameterized by Mim-Width is (Indeed) Para-NP-Hard"
+title: "arXiv: Data Structures and Algorithms: Hamiltonicity Parameterized by Mim-Width is Indeed Para-NP-Hard"
 date: 2025-07-02T00:00:00
 ---
 

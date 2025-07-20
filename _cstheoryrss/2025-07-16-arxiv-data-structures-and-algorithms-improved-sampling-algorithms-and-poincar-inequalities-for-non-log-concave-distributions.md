@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Improved sampling algorithms and Poincaré inequalities for
-  non-log-concave distributions"
+title: "arXiv: Data Structures and Algorithms: Improved sampling algorithms and Poincar inequalities for"
 date: 2025-07-16T00:00:00
 ---
 

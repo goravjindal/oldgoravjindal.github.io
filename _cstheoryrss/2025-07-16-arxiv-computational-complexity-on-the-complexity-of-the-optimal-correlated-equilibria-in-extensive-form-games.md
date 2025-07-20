@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: On the Complexity of the Optimal Correlated Equilibria in Extensive-Form
-  Games"
+title: "arXiv: Computational Complexity: On the Complexity of the Optimal Correlated Equilibria in Extensive-Form"
 date: 2025-07-16T00:00:00
 ---
 

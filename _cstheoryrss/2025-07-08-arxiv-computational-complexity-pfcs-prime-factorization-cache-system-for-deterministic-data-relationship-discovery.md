@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: PFCS: Prime Factorization Cache System for Deterministic Data
-  Relationship Discovery"
+title: "arXiv: Computational Complexity: PFCS: Prime Factorization Cache System for Deterministic Data"
 date: 2025-07-08T00:00:00
 ---
 

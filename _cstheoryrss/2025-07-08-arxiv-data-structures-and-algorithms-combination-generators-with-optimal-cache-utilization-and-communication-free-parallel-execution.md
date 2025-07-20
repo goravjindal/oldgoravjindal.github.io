@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Combination generators with optimal cache utilization and communication
-  free parallel execution"
+title: "arXiv: Data Structures and Algorithms: Combination generators with optimal cache utilization and communication"
 date: 2025-07-08T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Geometry: A Linear Time Algorithm for Finding Minimum Flip Sequences between Plane
-  Spanning Paths in Convex Point Sets"
+title: "arXiv: Computational Geometry: A Linear Time Algorithm for Finding Minimum Flip Sequences between Plane"
 date: 2025-07-04T00:00:00
 ---
 

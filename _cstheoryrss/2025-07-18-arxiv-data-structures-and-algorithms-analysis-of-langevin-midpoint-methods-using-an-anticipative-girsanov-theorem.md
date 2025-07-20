@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Analysis of Langevin midpoint methods using an anticipative Girsanov
-  theorem"
+title: "arXiv: Data Structures and Algorithms: Analysis of Langevin midpoint methods using an anticipative Girsanov"
 date: 2025-07-18T00:00:00
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Breaking the $n^{1.5}$ Additive Error Barrier for Private and Efficient
-  Graph Sparsification via Private Expander Decomposition"
+title: "arXiv: Data Structures and Algorithms: Breaking the n{1.5} Additive Error Barrier for Private and Efficient"
 date: 2025-07-03T00:00:00
 ---
 

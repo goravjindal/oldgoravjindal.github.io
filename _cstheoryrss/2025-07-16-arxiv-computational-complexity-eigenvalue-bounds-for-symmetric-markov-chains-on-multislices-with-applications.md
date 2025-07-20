@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: Eigenvalue Bounds for Symmetric Markov Chains on Multislices With
-  Applications"
+title: "arXiv: Computational Complexity: Eigenvalue Bounds for Symmetric Markov Chains on Multislices With"
 date: 2025-07-16T00:00:00
 ---
 

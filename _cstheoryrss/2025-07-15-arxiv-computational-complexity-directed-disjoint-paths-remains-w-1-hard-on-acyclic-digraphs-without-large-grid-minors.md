@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: Directed disjoint paths remains W[1]-hard on acyclic digraphs without
-  large grid minors"
+title: "arXiv: Computational Complexity: Directed disjoint paths remains W[1]-hard on acyclic digraphs without"
 date: 2025-07-15T00:00:00
 ---
 

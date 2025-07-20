@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: Weighted $k$-Server Admits an Exponentially Competitive Algorithm"
+title: "arXiv: Data Structures and Algorithms: Weighted k-Server Admits an Exponentially Competitive Algorithm"
 date: 2025-07-17T00:00:00
 ---
 

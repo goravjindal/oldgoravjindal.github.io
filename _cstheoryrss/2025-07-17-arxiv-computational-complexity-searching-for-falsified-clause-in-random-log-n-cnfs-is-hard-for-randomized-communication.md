@@ -1,8 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Computational Complexity: Searching for Falsified Clause in Random (log n)-CNFs is Hard for
-  Randomized Communication"
+title: "arXiv: Computational Complexity: Searching for Falsified Clause in Random log n-CNFs is Hard for"
 date: 2025-07-17T00:00:00
 ---
 

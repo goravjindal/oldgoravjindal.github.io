@@ -1,7 +1,7 @@
 ---
 layout: post
 category: cstheoryrss
-title: "arXiv: Data Structures and Algorithms: A 1/2-Approximation for Budgeted $k$-Submodular Maximization"
+title: "arXiv: Data Structures and Algorithms: A 1/2-Approximation for Budgeted k-Submodular Maximization"
 date: 2025-07-18T00:00:00
 ---
 
