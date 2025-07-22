@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Learning Theory Alliance Blog: Testing Assumptions of Learning Algorithms | Gorav  Jindal</title>
+    <meta name="author" content="Gorav  Jindal">
+    <meta name="description" content="Gorav Jindal's personal and academic webpage
+">
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://goravjindal.github.io/_cstheoryrss/2025-07-21-the-learning-theory-alliance-blog-testing-assumptions-of-learning-algorithms.html">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+    
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Gorav </span>Jindal</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">About</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/cv/">CV</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">Teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cstheoryrss/">CS Theory RSS</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">The Learning Theory Alliance Blog: Testing Assumptions of Learning Algorithms</h1>
+    <p class="post-meta">July 21, 2025</p>
+    <p class="post-tags">
+      <a href="/blog/2025"> <i class="fas fa-calendar fa-sm"></i> 2025 </a>
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p>Today’s technical post is by <a href="https://www.vasilyan.net/" rel="external nofollow noopener" target="_blank">Arsen Vasilyan</a>. This focuses on the very exciting new “testable learning” he introduced with Rubinfeld in a <a href="https://arxiv.org/abs/2204.07196" rel="external nofollow noopener" target="_blank">2023 paper</a>. There’s been a flurry of work since then, so this is a good chance to catch up in case you’re behind!</p>
+
+<hr>
+
+<h2 id="1-the-goal-learning-with-noisy-labels">1. The Goal: Learning with Noisy Labels</h2>
+
+<h3 id="11-introduction"><strong>1.1 Introduction</strong></h3>
+
+<p>Many learning algorithms simply stop working when some of the training examples are mislabeled. For example, suppose we are using a linear program to learn a linear classifier. Then, a single mislabeled data-point can make the linear program infeasible, and the algorithm fails to output a solution. Today, we will discuss how to design learning algorithms that are provably robust to such noise.</p>
+
+<p>For noise-resistant learning algorithms, a key consideration emerges: what can these algorithms assume about how the data-points are distributed? We will discuss three theoretical frameworks addressing this question:</p>
+
+<ul>
+  <li>Framework 1 — <em>the distribution-free framework</em> — makes no assumption on how data-points are generated. For every distribution over datapoints, the algorithm has to run efficiently and be robust to noise. This framework is very well-understood, but is computationally intractable. Even the simplest concept classes lead to computationally hard learning tasks in this framework.</li>
+  <li>Framework 2 — <em>the distribution-specific framework</em> — assumes that data-points come from some well-behaved distribution, such as the Gaussian distribution. Over the last 30 years, the distribution-specific framework has led to a wealth of provably efficient algorithms. However, these algorithms fail to be noise-resistant when their assumptions do not hold.</li>
+  <li>Framework 3 — <em>the testable framework</em> — relies on an assumption on the data-point distribution only for the run-time of an algorithm, but not for the algorithm’s robustness to noise. Even if data-points do not come from some well-behaved distribution, the algorithm should be robust to noise. However, in this case, the algorithm might take a long time to run.</li>
+</ul>
+
+<p>This blog post will mostly focus on the third framework, which was recently introduced in [<a href="https://dl.acm.org/doi/10.1145/3564246.3585117" rel="external nofollow noopener" target="_blank">RV ’23</a>] in the context of learning with noise, and further explored in [<a href="https://dl.acm.org/doi/10.1145/3564246.3585206" rel="external nofollow noopener" target="_blank">GKK ’23</a>, <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/7c319b62e2257b34cb0e1040ced2e007-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">DKKLZ ’23</a>, <a href="https://papers.nips.cc/paper_files/paper/2023/hash/204d9a9a4816a45909010587ffc3204b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GKSV ’23</a>, <a href="https://openreview.net/forum?id=z6n1fKMMC1" rel="external nofollow noopener" target="_blank">GKSV ’24</a>, <a href="https://papers.nips.cc/paper_files/paper/2024/hash/e209210eae282e23e305df49fbb2769c-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GSSV ’24</a>, <a href="https://proceedings.mlr.press/v247/diakonikolas24a.html" rel="external nofollow noopener" target="_blank">DKLZ’24</a>, <a href="https://papers.nips.cc/paper_files/paper/2024/hash/06e9029d3d4d6cee71c5d9b8502f891b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">STW ’24</a>, <a href="https://arxiv.org/abs/2501.09189" rel="external nofollow noopener" target="_blank">GKSV ’25</a>]. In brief, although Framework 3 is more stringent than Framework 2, there is a toolkit of techniques that we can use to upgrade many Framework 2 algorithms into Framework 3.</p>
+
+<h3 id="12-faq-on-the-testable-framework-framework-3"><strong>1.2 FAQ on the Testable Framework (Framework 3)</strong></h3>
+
+<p>We get a lot of questions about Framework 3, and so we begin with the following FAQs:</p>
+
+<ol>
+  <li>
+<strong>Q:</strong> <em>Why is the framework called testable?</em> <br>
+<strong>A:</strong> All current algorithms in Framework 3 follow the following general recipe for upgrading Framework 2 algorithms into Framework 3 — the procedure suggests the name <em>testable learning</em>. See Section <a href="https://theory.report/atom.xml#subsecMaking-Low-Degree-Algorithm" rel="external nofollow noopener" target="_blank">2.2</a> for more about this recipe.
+    <ul>
+      <li>a) Run a Framework 2 algorithm and obtain a hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002" alt="{h}">.</li>
+      <li>b) Run a tester that is guaranteed to output “accept” whenever the assumption holds.</li>
+      <li>c) If the tester accepted, return the hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002" alt="{h}">.</li>
+      <li>d) Otherwise, the assumption must have been violated so we can run a computationally expensive algorithm (See Section <a href="https://theory.report/atom.xml#subsecThree-Frameworks-for" rel="external nofollow noopener" target="_blank">1.3</a> for more about those).</li>
+    </ul>
+  </li>
+  <li>
+<strong>Q:</strong> <em>To implement this tester, cant we just check that the distribution is “close” to a Gaussian using tools from distribution testing?</em> <br>
+<strong>A:</strong> For many notions of “closeness” this is statistically impossible: for example one cannot test whether an unknown distribution is Gaussian or far from Gaussian in total variation distance.<a href="https://theory.report/atom.xml#15aafd02-c12c-4db6-b4a0-4f893efdd1a6" rel="external nofollow noopener" target="_blank">1</a> For other notions of closeness, such as the earth-mover distance, these tools require a number of samples and run-time that is exponential in the dimension. In learning theory, we are looking for much faster run-times (see [<a href="https://dl.acm.org/doi/10.1145/3564246.3585117" rel="external nofollow noopener" target="_blank">RV ’23</a>] for more discussion).</li>
+  <li>
+<strong>Q:</strong> <em>What if the assumption is violated only slightly? I am concerned that this will cause a Framework 3 algorithm to run slowly as a result.</em> <br>
+<strong>A:</strong> Many algorithms in Framework 3 can be modified to run fast whenever the assumption is only approximately satisfied in total variation distance [<a href="https://arxiv.org/abs/2501.09189" rel="external nofollow noopener" target="_blank">GKSV ’25</a>]. This setting is called <em>Tolerant Testable Learning</em>, and discussed more in Section <a href="https://theory.report/atom.xml#subsecAssumption-Tolerance-and-the" rel="external nofollow noopener" target="_blank">3.2</a>.</li>
+  <li>
+<strong>Q:</strong> <em>The algorithm is guaranteed to run fast for only one specific distribution.</em> <em>What if I want it to run fast for an entire family of distributions?</em> <br>
+<strong>A</strong>: This setting, called <em>universal testable learning</em>, has also been studied. [<a href="https://papers.nips.cc/paper_files/paper/2023/hash/204d9a9a4816a45909010587ffc3204b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GKSV ’23</a>] studies it for the family of <em>log-concave distributions</em>, and it turns out to be intimately connected with Sum-of-Squares relaxations [<a href="https://arxiv.org/abs/1711.07465" rel="external nofollow noopener" target="_blank">KS17</a>].</li>
+  <li>
+<strong>Q:</strong> <em>Framework 3 is defined to work with learning under label noise (a.k.a. agnostic learning). What about (noise-free) PAC learning?</em> <br>
+<strong>A:</strong> Frameworks 2 and 3 are essentially equivalent in the noise-free setting. In this setting, one can always tell whether the learning algorithm successfully produced a good hypothesis: just estimate its prediction error by drawing a fresh set of examples. If the prediction error is large, this must be because the assumption is violated, so Framework 3 does not require us to run fast. In this case, we can produce a classifier by running a computationally expensive algorithm (See Section <a href="https://theory.report/atom.xml#subsecThree-Frameworks-for" rel="external nofollow noopener" target="_blank">1.3</a> for more about those).</li>
+  <li>
+<strong>Q:</strong> <em>What is the sample complexity of this framework? Is it related to VC dimension?</em> <br>
+<strong>A:</strong> [<a href="https://dl.acm.org/doi/10.1145/3564246.3585206" rel="external nofollow noopener" target="_blank">GKK ’23</a>]have shown that the sample complexity of this model is characterized by the Rademacher complexity of the hypothesis class. However, in this blog post we will focus on the run-time rather than sample complexity.</li>
+</ol>
+
+<p>We will now introduce the three frameworks in more detail, survey more of the known results and highlight general ideas for designing such algorithms.</p>
+
+<h3 id="13-three-frameworks-for-learning-with-noisy-labels"><strong>1.3 Three Frameworks for Learning with Noisy Labels</strong></h3>
+
+<p>Let us be more formal now. <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> will denote our hypothesis class, containing binary-valued functions over the domain <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BR%7D%5E%7Bd%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{R}^{d}}">. We get independent examples <img src="https://s0.wp.com/latex.php?latex=%7B%5Cleft%5C%7B+x_%7Bi%7D%5Cright%5C%7D+%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\left{ x_{i}\right} }"> from a distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%2C%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}},}"> and each <img src="https://s0.wp.com/latex.php?latex=%7Bx_%7Bi%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{x_{i}}"> is labeled bysome unknown binary-valuedfunction<a href="https://theory.report/atom.xml#30a9afd3-f30d-4c82-8879-cc2de2a0d64c" rel="external nofollow noopener" target="_blank">2</a> <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}">. To model arbitrary label noise, we place no assumption on <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}">, and our goal is to get as close as possible to the smallest error among all functions <img src="https://s0.wp.com/latex.php?latex=%7Bf%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f}"> from the class <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}">:</p>
+
+<p>![\displaystyle \text{opt}<em>{\mathcal{C}}:=\min</em>{f\in\mathcal{C}}\underbrace{\Pr_{x\sim D_{\text{Examples}}}[f(x)\neq f_{\text{noisy labels}}(x)]}<em>{\text{Prediction error of \ensuremath{f}.}}. ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%3A%3D%5Cmin_%7Bf%5Cin%5Cmathcal%7BC%7D%7D%5Cunderbrace%7B%5CPr_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Bf%28x%29%5Cneq+f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29%5D%7D_%7B%5Ctext%7BPrediction+error+of+%5Censuremath%7Bf%7D.%7D%7D.+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</p>
+
+<p>For instance, ![{\text{opt}<em>{\text{Linear Classifiers}}}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7BLinear+Classifiers%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) denotes the smallest classification error achievable by any linear classifier.</p>
+
+<hr>
+
+<p><strong>Framework 1 [Distribution-free Framework]</strong> For any distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> and function <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}">, the learning algorithm should run in time <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}"> and with high probability<a href="https://theory.report/atom.xml#ebba8fcb-f5da-491f-bd59-92e53a33a4bc" rel="external nofollow noopener" target="_blank">3</a> output a classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> with</p>
+
+<p>![\displaystyle \overbrace{\Pr_{x\sim D_{\text{Examples}}}[h(x)\neq f_{\text{noisy labels}}(x)]}^{\text{Prediction error of \ensuremath{h}.}}\leq\underbrace{\overbrace{\text{opt}<em>{\mathcal{C}}}^{\text{Optimal prediction error in \ensuremath{\mathcal{C}.}}}+\varepsilon}</em>{\text{\ensuremath{\text{\text{\ensuremath{\text{Weaker guarantees, such as O(\ensuremath{\text{opt}<em>{\mathcal{C}}})+\ensuremath{\varepsilon},\ also considered.}}}}}}}. ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Coverbrace%7B%5CPr</em>%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Bh%28x%29%5Cneq+f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29%5D%7D%5E%7B%5Ctext%7BPrediction+error+of+%5Censuremath%7Bh%7D.%7D%7D%5Cleq%5Cunderbrace%7B%5Coverbrace%7B%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%5E%7B%5Ctext%7BOptimal+prediction+error+in+%5Censuremath%7B%5Cmathcal%7BC%7D.%7D%7D%7D%2B%5Cvarepsilon%7D_%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7BWeaker+guarantees%2C+such+as+O%28%5Censuremath%7B%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%29%2B%5Censuremath%7B%5Cvarepsilon%7D%2C%5C+also+considered.%7D%7D%7D%7D%7D%7D%7D.+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</p>
+
+<hr>
+
+<p>This task, also known as <em>agnostic learning</em>, can be solved sample-efficiently. According to a central theorem in the VC theory, <img src="https://s0.wp.com/latex.php?latex=%7B%5Cwidetilde%7BO%7D%28%5Ctext%7BVC%7D%28%5Cmathcal%7BC%7D%29%2F%5Cvarepsilon%5E%7B2%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\widetilde{O}(\text{VC}(\mathcal{C})/\varepsilon^{2})}"> samples suffice (where <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7BVC%7D%28%5Cmathcal%7BC%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{VC}(\mathcal{C})}"> is the <a href="https://en.wikipedia.org/wiki/Vapnik%E2%80%93Chervonenkis_dimension" rel="external nofollow noopener" target="_blank">VC dimension</a> of <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}">). For example, if <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is the class of linear classifiers, then <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7BVC%7D%28%5Cmathcal%7BC%7D%29%3Dd%2B1%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{VC}(\mathcal{C})=d+1}">, so <img src="https://s0.wp.com/latex.php?latex=%7B%5Cwidetilde%7BO%7D%28d%2F%5Cvarepsilon%5E%7B2%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\widetilde{O}(d/\varepsilon^{2})}"> samples are enough.</p>
+
+<p>However, when considering the run-time <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}">, the Framework 1 is revealed to be intractable. For example, no <img src="https://s0.wp.com/latex.php?latex=%7B2%5E%7Bo%28d%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{2^{o(d)}}">-time algorithm is known in Framework 1 when <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is taken to be the class of linear classifiers (which is arguably the most basic hypothesis class). Furthermore, even the task of deciding if ![{\text{ \ensuremath{\text{opt}<em>{\text{Linear Classifiers}}}}\leq0.01}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7B+%5Censuremath%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7BLinear+Classifiers%7D%7D%7D%7D%5Cleq0.01%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) or ![{\text{opt}<em>{\text{Linear Classifiers}}\geq0.49}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7BLinear+Classifiers%7D%7D%5Cgeq0.49%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) is known to be NP-hard [<a href="https://ieeexplore.ieee.org/document/4031389" rel="external nofollow noopener" target="_blank">GR’06</a>, <a href="https://ieeexplore.ieee.org/document/4031391" rel="external nofollow noopener" target="_blank">FGKP’06</a>] for linear classifiers and believed to require <img src="https://s0.wp.com/latex.php?latex=%7B2%5E%7B%5COmega%28d%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{2^{\Omega(d)}}"> time. In summary, these Framework 1 tasks take <img src="https://s0.wp.com/latex.php?latex=%7B%5Cwidetilde%7BO%7D%28d%2F%5Cvarepsilon%5E%7B2%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\widetilde{O}(d/\varepsilon^{2})}"> samples but the run-time <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}"> is <img src="https://s0.wp.com/latex.php?latex=%7B2%5E%7B%5COmega%28d%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{2^{\Omega(d)}}">.</p>
+
+<p>These intractability results hold for certain carefully-constructed worst-case choices of <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}">. What happens if <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> is some specific commonly-occurring probability distribution? For instance, we may want to find a good linear classifier when the data-points come from a Gaussian distribution or some other well-behaved distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}">. This has motivated research in the following framework:</p>
+
+<hr>
+
+<p><strong>Framework 2 [Distribution-Specific Framework]</strong> For any distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> and function <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}">, if <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%3DD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}=D_{\text{Assumption}}}">, then the learning algorithm should run in time <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}"> and with high probability output a classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> with</p>
+
+<p>![\displaystyle \overbrace{\Pr_{x\sim D_{\text{Examples}}}[h(x)\neq f_{\text{noisy labels}}(x)]}^{\text{Prediction error of \ensuremath{h}.}}\leq\underbrace{\overbrace{\text{opt}<em>{\mathcal{C}}}^{\text{Optimal prediction error in \ensuremath{\mathcal{C}.}}}+\varepsilon}</em>{\text{\ensuremath{\text{\text{\ensuremath{\text{Weaker guarantees, such as O(\ensuremath{\text{opt}<em>{\mathcal{C}}})+\ensuremath{\varepsilon},\ also considered.}}}}}}}. ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Coverbrace%7B%5CPr</em>%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Bh%28x%29%5Cneq+f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29%5D%7D%5E%7B%5Ctext%7BPrediction+error+of+%5Censuremath%7Bh%7D.%7D%7D%5Cleq%5Cunderbrace%7B%5Coverbrace%7B%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%5E%7B%5Ctext%7BOptimal+prediction+error+in+%5Censuremath%7B%5Cmathcal%7BC%7D.%7D%7D%7D%2B%5Cvarepsilon%7D_%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7BWeaker+guarantees%2C+such+as+O%28%5Censuremath%7B%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%29%2B%5Censuremath%7B%5Cvarepsilon%7D%2C%5C+also+considered.%7D%7D%7D%7D%7D%7D%7D.+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</p>
+
+<hr>
+
+<p>This framework is also often referred to as <em>distribution-specific agnostic learning</em>. For many natural choices of distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}">, the aforementioned hardness results for Framework 1 can be sidestepped in Framework 2. When the class <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is the class of linear classifiers and the distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> is a Gaussian distribution, the algorithm of [<a href="https://epubs.siam.org/doi/10.1137/060649057" rel="external nofollow noopener" target="_blank">KKMS ’08</a>, <a href="https://epubs.siam.org/doi/abs/10.1137/100783030" rel="external nofollow noopener" target="_blank">DGJSV ’10</a>] can achieve an error ![{\text{opt}<em>{\text{Linear Classifiers}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7BLinear+Classifiers%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) with run-time <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7B%5Ctilde%7BO%7D%281%2F%5Cvarepsilon%5E%7B2%7D%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{\tilde{O}(1/\varepsilon^{2})}}">, which is a lot better than the <img src="https://s0.wp.com/latex.php?latex=%7B2%5E%7BO%28d%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{2^{O(d)}}"> run-time in Framework 1. This run-time is believed to be optimal [<a href="https://papers.nips.cc/paper/2020/hash/9d7311ba459f9e45ed746755a32dcd11-Abstract.html" rel="external nofollow noopener" target="_blank">DKZ ’20</a>, <a href="https://papers.nips.cc/paper/2020/hash/17257e81a344982579af1ae6415a7b8c-Abstract.html" rel="external nofollow noopener" target="_blank">GGK ’20</a>, <a href="https://proceedings.mlr.press/v134/diakonikolas21c.html" rel="external nofollow noopener" target="_blank">DKPZ ’21</a>, <a href="https://proceedings.mlr.press/v202/diakonikolas23b.html" rel="external nofollow noopener" target="_blank">DKR ’23</a>], but can be sped up to <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}"> if one is happy with a slightly larger error<a href="https://theory.report/atom.xml#a367653b-0bd9-4068-ac43-a1ec745f36d5" rel="external nofollow noopener" target="_blank">4</a> of ![{O(\text{opt}<em>{\text{Linear Classifiers}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Ctext%7Bopt%7D</em>%7B%5Ctext%7BLinear+Classifiers%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) [<a href="https://dl.acm.org/doi/10.1145/2591796.2591839" rel="external nofollow noopener" target="_blank">ABL ’14</a>, <a href="https://proceedings.mlr.press/v162/diakonikolas22b.html" rel="external nofollow noopener" target="_blank">DKTZ ’22</a>].</p>
+
+<p>Yet, Framework 2 relies on the potentially unverifiable assumption that the distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> equals <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}">. Note that it is impossible to verify whether <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> is exactly equal to the Gaussian distribution. Unfortunately, when <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%5Cneq+D_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}\neq D_{\text{Assumption}}}">, the ![{\text{opt}<em>{\mathcal{C}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) error guarantee of an algorithm in Framework 2 becomes null and void. Remember how a linear-programming approach can fully fail to find a linear classifier with even a single mislabeled example? We see that Framework 2 also permits an algorithm to fully fail when <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%5Cneq+D_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}\neq D_{\text{Assumption}}}">.</p>
+
+<p>This limitation is addressed by the following more challenging framework, in which the algorithm must <strong>always</strong> output a near-optimal classifier (with high probability, as in Framework 1) but must run quickly <strong>only</strong> when the assumption holds (as in Framework 2):</p>
+
+<hr>
+
+<p><strong>Framework 3 [Testable Framework]</strong> For any distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> and function <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}">, the learning algorithm should with high probability output a classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> with</p>
+
+<p>![\displaystyle \overbrace{\Pr_{x\sim D_{\text{Examples}}}[h(x)\neq f_{\text{noisy labels}}(x)]}^{\text{Prediction error of \ensuremath{h}.}}\leq\underbrace{\overbrace{\text{opt}<em>{\mathcal{C}}}^{\text{Optimal prediction error in \ensuremath{\mathcal{C}.}}}+\varepsilon}</em>{\text{\ensuremath{\text{Weaker guarantees, such as O(\ensuremath{\text{opt}<em>{\mathcal{C}}})+\ensuremath{\varepsilon},\ also considered.}}}}. \ \ \ \ \ (1)](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Coverbrace%7B%5CPr</em>%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Bh%28x%29%5Cneq+f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29%5D%7D%5E%7B%5Ctext%7BPrediction+error+of+%5Censuremath%7Bh%7D.%7D%7D%5Cleq%5Cunderbrace%7B%5Coverbrace%7B%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%5E%7B%5Ctext%7BOptimal+prediction+error+in+%5Censuremath%7B%5Cmathcal%7BC%7D.%7D%7D%7D%2B%5Cvarepsilon%7D_%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7BWeaker+guarantees%2C+such+as+O%28%5Censuremath%7B%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%29%2B%5Censuremath%7B%5Cvarepsilon%7D%2C%5C+also+considered.%7D%7D%7D%7D.+%5C+%5C+%5C+%5C+%5C+%281%29&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</p>
+
+<p>Furthermore, if <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%3DD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}=D_{\text{Assumption}}}">, then with high probability the learning algorithm should run<a href="https://theory.report/atom.xml#e18fc90b-639d-4ee0-bce9-3c77a7eaa096" rel="external nofollow noopener" target="_blank">5</a> in time <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}">.</p>
+
+<hr>
+
+<p>This framework is also often referred to as <em>testable learning</em> (for reasons explained in Section <a href="https://theory.report/atom.xml#subsecMaking-Low-Degree-Algorithm" rel="external nofollow noopener" target="_blank">2.2</a>). When a Framework 3 algorithm produces a classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}">, the user can be confident that <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> is nearly-optimal (Equation <a href="https://theory.report/atom.xml#eq%20optimality%20guarantee." rel="external nofollow noopener" target="_blank">1</a>) whether or not <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%3DD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}=D_{\text{Assumption}}}">, but the fast run-time is only guaranteed when <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%3DD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}=D_{\text{Assumption}}}">.</p>
+
+<p><img src="https://i0.wp.com/www.let-all.com/blog/wp-content/uploads/2025/07/2.png?fit=678%2C328&amp;ssl=1" alt=""></p>
+
+<p>Even though Framework 3 requires more from the learning algorithm than Framework 2, a growing body of research demonstrates that Framework 3 is often as computationally tractable as Framework 2. This research direction was initiated in [<a href="https://dl.acm.org/doi/10.1145/3564246.3585117" rel="external nofollow noopener" target="_blank">RV ’23</a>] which mainly considered linear classifiers under the Gaussian distribution, and was subsequently extended to many more hypothesis classes and distributions <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> [<a href="https://dl.acm.org/doi/10.1145/3564246.3585206" rel="external nofollow noopener" target="_blank">GKK ’23</a>, <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/7c319b62e2257b34cb0e1040ced2e007-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">DKKLZ ’23</a>, <a href="https://papers.nips.cc/paper_files/paper/2023/hash/204d9a9a4816a45909010587ffc3204b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GKSV ’23</a>, <a href="https://openreview.net/forum?id=z6n1fKMMC1" rel="external nofollow noopener" target="_blank">GKSV ’24</a>, <a href="https://papers.nips.cc/paper_files/paper/2024/hash/e209210eae282e23e305df49fbb2769c-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GSSV ’24</a>, <a href="https://proceedings.mlr.press/v247/diakonikolas24a.html" rel="external nofollow noopener" target="_blank">DKLZ’24</a>, <a href="https://papers.nips.cc/paper_files/paper/2024/hash/06e9029d3d4d6cee71c5d9b8502f891b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">STW ’24</a>, <a href="https://arxiv.org/abs/2501.09189" rel="external nofollow noopener" target="_blank">GKSV ’25</a>]. In this blog post, we will survey this research direction and explore some of the techniques used to design such algorithms.</p>
+
+<h2 id="2-how-to-modify-framework-2-algorithms-to-work-in-framework-3"><strong>2. How to Modify Framework 2 Algorithms to Work in Framework 3.</strong></h2>
+
+<p>In this section we will discuss a general recipe for converting Framework 2 algorithms into Framework 3 by augmenting them with an appropriate <em>tester</em>. As a case study, we will focus on one of the most widely-studied Framework 2 algorithms: the <em>Low-Degree Algorithm</em>. We will see how it can be upgraded into Framework 3 using the <em>Moment-Matching Tester</em>. Later, in Section 3, we will see how a similar recipe can be used for other algorithms as well.</p>
+
+<h3 id="21-what-is-an-example-of-framework-2-algorithm-the-low-degree-algorithm"><strong>2.1 What is an Example of Framework 2 Algorithm? The Low-Degree Algorithm.</strong></h3>
+
+<p>We begin by examining the following Framework 2 algorithm.</p>
+
+<hr>
+
+<p><strong>Degree-k Low-Degree Algorithm [<a href="https://epubs.siam.org/doi/10.1137/060649057" rel="external nofollow noopener" target="_blank">KKMS ’08</a>]:</strong></p>
+
+<p>Given: access to independent Gaussian examples labeled by unknown function <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%3A%5Cmathbb%7BR%7D%5E%7Bd%7D%5Crightarrow%5Cleft%5C%7B+%5Cpm1%5Cright%5C%7D+%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}:\mathbb{R}^{d}\rightarrow\left{ \pm1\right} }"> and a parameter <img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}">.</p>
+
+<p>Output: hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bh%3A%5Cmathbb%7BR%7D%5E%7Bd%7D%5Crightarrow%5Cleft%5C%7B+%5Cpm1%5Cright%5C%7D+%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h:\mathbb{R}^{d}\rightarrow\left{ \pm1\right} }">.</p>
+
+<ol>
+  <li>
+<img src="https://s0.wp.com/latex.php?latex=%7BS%5Cleftarrow%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S\leftarrow}"> {<img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7Bk%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{k}}"> Gaussian examples labeled by function <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}">}.</li>
+  <li>
+    <p>Compute</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>![\displaystyle p^{*}\leftarrow\underset{\boldsymbol{\text{degree}}-k\text{ polynomial }p}{\text{argmin}}\left[\mathbb{E}<em>{(x</em>{i},f_{\text{noisy labels}}(x_{i}))\sim S}</td>
+          <td>p(x_{i})-f_{\text{noisy labels}}(x_{i})</td>
+          <td>\right] ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+p%5E%7B%2A%7D%5Cleftarrow%5Cunderset%7B%5Cboldsymbol%7B%5Ctext%7Bdegree%7D%7D-k%5Ctext%7B+polynomial+%7Dp%7D%7B%5Ctext%7Bargmin%7D%7D%5Cleft%5B%5Cmathbb%7BE%7D_%7B%28x_%7Bi%7D%2Cf_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x_%7Bi%7D%29%29%5Csim+S%7D%7Cp%28x_%7Bi%7D%29-f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x_%7Bi%7D%29%7C%5Cright%5D+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>by solving a linear program.</p>
+  </li>
+  <li>Output hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> mapping <img src="https://s0.wp.com/latex.php?latex=%7Bx%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{x}"> in <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BR%7D%5E%7Bd%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{R}^{d}}"> to <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%28%5Censuremath%7Bp%5E%7B%2A%7D%7D%28x%29%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign(\ensuremath{p^{*}}(x))}}">.</li>
+</ol>
+
+<hr>
+
+<p>It can be shown [<a href="https://epubs.siam.org/doi/10.1137/060649057" rel="external nofollow noopener" target="_blank">KKMS ’08</a>, <a href="https://epubs.siam.org/doi/abs/10.1137/100783030" rel="external nofollow noopener" target="_blank">DGJSV ’10</a>] that, for <img src="https://s0.wp.com/latex.php?latex=%7Bk%3D%5Ctilde%7BO%7D%281%2F%5Cvarepsilon%5E%7B2%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k=\tilde{O}(1/\varepsilon^{2})}">, the resulting classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> will achieve prediction error ![{\text{O(\ensuremath{\text{opt}<em>{\text{Linear Classifiers}}}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7BO%28%5Censuremath%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7BLinear+Classifiers%7D%7D%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002). Furthermore, with a slightly more sophisticated version of step 3, the prediction error improves to ![{\text{\ensuremath{\text{opt}<em>{\text{Linear Classifiers}}}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7BLinear+Classifiers%7D%7D%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) [<a href="https://epubs.siam.org/doi/10.1137/060649057" rel="external nofollow noopener" target="_blank">KKMS ’08</a>, <a href="https://epubs.siam.org/doi/abs/10.1137/100783030" rel="external nofollow noopener" target="_blank">DGJSV ’10</a>]. The run-time is <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7BO%28k%29%7D%3Dd%5E%7B%5Ctilde%7BO%7D%281%2F%5Cvarepsilon%5E%7B2%7D%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{O(k)}=d^{\tilde{O}(1/\varepsilon^{2})}}">.</p>
+
+<p>This approach also yields a classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> with error ![{\text{\ensuremath{\text{opt}<em>{\text{\ensuremath{\mathcal{C}}}}}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7B%5Censuremath%7B%5Cmathcal%7BC%7D%7D%7D%7D%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) for many other hypothesis classes <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}">, such as ANDs of linear classifiers or indicators of convex sets in <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BR%7D%5E%7Bd%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{R}^{d}}"> [<a href="https://ieeexplore.ieee.org/document/4690987" rel="external nofollow noopener" target="_blank">KOS ’08</a>]. The same approach can even be used when the class <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is constant-depth circuits and the distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> is uniform over binary bit-strings [<a href="https://epubs.siam.org/doi/10.1137/060649057" rel="external nofollow noopener" target="_blank">KKMS ’08</a>]. To achieve all these results, we only need to run the algorithm above with a larger value of the degree parameter <img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}">. The run-time <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7BO%28k%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{O(k)}}"> will increase, but as long as we insist on error bound of ![{\text{opt}<em>{\mathcal{C}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) in Framework 2, this approach is known to be optimal for many hypothesis classes <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> [<a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611973730.34" rel="external nofollow noopener" target="_blank">DFTWW’15</a>, <a href="https://papers.nips.cc/paper/2020/hash/9d7311ba459f9e45ed746755a32dcd11-Abstract.html" rel="external nofollow noopener" target="_blank">DKZ ’20</a>, <a href="https://papers.nips.cc/paper/2020/hash/17257e81a344982579af1ae6415a7b8c-Abstract.html" rel="external nofollow noopener" target="_blank">GGK ’20</a>, <a href="https://proceedings.mlr.press/v134/diakonikolas21c.html" rel="external nofollow noopener" target="_blank">DKPZ ’21</a>, <a href="https://proceedings.mlr.press/v202/diakonikolas23b.html" rel="external nofollow noopener" target="_blank">DKR ’23</a>]. (Additionally, in order to achieve error ![{\text{\ensuremath{\text{opt}<em>{\text{\ensuremath{\mathcal{C}}}}}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7B%5Censuremath%7B%5Cmathcal%7BC%7D%7D%7D%7D%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) rather than ![{\text{O(\ensuremath{\text{opt}<em>{\text{\ensuremath{\mathcal{C}}}}})}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7BO%28%5Censuremath%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7B%5Censuremath%7B%5Cmathcal%7BC%7D%7D%7D%7D%7D%29%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) one needs to replace step 3 with a slightly more sophisticated version of this step [<a href="https://epubs.siam.org/doi/10.1137/060649057" rel="external nofollow noopener" target="_blank">KKMS ’08</a>]. From now on, we will make a tacit assumption that this improved version of step 3 is used.)</p>
+
+<h3 id="22-converting-the-low-degree-algorithm-into-framework-3-via-the-moment-matching-test"><strong>2.2 Converting the Low-Degree Algorithm into Framework 3 via the Moment-Matching Test.</strong></h3>
+
+<p>For a wide range of concept classes <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}">, you can get Framework 3 algorithms by combining the Low-Degree Algorithm with a suitable tester <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}">. Here is a general recipe to extend Framework 2 algorithms so they run in Framework 3:</p>
+
+<ol>
+  <li>Run<a href="https://theory.report/atom.xml#f0bd6d70-92ae-44be-9cd5-09cb8b45e961" rel="external nofollow noopener" target="_blank">6</a> an algorithm <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BA%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{A}}"> for class <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> in Framework 2 to get a classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh.%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h.}">
+</li>
+  <li>Run some algorithm <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}">, which we will call the <em>tester</em>, that accesses <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> and outputs Accept or Reject.</li>
+  <li>If <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> accepts, then return the classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> from step (1).</li>
+  <li>If <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> rejects, then run a (potentially very slow) algorithm <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BA%7D%27%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{A}'}"> for class <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> in Framework 1. (See Section <a href="https://theory.report/atom.xml#subsecThree-Frameworks-for" rel="external nofollow noopener" target="_blank">1.3</a> for more about those)</li>
+</ol>
+
+<p>Let us compare Framework 2 and Framework 3, to see what specifications the tester <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> needs to meet to ensure that the procedure above satisfies Framework 3. We see that it would suffice if algorithm <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> accepted whenever <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%3DD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}=D_{\text{Assumption}}}"> and rejected whenever <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%5Cneq+D_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}\neq D_{\text{Assumption}}}">. Unfortunately, for example when <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> is the Gaussian distribution, there is provably no tester <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> that can distinguish if <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%3DD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}=D_{\text{Assumption}}}"> or <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%5Cneq+D_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}\neq D_{\text{Assumption}}}">.</p>
+
+<p>However, we can get away with less stringent requirements for <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> and still achieve our goal:</p>
+
+<ul>
+  <li>
+<strong>Completeness:</strong> whenever <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%3DD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}=D_{\text{Assumption}}}">, the tester <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> accepts with high probability.</li>
+  <li>
+    <p><strong>Soundness:</strong> For all distributions <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}">, either the tester <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> will with high probability reject <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}">, or <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> is such that the algorithm <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BA%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{A}}"> will with high probability give a hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> satisfying the <img src="https://s0.wp.com/latex.php?latex=%7B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\varepsilon}">-optimality guarantee</p>
+
+    <p>![\displaystyle \overbrace{\Pr_{x\sim D_{\text{Examples}}}[h(x)\neq f_{\text{noisy labels}}(x)]}^{\text{Prediction error of \ensuremath{h}.}}\leq\overbrace{\text{opt}<em>{\mathcal{C}}}^{\text{Optimal prediction error in \ensuremath{\mathcal{C}.}}}+\varepsilon. ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Coverbrace%7B%5CPr</em>%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Bh%28x%29%5Cneq+f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29%5D%7D%5E%7B%5Ctext%7BPrediction+error+of+%5Censuremath%7Bh%7D.%7D%7D%5Cleq%5Coverbrace%7B%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%5E%7B%5Ctext%7BOptimal+prediction+error+in+%5Censuremath%7B%5Cmathcal%7BC%7D.%7D%7D%7D%2B%5Cvarepsilon.+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</p>
+  </li>
+  <li>
+<strong>Fast Run Time:</strong> the tester <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> runs in time at most <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}">.</li>
+</ul>
+
+<p>The point of the Soundness condition is to permit the algorithm <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> to accept a distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> even if <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%5Cneq+D_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}\neq D_{\text{Assumption}}}"> but <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> is still “good enough” for the algorithm <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BA%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{A}}">.</p>
+
+<p>Let us come back to using the recipe above, taking <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BA%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{A}}"> to be the Low-Degree Algorithm. The recipe above can be executed using the following algorithm<a href="https://theory.report/atom.xml#e24c404f-9465-416b-9d59-3feddcf98899" rel="external nofollow noopener" target="_blank">7</a> as the tester <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}">:</p>
+
+<hr>
+
+<p><strong>Degree-<img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}"> Moment-Matching Tester [<a href="https://dl.acm.org/doi/10.1145/3564246.3585117" rel="external nofollow noopener" target="_blank">RV ’23</a>, <a href="https://dl.acm.org/doi/10.1145/3564246.3585206" rel="external nofollow noopener" target="_blank">GKK ’23</a>]:</strong></p>
+
+<ul>
+  <li>Given: access to independent examples from <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}">, a reference distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}">, parameter <img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}">.</li>
+  <li>Output: Accept or Reject.</li>
+</ul>
+
+<ol>
+  <li>
+<img src="https://s0.wp.com/latex.php?latex=%7BS%5Cleftarrow%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S\leftarrow}"> {<img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7BO%28k%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{O(k)}}"> examples from <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}">}.</li>
+  <li>For all monomials <img src="https://s0.wp.com/latex.php?latex=%7Bm%3D%5Cprod_%7Bi%7Dx_%7Bi%7D%5E%7B%5Calpha_%7Bi%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{m=\prod_{i}x_{i}^{\alpha_{i}}}"> of total degree at most <img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}">:
+    <ol>
+      <li>If <img src="https://s0.wp.com/latex.php?latex=%7B%5Clvert%5Cmathbb%7BE%7D_%7Bx%5Csim+S%7D%5Bm%28x%29%5D-%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5Bm%28x%29%5D%5Crvert%3Ed%5E%7B-k%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\lvert\mathbb{E}_{x\sim S}[m(x)]-\mathbb{E}_{x\sim D_{\text{Assumption}}}[m(x)]\rvert&gt;d^{-k}}">, output Reject and terminate. <br>
+(Note: For many distributions <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> of interest, such as Gaussian distribution, the quantity <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5Bm%28x%29%5D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{E}_{x\sim D_{\text{Assumption}}}[m(x)]}"> can be computed directly. One can also draw samples from <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> and use them to estimate <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5Bm%28x%29%5D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{E}_{x\sim D_{\text{Assumption}}}[m(x)]}">.)</li>
+    </ol>
+  </li>
+  <li>If this step is reached, output Accept.</li>
+</ol>
+
+<hr>
+
+<p>Since in <img src="https://s0.wp.com/latex.php?latex=%7Bd%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d}"> dimensions there are at most <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7BO%28k%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{O(k)}}"> monomials of degree <img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}">, the Moment-Matching Tester above runs in time <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7BO%28k%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{O(k)}}">.</p>
+
+<p>Overall, using the recipe above to combine the degree-<img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}"> Low-Degree Algorithm with the degree-<img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}"> Moment-Matching Tester, yields Framework 3 algorithms for many concept classes—including linear classifiers, ANDs of linear classifiers, and constant-depth circuits. As a concrete example, when <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is the class of linear classifiers, the resulting algorithm in Framework 3 has a run-time bound <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}"> of <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7B%5Ctilde%7BO%7D%281%2F%5Cvarepsilon%5E%7B2%7D%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{\tilde{O}(1/\varepsilon^{2})}}">. This run-time matches best algorithm of in Framework 2 (believed to be optimal).</p>
+
+<p>The proof of correctness for these algorithms in Framework 3 is far from automatic. As explained in Section <a href="https://theory.report/atom.xml#subsecAnalysis-of-the" rel="external nofollow noopener" target="_blank">2.3</a>, the notion of sandwiching polynomials from the field of pseudorandomness turns out to be very important for the proof of correctness [<a href="https://dl.acm.org/doi/10.1145/3564246.3585206" rel="external nofollow noopener" target="_blank">GKK ’23</a>].</p>
+
+<p><strong>Remark:</strong> many papers referenced here phrase their main result as a tester <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}"> that satisfies the three aforementioned conditions of <em>completeness</em>, <em>soundness</em> and <em>fast run-time</em> (together with a Framework 2 algorithm <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BA%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{A}}">). Note that, as described above and also noted in [<a href="https://dl.acm.org/doi/10.1145/3564246.3585117" rel="external nofollow noopener" target="_blank">RV ’23</a>], having such a tester gives<a href="https://theory.report/atom.xml#5da7233e-676e-42f9-8bc5-41c5198adc8a" rel="external nofollow noopener" target="_blank">8</a> an algorithm in Framework 3 (in fact it is equivalent to having an algorithm in Framework 3 [<a href="https://dl.acm.org/doi/10.1145/3564246.3585117" rel="external nofollow noopener" target="_blank">RV ’23</a>]).</p>
+
+<h3 id="23-analysis-of-the-moment-matching-tester-through-sandwiching-polynomials"><strong>2.3 Analysis of the Moment-Matching Tester through Sandwiching Polynomials.</strong></h3>
+
+<p>Soon, we will discuss more Framework 3 algorithms, but let us first discuss the proof of correctness for the Moment-Matching Tester. Recall that it needs to satisfy three conditions: <em>Completeness</em>, <em>Soundness</em> and <em>Fast Run Time</em>. Among these three, the Soundness condition is the most challenging one to prove. [<a href="https://dl.acm.org/doi/10.1145/3564246.3585206" rel="external nofollow noopener" target="_blank">GKK ’23</a>] give a principled way of doing this, which we will briefly sketch now. A key step is to show that every function <img src="https://s0.wp.com/latex.php?latex=%7Bf%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f}"> in the class <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> has <em><img src="https://s0.wp.com/latex.php?latex=%7B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\varepsilon}">-sandwiching polynomials</em> of degree <img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}"> under <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}">, i.e. a pair of polynomials <img src="https://s0.wp.com/latex.php?latex=%7Bp_%7B%5Ctext%7Bup%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{p_{\text{up}}}"> and <img src="https://s0.wp.com/latex.php?latex=%7Bp_%7B%5Ctext%7Bdown%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{p_{\text{down}}}"> satisfying:</p>
+
+<ul>
+  <li>
+<strong>Sandwiching:</strong> for every point <img src="https://s0.wp.com/latex.php?latex=%7Bx%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{x}">, we have <img src="https://s0.wp.com/latex.php?latex=%7Bp_%7B%5Ctext%7Bdown%7D%7D%28x%29%5Cleq+f%28x%29%5Cleq+p_%7B%5Ctext%7Bup%7D%7D%28x%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{p_{\text{down}}(x)\leq f(x)\leq p_{\text{up}}(x)}">.</li>
+  <li>
+<em><img src="https://s0.wp.com/latex.php?latex=%7B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\varepsilon}"></em><strong>-Closeness:</strong> we have <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5Bp_%7B%5Ctext%7Bup%7D%7D%28x%29-p_%7B%5Ctext%7Bdown%7D%7D%28x%29%5D%5Cleq%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{E}_{x\sim D_{\text{Assumption}}}[p_{\text{up}}(x)-p_{\text{down}}(x)]\leq\varepsilon}">.</li>
+</ul>
+
+<p>For example, linear classifiers have <em><img src="https://s0.wp.com/latex.php?latex=%7B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\varepsilon}">-sandwiching polynomials</em> of degree <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctilde%7BO%7D%5Cleft%28%5Cfrac%7B1%7D%7B%5Cvarepsilon%5E%7B2%7D%7D%5Cright%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\tilde{O}\left(\frac{1}{\varepsilon^{2}}\right)}"> under the Gaussian distribution <a href="https://epubs.siam.org/doi/abs/10.1137/100783030" rel="external nofollow noopener" target="_blank">[DGJSV ’10]</a>. This notion was first studied in the field of <em>pseudorandomness</em>, because the existence of sandwiching polynomials for <img src="https://s0.wp.com/latex.php?latex=%7Bf%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f}"> can be leveraged to approximate the expectation <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5Bf%28x%29%5D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{E}_{x\sim D_{\text{Assumption}}}[f(x)]}"> while only making deterministic queries to <img src="https://s0.wp.com/latex.php?latex=%7Bf%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f}">.</p>
+
+<p>It is shown in [<a href="https://dl.acm.org/doi/10.1145/3564246.3585206" rel="external nofollow noopener" target="_blank">GKK ’23</a>] that whenever such a pair of polynomials exists for every <img src="https://s0.wp.com/latex.php?latex=%7Bf%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f}"> in the hypothesis class <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}">, then for the Moment-Matching Tester, the Soundness condition holds. Let us briefly sketch the argument, denoting by <img src="https://s0.wp.com/latex.php?latex=%7Bf%5E%7B%2A%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f^{*}}"> the function in <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> with the smallest prediction error ![{\text{opt}<em>{\mathcal{C}}}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002). By assumption, there is a pair of sandwiching polynomials <img src="https://s0.wp.com/latex.php?latex=%7Bp_%7B%5Ctext%7Bup%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{p_{\text{up}}}"> and <img src="https://s0.wp.com/latex.php?latex=%7Bp_%7B%5Ctext%7Bdown%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{p_{\text{down}}}"> for <img src="https://s0.wp.com/latex.php?latex=%7Bf%5E%7B%2A%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f^{*}}">.</p>
+
+<p>If the distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> is such that the Moment-Matching Tester is likely to pass, then for every monomial <img src="https://s0.wp.com/latex.php?latex=%7Bm%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{m}"> of degree at most <img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}"> we have <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5Bm%28x%29%5D%5Capprox%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Bm%28x%29%5D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{E}_{x\sim D_{\text{Assumption}}}[m(x)]\approx\mathbb{E}_{x\sim D_{\text{Examples}}}[m(x)]}">. Therefore,</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>![\displaystyle \mathbb{E}<em>{x\sim D</em>{\text{Examples}}}\left[\left</td>
+      <td>f^{*}(x)-p_{\text{down}}(x)\right</td>
+      <td>\right] \ \leq\mathbb{E}<em>{x\sim D</em>{\text{Examples}}}[p_{\text{up}}(x)-p_{\text{down}}(x)]\approx\mathbb{E}<em>{x\sim D</em>{\text{Assumption}}}[p_{\text{up}}(x)-p_{\text{down}}(x)]\leq\varepsilon, ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Cleft%5B%5Cleft%7Cf%5E%7B%2A%7D%28x%29-p_%7B%5Ctext%7Bdown%7D%7D%28x%29%5Cright%7C%5Cright%5D+%5C%5C+%5Cleq%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Bp_%7B%5Ctext%7Bup%7D%7D%28x%29-p_%7B%5Ctext%7Bdown%7D%7D%28x%29%5D%5Capprox%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5Bp_%7B%5Ctext%7Bup%7D%7D%28x%29-p_%7B%5Ctext%7Bdown%7D%7D%28x%29%5D%5Cleq%5Cvarepsilon%2C+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>where the first step uses the sandwiching property, the second step breaks <img src="https://s0.wp.com/latex.php?latex=%7Bp_%7B%5Ctext%7Bup%7D%7D%28x%29-p_%7B%5Ctext%7Bdown%7D%7D%28x%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{p_{\text{up}}(x)-p_{\text{down}}(x)}"> into monomials and then applies<a href="https://theory.report/atom.xml#010dd730-d676-4dad-b414-d8513a155208" rel="external nofollow noopener" target="_blank">9</a> <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5Bm%28x%29%5D%5Capprox%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Bm%28x%29%5D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{E}_{x\sim D_{\text{Assumption}}}[m(x)]\approx\mathbb{E}_{x\sim D_{\text{Examples}}}[m(x)]}"> to each monomial <img src="https://s0.wp.com/latex.php?latex=%7Bm%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{m}">. The last step above uses the <em><img src="https://s0.wp.com/latex.php?latex=%7B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\varepsilon}"></em>-Closeness property.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Finally, the upper bound on ![{\mathbb{E}<em>{x\sim D</em>{\text{Examples}}}\left[\left</td>
+      <td>f^{*}(x)-p_{\text{down}}(x)\right</td>
+      <td>\right]}](https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Cleft%5B%5Cleft%7Cf%5E%7B%2A%7D%28x%29-p_%7B%5Ctext%7Bdown%7D%7D%28x%29%5Cright%7C%5Cright%5D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) tells us that the Low-Degree Algorithm finds a polynomial <img src="https://s0.wp.com/latex.php?latex=%7Bp%5E%7B%2A%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{p^{*}}"> with</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>![\displaystyle \frac{1}{2}\mathbb{E}<em>{x\sim D</em>{\text{Examples}}}\left[\left</td>
+      <td>f_{\text{noisy labels}}(x)-p^{*}(x)\right</td>
+      <td>\right]\lesssim\frac{1}{2}\mathbb{E}<em>{x\sim D</em>{\text{Examples}}}\left[\left</td>
+      <td>f_{\text{noisy labels}}(x)-p_{\text{down}}(x)\right</td>
+      <td>\right] \lesssim \ \underbrace{\frac{1}{2}\mathbb{E}<em>{x\sim D</em>{\text{Examples}}}\left[\left</td>
+      <td>f_{\text{noisy labels}}(x)-f^{*}(x)\right</td>
+      <td>\right]}<em>{=\text{opt}</em>{\mathcal{C}}\text{ because } f^{*} \text{ is best classifier in }\mathcal{C}+\varepsilon}. ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cfrac%7B1%7D%7B2%7D%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Cleft%5B%5Cleft%7Cf_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29-p%5E%7B%2A%7D%28x%29%5Cright%7C%5Cright%5D%5Clesssim%5Cfrac%7B1%7D%7B2%7D%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Cleft%5B%5Cleft%7Cf_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29-p_%7B%5Ctext%7Bdown%7D%7D%28x%29%5Cright%7C%5Cright%5D+%5Clesssim+%5C%5C+%5Cunderbrace%7B%5Cfrac%7B1%7D%7B2%7D%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Cleft%5B%5Cleft%7Cf_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29-f%5E%7B%2A%7D%28x%29%5Cright%7C%5Cright%5D%7D_%7B%3D%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%5Ctext%7B+because+%7D+f%5E%7B%2A%7D+%5Ctext%7B+is+best+classifier+in+%7D%5Cmathcal%7BC%7D%2B%5Cvarepsilon%7D.+&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="3-going-beyond-low-degree-algorithm"><strong>3. Going Beyond Low-Degree Algorithm.</strong></h2>
+
+<p>To recap: in Framework 2, the Low-Degree Algorithm works for many hypothesis classes <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}">, giving a classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> with error ![{\text{opt}<em>{\mathcal{C}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002). In Framework 3, this algorithm can be used together with the Moment-Matching Tester to get computationally efficient algorithms. However, this approach has a number of limitations:</p>
+
+<ul>
+  <li>Run-time for the Low-Degree Algorithm tends to be exponential in <img src="https://s0.wp.com/latex.php?latex=%7B1%2F%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{1/\varepsilon}">. For example, to get error ![{\text{\ensuremath{\text{opt}<em>{\text{Linear Classifiers}}}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7Bopt%7D</em>%7B%5Ctext%7BLinear+Classifiers%7D%7D%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002), the Low-Degree Algorithms needs to run in time <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7B%5Ctilde%7BO%7D%281%2F%5Cvarepsilon%5E%7B2%7D%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{\tilde{O}(1/\varepsilon^{2})}}">.</li>
+  <li>The algorithms are <em>improper</em>, which means the hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> they give is not itself in the class <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}">. To be concrete, compare the two following two tasks:
+    <ul>
+      <li>(a) We get a labeled data-set <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}">, and we want to fit approximately the best linear classifier to <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}">.</li>
+      <li>(b) We get a labeled data set <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}">, and we want to fit a classifier to <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}"> of the form <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%7D%28p%28x%29%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign}(p(x))}"> where <img src="https://s0.wp.com/latex.php?latex=%7Bp%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{p}"> is some polynomial, this classifier should approximately be as good as the best linear classifier on <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}"> .
+The Low-Degree Algorithm is solving task (b) not task (a). However, most people would agree that task (a) is far more natural.* The Moment-Matching Tester is guaranteed to accept when the distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> equals to a specific distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}">, but still might reject when <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> is very similar to <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}">. Formally, one can construct a distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> that will be rejected by the degree-<img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}"> Moment-Matching Tester, even though <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bdist%7D_%7B%5Ctext%7BTV%7D%7D%28D_%7B%5Ctext%7BExamples%7D%7D%2CD_%7B%5Ctext%7BAssumption%7D%7D%29%3Dd%5E%7B-O%28k%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{dist}_{\text{TV}}(D_{\text{Examples}},D_{\text{Assumption}})=d^{-O(k)}}">.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>We will now discuss subsequent work that focuses on removing these limitations.</p>
+
+<h3 id="31-the-matter-of-efficiency-polynomial-time-algorithms-in-framework-3"><strong>3.1 The Matter of Efficiency: Polynomial-Time Algorithms in Framework 3.</strong></h3>
+
+<h4 id="311-learning-beyond-low-degree-algorithm">3.1.1 Learning Beyond Low-Degree Algorithm.</h4>
+
+<p>In contrast with the Low-Degree Algorithm, some algorithms in Framework 2 are tailor-made for specific classes <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> and have run-times <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}">, at the price of looser error guarantees such as ![{O(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) or ![{\widetilde{O}(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Cwidetilde%7BO%7D%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002). For example, consider the following algorithm:</p>
+
+<hr>
+
+<p><strong>Averaging Algorithm [<a href="https://epubs.siam.org/doi/10.1137/060649057" rel="external nofollow noopener" target="_blank">KKMS ’08</a>]:</strong></p>
+
+<ul>
+  <li>Given: access to independent standard Gaussian examples <img src="https://s0.wp.com/latex.php?latex=%7B%5Cleft%5C%7B+x_%7Bi%7D%5Cright%5C%7D+%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\left{ x_{i}\right} }">, labeled by unknown function <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%3A%5Cmathbb%7BR%7D%5E%7Bd%7D%5Crightarrow%5Cleft%5C%7B+%5Cpm1%5Cright%5C%7D+%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}:\mathbb{R}^{d}\rightarrow\left{ \pm1\right} }">.</li>
+  <li>Output: hypothesis <img src="https://s0.wp.com/latex.php?latex=%7B%5Cwidehat%7Bh%7D%3A%5Cmathbb%7BR%7D%5E%7Bd%7D%5Crightarrow%5Cleft%5C%7B+%5Cpm1%5Cright%5C%7D+%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\widehat{h}:\mathbb{R}^{d}\rightarrow\left{ \pm1\right} }">.</li>
+</ul>
+
+<ol>
+  <li>
+<img src="https://s0.wp.com/latex.php?latex=%7BS%5Cleftarrow%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S\leftarrow}"> {<img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}"> Gaussian examples <img src="https://s0.wp.com/latex.php?latex=%7B%5Cleft%5C%7B+x_%7Bi%7D%5Cright%5C%7D+%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\left{ x_{i}\right} }"> labeled by <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}">}.</li>
+  <li>
+<img src="https://s0.wp.com/latex.php?latex=%7Bw%5Cleftarrow%5Csum_%7Bx_%7Bi%7D%5Cin+S%7D%5Cleft%5Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x_%7Bi%7D%29%5Ccdot+x_%7Bi%7D%5Cright%5D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w\leftarrow\sum_{x_{i}\in S}\left[f_{\text{noisy labels}}(x_{i})\cdot x_{i}\right]}">.</li>
+  <li>Output <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> mapping <img src="https://s0.wp.com/latex.php?latex=%7Bx%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{x}"> in <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BR%7D%5E%7Bd%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{R}^{d}}"> to <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%28%5Censuremath%7Bw%5Ccdot+x%7D%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign(\ensuremath{w\cdot x})}}">
+</li>
+</ol>
+
+<hr>
+
+<p>When the distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> is the standard Gaussian, this simple Framework 2 algorithm runs in time <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}">, and gives a classifier <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%7D%28w%5Censuremath%7B%5Ccdot+x%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign}(w\ensuremath{\cdot x})}"> with error ![{\widetilde{O}(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Cwidetilde%7BO%7D%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002). Here ![{\text{opt}<em>{\mathcal{C}}}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) is the best prediction error of an origin-centered linear classifier (i.e. a classifier of the form <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%7D%28w%27%5Censuremath%7B%5Ccdot+x%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign}(w'\ensuremath{\cdot x})}">) [<a href="https://epubs.siam.org/doi/10.1137/060649057" rel="external nofollow noopener" target="_blank">KKMS ’08</a>]. The analysis of the Averaging Algorithm is self-contained and only takes three pages [<a href="https://epubs.siam.org/doi/10.1137/060649057" rel="external nofollow noopener" target="_blank">KKMS ’08</a>], and a key idea is to denote the optimal classifier as <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%7D%28w%5E%7B%2A%7D%5Censuremath%7B%5Ccdot+x%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign}(w^{*}\ensuremath{\cdot x})}"> and decompose <img src="https://s0.wp.com/latex.php?latex=%7Bw%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w}"> into <img src="https://s0.wp.com/latex.php?latex=%7Bw_%7B%5Ctext%7Bsignal%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w_{\text{signal}}}"> and <img src="https://s0.wp.com/latex.php?latex=%7Bw_%7B%5Ctext%7Bnoise%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w_{\text{noise}}}"> as follows:</p>
+
+<p><img src="https://s0.wp.com/latex.php?latex=%5Cdisplaystyle++w%3D%5Csum_%7Bx_%7Bi%7D%5Cin+S%7D%5Cleft%5Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x_%7Bi%7D%29%5Ccdot+x_%7Bi%7D%5Cright%5D%3D+%5Cunderbrace%7B%5Csum_%7Bx_%7Bi%7D%5Cin+S%7D%5Cleft%5B%5Ctext%7Bsign%7D%28w%5E%7B%2A%7D%5Ccdot+x_%7Bi%7D%29%5Ccdot+x_%7Bi%7D%5Cright%5D%7D+_%7B%5Ctext%7BSignal+term%3A+%7Dw_%7B%5Ctext%7Bsignal%7D%7D%7D+%2B+%5Cunderbrace%7B%5Csum_%7Bx_%7Bi%7D%5Cin+S%7D%5Cleft%5B%28f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x_%7Bi%7D%29-%5Ctext%7Bsign%7D%28w%5E%7B%2A%7D%5Ccdot+x_%7Bi%7D%29%29%5Ccdot+x_%7Bi%7D%5Cright%5D%7D_%7B%5Ctext%7BNoise+term%3A+%7Dw_%7B%5Ctext%7Bnoise%7D%7D%7D+&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002" alt="\displaystyle  w=\sum_{x_{i}\in S}\left[f_{\text{noisy labels}}(x_{i})\cdot x_{i}\right]= \underbrace{\sum_{x_{i}\in S}\left[\text{sign}(w^{*}\cdot x_{i})\cdot x_{i}\right]} _{\text{Signal term: }w_{\text{signal}}} + \underbrace{\sum_{x_{i}\in S}\left[(f_{\text{noisy labels}}(x_{i})-\text{sign}(w^{*}\cdot x_{i}))\cdot x_{i}\right]}_{\text{Noise term: }w_{\text{noise}}} "></p>
+
+<p>arguing<a href="https://theory.report/atom.xml#8efb53cb-cccd-41c3-ae64-7e218cc109e9" rel="external nofollow noopener" target="_blank">10</a> as follows:</p>
+
+<ol>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>For a Gaussian dataset <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}">, the angle <img src="https://s0.wp.com/latex.php?latex=%7B%5Cangle%28w_%7B%5Ctext%7Bsignal%7D%7D%2Cw%5E%7B%2A%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\angle(w_{\text{signal}},w^{*})}"> will be at most <img src="https://s0.wp.com/latex.php?latex=%7B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\varepsilon}"> with high probability. This is argued by observing that the inner product <img src="https://s0.wp.com/latex.php?latex=%7Bw_%7B%5Ctext%7Bsignal%7D%7D%5Ccdot+w%5E%7B%2A%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w_{\text{signal}}\cdot w^{*}}"> is likely to be large while the inner product with directions orthogonal to <img src="https://s0.wp.com/latex.php?latex=%7Bw%5E%7B%2A%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w^{*}}"> will likely be much smaller. Likewise, the norm ![{</td>
+          <td>w_{\text{signal}}</td>
+          <td>}](https://s0.wp.com/latex.php?latex=%7B%7Cw_%7B%5Ctext%7Bsignal%7D%7D%7C%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) can be shown to be close to ![{\Theta(</td>
+          <td>S</td>
+          <td>)}](https://s0.wp.com/latex.php?latex=%7B%5CTheta%28%7CS%7C%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) with high probability.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Since the classifier <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%7D%28w%5E%7B%2A%7D%5Censuremath%7B%5Ccdot+x%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign}(w^{*}\ensuremath{\cdot x})}"> has the optimal error ![{\text{opt}<em>{\mathcal{C}}}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002), only ![{O(\text{opt}<em>{\mathcal{C}})}](https://s0.wp.com/latex.php?latex=%7BO%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) fraction of points in <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}"> will contribute to <img src="https://s0.wp.com/latex.php?latex=%7Bw_%7B%5Ctext%7Bnoise%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w_{\text{noise}}}"> (with high probability over <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}">). Yet, it can be shown that small subsets of a Gaussian data-set have small averages. Formally, with high probability, if <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}"> comes from the standard Gaussian and has size <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}">, every subset <img src="https://s0.wp.com/latex.php?latex=%7BS%27%5Csubset+S%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S'\subset S}"> of size ![{\alpha</td>
+          <td>S</td>
+          <td>}](https://s0.wp.com/latex.php?latex=%7B%5Calpha%7CS%7C%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) satisfies</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>![\displaystyle \left</td>
+          <td>\sum_{x_{i}\in S’}\left[x_{i}\right]\right</td>
+          <td>\leq\left(\tilde{O}\left(\alpha\right)+\varepsilon\right)</td>
+          <td>S</td>
+          <td>. ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cleft%7C%5Csum_%7Bx_%7Bi%7D%5Cin+S%27%7D%5Cleft%5Bx_%7Bi%7D%5Cright%5D%5Cright%7C%5Cleq%5Cleft%28%5Ctilde%7BO%7D%5Cleft%28%5Calpha%5Cright%29%2B%5Cvarepsilon%5Cright%29%7CS%7C.+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>This lets us upper-bound the norm ![{</td>
+          <td>w_{\text{noise}}</td>
+          <td>}](https://s0.wp.com/latex.php?latex=%7B%7Cw_%7B%5Ctext%7Bnoise%7D%7D%7C%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) with ![{\left(\tilde{O}(\text{opt}_{\mathcal{C}})+\varepsilon\right)\cdot</td>
+          <td>S</td>
+          <td>}](https://s0.wp.com/latex.php?latex=%7B%5Cleft%28%5Ctilde%7BO%7D%28%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%5Cright%29%5Ccdot%7CS%7C%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002).</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Steps (a) and (b) together can be used to conclude that</p>
+
+    <p>![\displaystyle \angle(w,w^{<em>})=\angle(w_{\text{signal}}+w_{\text{noise}},w^{</em>})\leq\tilde{O}(\text{opt}<em>{\mathcal{C}})+\varepsilon. ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cangle%28w%2Cw%5E%7B%2A%7D%29%3D%5Cangle%28w</em>%7B%5Ctext%7Bsignal%7D%7D%2Bw_%7B%5Ctext%7Bnoise%7D%7D%2Cw%5E%7B%2A%7D%29%5Cleq%5Ctilde%7BO%7D%28%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon.+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</p>
+
+    <p>We now use the bound on the angle <img src="https://s0.wp.com/latex.php?latex=%7B%5Cangle%28w%2Cw%5E%7B%2A%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\angle(w,w^{*})}"> to bound how much less accurate the classifier <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%7D%28w%5Censuremath%7B%5Ccdot+x%7D%29%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign}(w\ensuremath{\cdot x}))}"> can be compared to <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%7D%28w%5E%7B%2A%7D%5Censuremath%7B%5Ccdot+x%7D%29%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign}(w^{*}\ensuremath{\cdot x}))}">. Indeed, for a Gaussian sample <img src="https://s0.wp.com/latex.php?latex=%7Bx%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{x}">, the probability that <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%7D%28w%5E%7B%2A%7D%5Censuremath%7B%5Ccdot+x%7D%29%29%5Cneq%5Ctext%7Bsign%7D%28w%5Censuremath%7B%5Ccdot+x%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign}(w^{*}\ensuremath{\cdot x}))\neq\text{sign}(w\ensuremath{\cdot x})}"> is <img src="https://s0.wp.com/latex.php?latex=%7B%5CTheta%28%5Cangle%28w%2Cw%5E%7B%2A%7D%29%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\Theta(\angle(w,w^{*}))}">, which allows us to conclude that</p>
+
+    <p>![\displaystyle \Pr_{x\sim D_{\text{Examples}}}[\text{sign}(w{\cdot x})\neq f_{\text{noisy labels}}(x)]\leq\ \underbrace{\Pr_{x\sim D_{\text{Examples}}}[\text{sign}(w^{<em>}{\cdot x})\neq\text{sign}(w{\cdot x})]}_{=\Theta(\angle(w,w^{</em>}))\leq\tilde{O}(\text{opt}<em>{\mathcal{C}})+\varepsilon}+\underbrace{\Pr</em>{x\sim D_{\text{Examples}}}[\text{sign}(w^{*}{\cdot x})\neq f_{\text{noisy labels}}(x)]}<em>{=\text{opt}</em>{\mathcal{C}}}=\tilde{O}(\text{opt}<em>{\mathcal{C}})+\varepsilon. ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5CPr</em>%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5B%5Ctext%7Bsign%7D%28w%7B%5Ccdot+x%7D%29%5Cneq+f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29%5D%5Cleq%5C%5C+%5Cunderbrace%7B%5CPr_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5B%5Ctext%7Bsign%7D%28w%5E%7B%2A%7D%7B%5Ccdot+x%7D%29%5Cneq%5Ctext%7Bsign%7D%28w%7B%5Ccdot+x%7D%29%5D%7D_%7B%3D%5CTheta%28%5Cangle%28w%2Cw%5E%7B%2A%7D%29%29%5Cleq%5Ctilde%7BO%7D%28%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D%2B%5Cunderbrace%7B%5CPr_%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5B%5Ctext%7Bsign%7D%28w%5E%7B%2A%7D%7B%5Ccdot+x%7D%29%5Cneq+f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29%5D%7D_%7B%3D%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%3D%5Ctilde%7BO%7D%28%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon.+&amp;bg=ffffff&amp;fg=000&amp;s=0&amp;c=20201002)</p>
+  </li>
+</ol>
+
+<p>A series of subsequent works developed new algorithms, improving the prediction error to ![{O(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) [<a href="https://dl.acm.org/doi/10.1145/2591796.2591839" rel="external nofollow noopener" target="_blank">ABL ’14</a>, <a href="https://proceedings.neurips.cc/paper/2020/hash/d785bf9067f8af9e078b93cf26de2b54-Abstract.html" rel="external nofollow noopener" target="_blank">DKTZ ’20</a>, <a href="https://proceedings.mlr.press/v162/diakonikolas22b.html" rel="external nofollow noopener" target="_blank">DKTZ ’22</a>]. Also, unlike the Low-Degree Algorithm, these algorithms are <em>proper</em>, i.e. the hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> they produce is itself a linear classifier, rather than a complicated function of the form <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bsign%7D%28p%28x%29%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{sign}(p(x))}">.</p>
+
+<p>However, all these algorithms inherently operate in Framework 2 rather than Framework 3, relying on the Gaussianity assumption not only for their run-time but also for their accuracy guarantee. For example, we can see that all three aforementioned steps — (a), (b) and (c) — in the accuracy analysis of the Averaging Algorithm use Gaussianity in crucial ways.</p>
+
+<h4 id="312-modified-moment-matching-tester">3.1.2 Modified Moment-Matching Tester.</h4>
+
+<p>Can we again use the recipe from Section <a href="https://theory.report/atom.xml#subsecMaking-Low-Degree-Algorithm" rel="external nofollow noopener" target="_blank">2.2</a> and the Moment-Matching Tester to get a <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}">-time algorithm in Framework 3 based on the Averaging Algorithm? Conceptually, the Moment-Matching Tester checks that the distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> is indistinguishable from <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> by low-degree monomials. It is therefore unsurprising that this tester works well with the Low-Degree Algorithm, as this algorithm is based on finding the best-fitting polynomial. By the same token, one would not expect the Moment-Matching Tester to work well with tailor-made algorithms such as the Averaging Algorithm, as these algorithms do not use polynomials in any way.</p>
+
+<p>Surprisingly, a modified version of the Moment-Matching Tester can nevertheless be used in this way. First, we run one of these algorithms and obtain a hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bh%28x%29%3D%5Ctext%7Bsign%7D%28w%5Censuremath%7B%5Ccdot+x%7D%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h(x)=\text{sign}(w\ensuremath{\cdot x})}">. As in Section <a href="https://theory.report/atom.xml#subsecMaking-Low-Degree-Algorithm" rel="external nofollow noopener" target="_blank">2.2</a>, we need to decide whether to output the classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> or to run a slow Framework 1 Algorithm. This is again done by running a tester <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BT%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{T}}">, but here the tester also uses the vector <img src="https://s0.wp.com/latex.php?latex=%7Bw%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w}"> obtained prior to running the tester:</p>
+
+<hr>
+
+<p><strong>Strip Tester [<a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/7c319b62e2257b34cb0e1040ced2e007-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">DKKLZ ’23</a>, <a href="https://papers.nips.cc/paper_files/paper/2023/hash/204d9a9a4816a45909010587ffc3204b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GKSV ’23</a>, <a href="https://openreview.net/forum?id=z6n1fKMMC1" rel="external nofollow noopener" target="_blank">GKSV ’24</a>]:</strong></p>
+
+<ul>
+  <li>Given: access to independent examples from <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}">, a reference distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}">, unit vector <img src="https://s0.wp.com/latex.php?latex=%7Bw%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w}"> in <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BR%7D%5E%7Bd%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{R}^{d}}">.</li>
+  <li>Output: Accept or Reject.</li>
+</ul>
+
+<ol>
+  <li>
+<img src="https://s0.wp.com/latex.php?latex=%7BS%5Cleftarrow%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S\leftarrow}"> {<img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}"> independent examples from <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}">}.</li>
+  <li>For all monomials <img src="https://s0.wp.com/latex.php?latex=%7Bm%3D%5Cprod_%7Bi%7Dx_%7Bi%7D%5E%7B%5Calpha_%7Bi%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{m=\prod_{i}x_{i}^{\alpha_{i}}}"> of total degree at most <img src="https://s0.wp.com/latex.php?latex=%7BO%281%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{O(1)}"> and integers <img src="https://s0.wp.com/latex.php?latex=%7Bi%5Cin%5Cleft%28-%5Cfrac%7B%5Csqrt%7B%5Clog1%2F%5Cvarepsilon%7D%7D%7B%5Cvarepsilon%7D%2C%5Cfrac%7B%5Csqrt%7B%5Clog1%2F%5Cvarepsilon%7D%7D%7B%5Cvarepsilon%7D%5Cright%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{i\in\left(-\frac{\sqrt{\log1/\varepsilon}}{\varepsilon},\frac{\sqrt{\log1/\varepsilon}}{\varepsilon}\right)}">:
+    <ol>
+      <li>
+        <p>Define</p>
+
+        <p>![\displaystyle \mathbf{1}<em>{w\cdot x\in[i\varepsilon,(i+1)\varepsilon]}=\begin{cases} 1 &amp; \text{if }w\cdot x\in[i\varepsilon,(i+1)\varepsilon]\ 0 &amp; \text{otherwise.} \end{cases} ](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cmathbf%7B1%7D</em>%7Bw%5Ccdot+x%5Cin%5Bi%5Cvarepsilon%2C%28i%2B1%29%5Cvarepsilon%5D%7D%3D%5Cbegin%7Bcases%7D+1+%26+%5Ctext%7Bif+%7Dw%5Ccdot+x%5Cin%5Bi%5Cvarepsilon%2C%28i%2B1%29%5Cvarepsilon%5D%5C%5C+0+%26+%5Ctext%7Botherwise.%7D+%5Cend%7Bcases%7D+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</p>
+      </li>
+      <li>
+        <p>If ![{\lvert\mathbb{E}<em>{x\sim S}[m(x)\mathbf{1}</em>{w\cdot x\in[i\varepsilon,(i+1)\varepsilon]}]-\mathbb{E}<em>{x\sim D</em>{\text{Assumption}}}[m(x)\mathbf{1}<em>{w\cdot x\in[i\varepsilon,(i+1)\varepsilon]}]\rvert&gt;\left(\varepsilon/d\right)^{O(1)}}](https://s0.wp.com/latex.php?latex=%7B%5Clvert%5Cmathbb%7BE%7D</em>%7Bx%5Csim+S%7D%5Bm%28x%29%5Cmathbf%7B1%7D_%7Bw%5Ccdot+x%5Cin%5Bi%5Cvarepsilon%2C%28i%2B1%29%5Cvarepsilon%5D%7D%5D-%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5Bm%28x%29%5Cmathbf%7B1%7D_%7Bw%5Ccdot+x%5Cin%5Bi%5Cvarepsilon%2C%28i%2B1%29%5Cvarepsilon%5D%7D%5D%5Crvert%3E%5Cleft%28%5Cvarepsilon%2Fd%5Cright%29%5E%7BO%281%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002), output Reject and terminate.</p>
+      </li>
+    </ol>
+  </li>
+  <li>If this step is reached, output Accept.</li>
+</ol>
+
+<hr>
+
+<p>Essentially, the algorithm above breaks the <img src="https://s0.wp.com/latex.php?latex=%7Bd%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d}">-dimensional space into strips along the vector <img src="https://s0.wp.com/latex.php?latex=%7Bw%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{w}"> and runs the degree-<strong><img src="https://s0.wp.com/latex.php?latex=%7BO%281%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{O(1)}"></strong> moment tester for each of the strips.</p>
+
+<p>Combining this Strip Tester with the Framework 2 algorithm of [<a href="https://proceedings.neurips.cc/paper/2020/hash/d785bf9067f8af9e078b93cf26de2b54-Abstract.html" rel="external nofollow noopener" target="_blank">DKTZ ’20</a>], yields an algorithm in Framework 3 with prediction error ![{O(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) and run-time <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}"> [<a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/7c319b62e2257b34cb0e1040ced2e007-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">DKKLZ ’23</a>, <a href="https://papers.nips.cc/paper_files/paper/2023/hash/204d9a9a4816a45909010587ffc3204b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GKSV ’23</a>, <a href="https://openreview.net/forum?id=z6n1fKMMC1" rel="external nofollow noopener" target="_blank">GKSV ’24</a>], where <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is the class of origin-centered linear classifiers.</p>
+
+<p>Moreover, like the Averaging Algorithm, this algorithm is <em>proper</em>, i.e. the hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> is itself a linear classifier. This addresses the second limitation of the Low Degree Algorithm we pointed out earlier.</p>
+
+<h3 id="32-assumption-tolerance-and-the-spectral-tester"><strong>3.2 Assumption-Tolerance and the Spectral Tester.</strong></h3>
+
+<p>Finally, we briefly discuss some recent work on addressing the third limitation of the Moment-Matching Tester described in the beginning of Section <a href="https://theory.report/atom.xml#secGoing-Beyond-Low-Degree" rel="external nofollow noopener" target="_blank">3</a>. To recap, the limitation is that the Moment-Matching Tester might reject distributions that are very close to the distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> but not exactly equal to it. To address this, the paper considers the following<a href="https://theory.report/atom.xml#5da9fe9e-2908-44f7-b5dd-3394397a0f9a" rel="external nofollow noopener" target="_blank">11</a> more stringent version of Framework 3:</p>
+
+<hr>
+
+<p><strong>Framework 4 [Tolerant Testable Framework]</strong> For any <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> and <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%2C%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}},}"> the learning algorithm should with high probability output a classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> with</p>
+
+<p>![\displaystyle \overbrace{\Pr_{x\sim D_{\text{Examples}}}[h(x)\neq f_{\text{noisy labels}}(x)]}^{\text{Prediction error of \ensuremath{h}.}}\leq\underbrace{\overbrace{\text{opt}<em>{\mathcal{C}}}^{\text{Optimal prediction error in \ensuremath{\mathcal{C}.}}}+\varepsilon}</em>{\text{\ensuremath{\text{Weaker guarantees such as O(\ensuremath{\text{opt}<em>{\mathcal{C}}})+\ensuremath{\varepsilon\ }also considered.}}}}. \ \ \ \ \ (2)](https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Coverbrace%7B%5CPr</em>%7Bx%5Csim+D_%7B%5Ctext%7BExamples%7D%7D%7D%5Bh%28x%29%5Cneq+f_%7B%5Ctext%7Bnoisy+labels%7D%7D%28x%29%5D%7D%5E%7B%5Ctext%7BPrediction+error+of+%5Censuremath%7Bh%7D.%7D%7D%5Cleq%5Cunderbrace%7B%5Coverbrace%7B%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%5E%7B%5Ctext%7BOptimal+prediction+error+in+%5Censuremath%7B%5Cmathcal%7BC%7D.%7D%7D%7D%2B%5Cvarepsilon%7D_%7B%5Ctext%7B%5Censuremath%7B%5Ctext%7BWeaker+guarantees+such+as+O%28%5Censuremath%7B%5Ctext%7Bopt%7D_%7B%5Cmathcal%7BC%7D%7D%7D%29%2B%5Censuremath%7B%5Cvarepsilon%5C+%7Dalso+considered.%7D%7D%7D%7D.+%5C+%5C+%5C+%5C+%5C+%282%29&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)</p>
+
+<p>Furthermore, for some absolute constant <img src="https://s0.wp.com/latex.php?latex=%7BC%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{C}">, if <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bdist%7D_%7B%5Ctext%7BTV%7D%7D%28D_%7B%5Ctext%7BExamples%7D%7D%2CD_%7B%5Ctext%7BAssumption%7D%7D%29%5Cleq+C%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{dist}_{\text{TV}}(D_{\text{Examples}},D_{\text{Assumption}})\leq C\varepsilon}">, then with high probability the learning algorithm should run in time <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}">.</p>
+
+<hr>
+
+<p>In [<a href="https://papers.nips.cc/paper_files/paper/2024/hash/e209210eae282e23e305df49fbb2769c-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GSSV ’24</a>], a general methodology is developed for designing algorithms in this more general framework. For example, when <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> is the Gaussian distribution and <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is the class of linear classifiers, a run-time of <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7B%5Ctilde%7BO%7D%281%2F%5Cvarepsilon%5E%7B2%7D%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{\tilde{O}(1/\varepsilon^{2})}}"> is achieved, matching the best algorithms in Frameworks 2 and 3.</p>
+
+<p>In brief, one of the key insights is that the degree-<img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}"> Moment-Matching tester can often be replaced by what is called the <em>degree-<img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}"> Spectral Tester</em>. Given a data-set <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}">, this tester checks that</p>
+
+<p><img src="https://s0.wp.com/latex.php?latex=%5Cdisplaystyle+%5Cmax_%7B%5Ctext%7Bdegree%7D-k%5Ctext%7B+polynomial+%7Dp%7D%5Cmathbb%7BE%7D_%7Bx%5Csim+S%7D%5B%28p%28x%29%29%5E%7B2%7D%5D%5Cleq+O%281%29%5Cmathbb%7BE%7D_%7Bx%5Csim+D_%7B%5Ctext%7BAssumption%7D%7D%7D%5B%28p%28x%29%29%5E%7B2%7D%5D.+&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="\displaystyle \max_{\text{degree}-k\text{ polynomial }p}\mathbb{E}_{x\sim S}[(p(x))^{2}]\leq O(1)\mathbb{E}_{x\sim D_{\text{Assumption}}}[(p(x))^{2}]. "></p>
+
+<p>The second insight is that the degree-<img src="https://s0.wp.com/latex.php?latex=%7Bk%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{k}"> Spectral Tester can be implemented in time <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7BO%28k%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{O(k)}}"> using an eigenvalue computation. The final insight<a href="https://theory.report/atom.xml#d7bfd691-edf6-4468-9965-ab5b7dba918c" rel="external nofollow noopener" target="_blank">12</a> is that when <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bdist%7D_%7B%5Ctext%7BTV%7D%7D%28D_%7B%5Ctext%7BExamples%7D%7D%2CD_%7B%5Ctext%7BAssumption%7D%7D%29%5Cleq+C%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{dist}_{\text{TV}}(D_{\text{Examples}},D_{\text{Assumption}})\leq C\varepsilon}"> one can remove <img src="https://s0.wp.com/latex.php?latex=%7BO%28%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{O(\varepsilon)}"> fraction of elements from <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}"> and have it pass the Spectral Tester. [<a href="https://papers.nips.cc/paper_files/paper/2024/hash/e209210eae282e23e305df49fbb2769c-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GSSV ’24</a>] designs an algorithm that efficiently finds which <img src="https://s0.wp.com/latex.php?latex=%7BO%28%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{O(\varepsilon)}"> fraction of elements needs to be removed from <img src="https://s0.wp.com/latex.php?latex=%7BS%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{S}"> to achieve this.</p>
+
+<h2 id="4-other-recent-work"><strong>4. Other recent work.</strong></h2>
+
+<p>This blog post focused on side-stepping the intractability of Framework 1 via making assumptions on the distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> and not making any assumptions on the labeling function <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}">. Yet, improved algorithms are possible when the labeling function <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}"> is also assumed to be well-behaved. For example, the <em>Random Classification Noise</em> assumption essentially presupposes that <img src="https://s0.wp.com/latex.php?latex=%7Bf_%7B%5Ctext%7Bnoisy+labels%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f_{\text{noisy labels}}}"> is formed by taking a hypothesis <img src="https://s0.wp.com/latex.php?latex=%7Bf%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{f}"> in the class <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> and flipping each function value with some probability <img src="https://s0.wp.com/latex.php?latex=%7B%5Ceta%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\eta}">. The work of [<a href="https://arxiv.org/abs/2501.09189" rel="external nofollow noopener" target="_blank">GKSV ’25</a>] gives algorithms for which (like in Framework 3) the failure of the Random Classification Noise assumptions can affect only the run-time rather than the accuracy guarantee. [<a href="https://arxiv.org/abs/2501.09189" rel="external nofollow noopener" target="_blank">GKSV ’25</a>] also designs such algorithms for the <em>Massart Noise</em> assumption that is far more general than the Random Classification Noise assumption.</p>
+
+<p>The work of [<a href="https://papers.nips.cc/paper_files/paper/2024/hash/06e9029d3d4d6cee71c5d9b8502f891b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">STW ’24</a>] shows how to use the Low-Degree Algorithm and the Moment-Matching Tester to get algorithms in Framework 3 for the challenging hypothesis class of polynomial threshold functions.</p>
+
+<p>The work of [<a href="https://papers.nips.cc/paper_files/paper/2023/hash/204d9a9a4816a45909010587ffc3204b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GKSV ’23</a>] extends Framework 3 to families of distributions. Rather than being required to run in time <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}"> only when <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%3DD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}=D_{\text{Assumption}}}"> for a specific distribution <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}">, the algorithms are required to run in time <img src="https://s0.wp.com/latex.php?latex=%7BT%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{T}"> when <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BExamples%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Examples}}}"> belongs to an entire family of distributions ![{\mathcal{D}<em>{\text{Assumption}}}](https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BD%7D</em>%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002). Designing such algorithms turns out to be intimately connected with the field of Sum-of-Squares relaxations [<a href="https://arxiv.org/abs/1711.07465" rel="external nofollow noopener" target="_blank">KS17</a>].</p>
+
+<p>[<a href="https://proceedings.mlr.press/v247/klivans24a.html" rel="external nofollow noopener" target="_blank">KKV24</a>, <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/e209210eae282e23e305df49fbb2769c-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GSSV’24</a>, <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/f8238b414fce7d91fedb896253545300-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">CKKSV’24</a>, <a href="https://proceedings.mlr.press/v247/klivans24b.html" rel="external nofollow noopener" target="_blank">KSV’24</a>] build on the approaches described here to <em>test distribution shift</em>, i.e. to test that the unlabeled data found during deployment of a classifier <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> comes from the same distribution as the training data. Similar to the test in Section <a href="https://theory.report/atom.xml#subsecMaking-Low-Degree-Algorithm" rel="external nofollow noopener" target="_blank">2.2</a>, the test is required to either guarantee that <img src="https://s0.wp.com/latex.php?latex=%7Bh%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{h}"> has a good prediction accuracy on this new dataset, or to detect that the new dataset came from a data distribution that differs from the distribution used during training.</p>
+
+<h2 id="5-open-problems"><strong>5. Open Problems.</strong></h2>
+
+<p>There are unsolved problems for all three frameworks we discussed today. Even in Framework 1, where there are still large gaps in our understanding of some basic problems:</p>
+
+<hr>
+
+<p><strong>Open problem 1:</strong> Is there an algorithm in Framework 1 with accuracy ![{\text{opt}<em>{\mathcal{C}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) and run-time bound <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7BO_%7B%5Cvarepsilon%7D%281%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{O_{\varepsilon}(1)}}">, when <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is the class of linear classifiers? What about algorithms with run-times <img src="https://s0.wp.com/latex.php?latex=%7B2%5E%7Bd%5E%7Bo%281%29%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{2^{d^{o(1)}}}"> or <img src="https://s0.wp.com/latex.php?latex=%7B2%5E%7Bo%28d%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{2^{o(d)}}"> when <img src="https://s0.wp.com/latex.php?latex=%7B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\varepsilon}"> is fixed to be a small constant (say <img src="https://s0.wp.com/latex.php?latex=%7B%5Cvarepsilon%3D0.01%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\varepsilon=0.01}">)?</p>
+
+<hr>
+
+<p>To the best of our understanding, assuming the Exponential Time Hypothesis, the NP-hardness results of [<a href="https://ieeexplore.ieee.org/document/4031389" rel="external nofollow noopener" target="_blank">GR’06</a>, <a href="https://ieeexplore.ieee.org/document/4031391" rel="external nofollow noopener" target="_blank">FGKP’06</a>] imply that no <img src="https://s0.wp.com/latex.php?latex=%7B2%5E%7Bo%28d%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{2^{o(d)}}">-time algorithm exists for this problem for a <em>proper</em> learning algorithm, i.e. an algorithm that itself outputs a linear classifier. However, when general <em>improper</em> algorithms are considered (i.e. algorithms with no restrictions on what classifier they can produce), no such hardness result is known.</p>
+
+<p>The following is an open question in Framework 2:</p>
+
+<hr>
+
+<p><strong>Open problem 2:</strong> Is there an algorithm in Framework 2 with accuracy ![{O(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) and run-time bound <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}">, when <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is the class of linear classifiers and <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> is the uniform distribution over <img src="https://s0.wp.com/latex.php?latex=%7B%5Cleft%5C%7B+%5Cpm1%5Cright%5C%7D+%5E%7Bd%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\left{ \pm1\right} ^{d}}">? What about algorithms with weaker accuracy bounds such as ![{\widetilde{O}(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Cwidetilde%7BO%7D%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) and ![{O(\sqrt{\text{opt}<em>{\mathcal{C}}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Csqrt%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002)?</p>
+
+<hr>
+
+<p>For a long time, we have had algorithms with run-time <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}"> and accuracy ![{O(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) when <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7Bassumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{assumption}}}"> is the standard Gaussian distribution [<a href="https://dl.acm.org/doi/10.1145/2591796.2591839" rel="external nofollow noopener" target="_blank">ABL ’14</a>, <a href="https://proceedings.neurips.cc/paper/2020/hash/d785bf9067f8af9e078b93cf26de2b54-Abstract.html" rel="external nofollow noopener" target="_blank">DKTZ ’20</a>, <a href="https://proceedings.mlr.press/v162/diakonikolas22b.html" rel="external nofollow noopener" target="_blank">DKTZ ’22</a>]. Ultimately, one would hope to achieve this for all product distributions over <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathbb%7BR%7D%5E%7Bd%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathbb{R}^{d}}"> and not only the Gaussian distribution, but even for the uniform distribution over <img src="https://s0.wp.com/latex.php?latex=%7B%5Cleft%5C%7B+%5Cpm1%5Cright%5C%7D+%5E%7Bd%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\left{ \pm1\right} ^{d}}"> such algorithms are yet to be developed.</p>
+
+<p>Finally, the following is an open question in Framework 3:</p>
+
+<hr>
+
+<p><strong>Open problem 3:</strong> Is there an algorithm in Framework 3 with accuracy ![{O(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) and run-time bound <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}">, when <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is the class of general linear classifiers and <img src="https://s0.wp.com/latex.php?latex=%7BD_%7B%5Ctext%7BAssumption%7D%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{D_{\text{Assumption}}}"> is the standard Gaussian distribution?</p>
+
+<hr>
+
+<p>Note that [<a href="https://proceedings.mlr.press/v247/diakonikolas24a.html" rel="external nofollow noopener" target="_blank">DKLZ’24</a>] gives an algorithm with a run-time bound <img src="https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bpoly%7D%28d%2F%5Cvarepsilon%29%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\text{poly}(d/\varepsilon)}"> and accuracy ![{O(\sqrt{\text{opt}<em>{\mathcal{C}}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Csqrt%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002), [<a href="https://dl.acm.org/doi/10.1145/3564246.3585117" rel="external nofollow noopener" target="_blank">RV ’23</a>, <a href="https://dl.acm.org/doi/10.1145/3564246.3585206" rel="external nofollow noopener" target="_blank">GKK ’23</a>] give algorithms with accuracy ![{\text{opt}<em>{\mathcal{C}}+\varepsilon}](https://s0.wp.com/latex.php?latex=%7B%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) and run-time <img src="https://s0.wp.com/latex.php?latex=%7Bd%5E%7B%5Ctilde%7BO%7D%281%2F%5Cvarepsilon%5E%7B2%7D%29%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{d^{\tilde{O}(1/\varepsilon^{2})}}">. As mentioned earlier, [<a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/7c319b62e2257b34cb0e1040ced2e007-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">DKKLZ ’23</a>, <a href="https://papers.nips.cc/paper_files/paper/2023/hash/204d9a9a4816a45909010587ffc3204b-Abstract-Conference.html" rel="external nofollow noopener" target="_blank">GKSV ’23</a>, <a href="https://openreview.net/forum?id=z6n1fKMMC1" rel="external nofollow noopener" target="_blank">GKSV ’24</a>] give algorithms with accuracy ![{O(\text{opt}<em>{\mathcal{C}})+\varepsilon}](https://s0.wp.com/latex.php?latex=%7BO%28%5Ctext%7Bopt%7D</em>%7B%5Cmathcal%7BC%7D%7D%29%2B%5Cvarepsilon%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002) but only when <img src="https://s0.wp.com/latex.php?latex=%7B%5Cmathcal%7BC%7D%7D&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002" alt="{\mathcal{C}}"> is the class of <em>origin-centered</em> linear classifiers.</p>
+
+<p><strong>Acknowledgements</strong></p>
+
+<p>We are grateful to Gautam Kamath, Adam Klivans, and Ronitt Rubinfeld for their valuable feedback on a draft of this blog post.</p>
+
+<p><strong>Footnotes</strong></p>
+
+<ol>
+  <li>A proof sketch: Draw $latex {N^{2}}&amp;fg=000000$ samples $latex {S}&amp;fg=000000$ from the Gaussian distribution and let $latex {D_{\text{sub-sample}}}&amp;fg=000000$ be uniform over $latex {S}&amp;fg=000000$. The distribution $latex {D_{\text{sub-sample}}}&amp;fg=000000$ is $latex {\Omega(1)}&amp;fg=000000$-far from Gaussian in total variation distance, but it can be shown that $latex {\Omega(N)}&amp;fg=000000$ samples are necessary to distinguish such $latex {D_{\text{sub-sample}}}&amp;fg=000000$ from the Gaussian distribution. We can take $latex {N}&amp;fg=000000$ to be arbitrarily large, so no finite-sample tester exists. <a href="https://theory.report/atom.xml#15aafd02-c12c-4db6-b4a0-4f893efdd1a6-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>One can also consider labels $latex {\left{ y_{i}\right} }&amp;fg=000000$ that are themselves random variables rather than a deterministic function of example $latex {x}&amp;fg=000000$. Everything is this blog post will apply to that setting as well. <a href="https://theory.report/atom.xml#30a9afd3-f30d-4c82-8879-cc2de2a0d64c-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>Throughout blog post, we will assume a success probability of (say) $latex {0.99}&amp;fg=000000$. This probability can be improved to $latex {1-\delta}&amp;fg=000000$ by repeating the process $latex {\log1/\delta}&amp;fg=000000$ times and selecting the classifier that does best on a fresh set of samples. <a href="https://theory.report/atom.xml#ebba8fcb-f5da-491f-bd59-92e53a33a4bc-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>Note: even for this easier task, no algorithm is known in Framework 2 with run-time better than $latex {2^{O(d)}}&amp;fg=000000$. <a href="https://theory.report/atom.xml#a367653b-0bd9-4068-ac43-a1ec745f36d5-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>Henceforth, for simplicity, when we say “a Framework 3 algorithm $latex {\mathcal{A}}&amp;fg=000000$ runs in time $latex {T}&amp;fg=000000$” we really mean “$latex {\mathcal{A}}&amp;fg=000000$ runs in time $latex {T}&amp;fg=000000$ when $latex {D_{\text{Examples}}=D_{\text{Assumption}}}&amp;fg=000000$” as Framework 3 does not require a run-time bound when $latex {D_{\text{Examples}}\neq D_{\text{Assumption}}}&amp;fg=000000$. <a href="https://theory.report/atom.xml#e18fc90b-639d-4ee0-bce9-3c77a7eaa096-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>If the algorithm runs longer than $latex {T}&amp;fg=000000$ or fails to output a classifier, stop and go to last step. <a href="https://theory.report/atom.xml#f0bd6d70-92ae-44be-9cd5-09cb8b45e961-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>The tester below generalizes the tester of [<a href="https://www.sciencedirect.com/science/article/pii/S0020019003003594" rel="external nofollow noopener" target="_blank">AGM ’03</a>, <a href="https://dl.acm.org/doi/abs/10.1145/1250790.1250863" rel="external nofollow noopener" target="_blank">AAKMRX ’07</a>, <a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol116-approx-random2018/LIPIcs.APPROX-RANDOM.2018.54/LIPIcs.APPROX-RANDOM.2018.54.pdf" rel="external nofollow noopener" target="_blank">OZ ’18</a>] for testing $latex {k}&amp;fg=000000$-wise independence. <a href="https://theory.report/atom.xml#e24c404f-9465-416b-9d59-3feddcf98899-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>Inspecting the general recipe described in this section, we see that, strictly speaking, to execute this recipe one needs not only a tester $latex {\mathcal{T}}&amp;fg=000000$ but also an algorithm $latex {\mathcal{A}’}&amp;fg=000000$ for class $latex {\mathcal{C}}&amp;fg=000000$ in Framework 1 (which is allowed to be very slow). Existence of such $latex {\mathcal{A}’}&amp;fg=000000$ is a very mild condition and holds for all concept classes $latex {\mathcal{C}}&amp;fg=000000$ for which this problem has been considered. <a href="https://theory.report/atom.xml#5da7233e-676e-42f9-8bc5-41c5198adc8a-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>To do this, one needs to show that none of the coefficients of $latex {p_{\text{up}}(x)-p_{\text{down}}(x)}&amp;fg=000000$ is too large, which turns out to be true. <a href="https://theory.report/atom.xml#010dd730-d676-4dad-b414-d8513a155208-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>For the rest of this subsection we will refer to Standard Gaussian distribution as simply Gaussian and origin-centered linear classifiers as simply linear classifiers. <a href="https://theory.report/atom.xml#8efb53cb-cccd-41c3-ae64-7e218cc109e9-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>The definition is inspired by the setting of tolerant property testing [<a href="https://www.sciencedirect.com/science/article/pii/S0022000006000444" rel="external nofollow noopener" target="_blank">PRR06</a>]. <a href="https://theory.report/atom.xml#5da9fe9e-2908-44f7-b5dd-3394397a0f9a-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+  <li>This last insight is closely related to the method used in [<a href="https://dl.acm.org/doi/abs/10.1145/3188745.3188754" rel="external nofollow noopener" target="_blank">DKS18</a>] to solve a different problem. <a href="https://theory.report/atom.xml#d7bfd691-edf6-4468-9965-ab5b7dba918c-link" rel="external nofollow noopener" target="_blank"><img src="https://s.w.org/images/core/emoji/16.0.1/72x72/21a9.png" alt="↩">︎</a>
+</li>
+</ol>
+
+<p>By avasilyan</p>
+
+<p><a href="https://www.let-all.com/blog/2025/07/21/testing-assumptions-of-learning-algorithms/" rel="external nofollow noopener" target="_blank">Read original post</a></p>
+
+    </div>
+  </article>
+
+
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2025 Gorav  Jindal. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
