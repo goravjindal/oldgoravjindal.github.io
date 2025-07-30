@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gil Kalai: Some Questions from Recent Quantum Events | Gorav  Jindal</title>
+    <meta name="author" content="Gorav  Jindal">
+    <meta name="description" content="Gorav Jindal's personal and academic webpage
+">
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
+
+    
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://goravjindal.github.io/cstheoryrss/2025/07/29/gil-kalai-some-questions-from-recent-quantum-events/">
+
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+    
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">Gorav </span>Jindal</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">About</a>
+              </li>
+              
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/cv/">CV</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/teaching/">Teaching</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/cstheoryrss/">CS Theory RSS</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Scrolling Progress Bar -->
+      <progress id="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </header>
+
+
+    <!-- Content -->
+    <div class="container mt-5">
+      
+        <!-- _layouts/post.html -->
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Gil Kalai: Some Questions from Recent Quantum Events</h1>
+    <p class="post-meta">July 29, 2025</p>
+    <p class="post-tags">
+      <a href="/blog/2025"> <i class="fas fa-calendar fa-sm"></i> 2025 </a>
+        ·  
+        <a href="/blog/category/cstheoryrss">
+          <i class="fas fa-tag fa-sm"></i> cstheoryrss</a>  
+          
+
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p>Over the past few years, I have given several lectures about quantum computation, presenting my argument for why quantum computing—and even significant early milestones toward it—are fundamentally impossible. Recently, I participated in a debate with <a href="https://researchprofiles.ku.dk/en/persons/matthias-christandl" rel="external nofollow noopener" target="_blank">Matthias Christandl</a> on the <a href="https://www.learned.cz/en/activities/news/quantum-duel-quantum-computers-do-they-exist-20-may-2025.html" rel="external nofollow noopener" target="_blank">possibility of quantum computing</a>, which took place in Prague. During these events, people raised many insightful questions. (Additional questions are welcome.)</p>
+
+<p>Below are (with some overlap) questions from talks at the Perimeter Institute, Rutgers University, The “<a href="https://www.learned.cz/en/activities/news/quantum-duel-quantum-computers-do-they-exist-20-may-2025.html" rel="external nofollow noopener" target="_blank">quantum duel”</a> with Matthias hosted by the Czech Learned Society, NextSilicon, and the Ethereum Foundation. (The lecture in Ethereum Foundation was in connection with the company’s hesitation about post-quantum cryptography; and some questions were related to this matter.) I conclude with a recent question (over FB) from Aram Harrow, who was my partner in a year-long debate in 2012.</p>
+
+<h3 id="perimeter-institute-dec-2022-video-three-questions-by-ray-laflamme">Perimeter Institute, Dec. 2022 <a href="https://pirsa.org/22120066" rel="external nofollow noopener" target="_blank">(video)</a>; Three questions by Ray Laflamme.</h3>
+
+<p>I recently heard the sad news that Ray Laflamme passed away. Ray Laflamme was an eminent researcher in both the theoretical and the experimental aspects of quantum computing. Here are  links to beautiful tributes to Ray by <a href="https://scottaaronson.blog/?p=8949" rel="external nofollow noopener" target="_blank">Scott Aaronson</a>, and by <a href="https://quantumfrontiers.com/2025/07/27/little-ray-of-sunshine/" rel="external nofollow noopener" target="_blank">Nicole Yunger Halpern.</a>  I met Ray in person <a href="https://scottaaronson.blog/?p=8949#comment-2011830" rel="external nofollow noopener" target="_blank">only once</a>, at a 2013 conference <em>QSTART,</em> which we organized in Jerusalem to inaugurate our Quantum Science Center.</p>
+
+<p>In my <a href="https://pirsa.org/22120066" rel="external nofollow noopener" target="_blank">lecture at PI</a> (click for abstract and video), Ray  (at 55:10) started the discussion with the following three questions:</p>
+
+<p><strong>Q1</strong>: In your “goal number three,” you mentioned surface codes, and and there were very nice experiments from the summer (2022) that Google published with surface codes of distance 3 with 17 qubits and another one of distance 5 with 49 qubits. They showed that by using distance 5 they had a slight improvement of the effective error rate. Would this experiment, if it becomes better and go to distance 7 and 9, shed doubts on your argument that quantum computers are impossible?</p>
+
+<p><strong>Q2</strong>: About the lowest realistic possible rate of noise that you refer to as a fundamental constant of nature ( <img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/1f642.png" alt="🙂">  ); do you have a number for that?</p>
+
+<p><strong>Q3</strong>: Does this putative “constant of nature” tells us there is something wrong with quantum mechanics?</p>
+
+<p>There were a several follow-up questions and comments including by Lee Smolin and by Debbie Leung (for Ray’s Q3) and by Latham Boyle (who hosted the lecture) and others (for Ray’s Q2). Latham asked about the details of the argument that I presented in the lecture in order to verify that it is not circular—namely, he questioned whether the argument implicitly assumes that gate errors cannot be decreased below the threshold in order to derive this as a conclusion. (I explained why the argument is indeed not circular.)</p>
+
+<p><a href="https://gilkalai.wordpress.com/wp-content/uploads/2025/07/rl13-8.png" rel="external nofollow noopener" target="_blank"><img src="https://gilkalai.wordpress.com/wp-content/uploads/2025/07/rl13-8.png?w=640" alt=""></a></p>
+
+<p>A question from me to Ray Laflamme in our <a href="https://gilkalai.wordpress.com/2013/04/12/qstart/" rel="external nofollow noopener" target="_blank">QSTART</a> conference, July 2013; Ray gave a beautiful <a href="https://youtu.be/F4K1qL44icw?si=I3vrpp-PttP19RCJ" rel="external nofollow noopener" target="_blank">opening talk</a> on experimental quantum error correction.</p>
+
+<h3 id="physics-colloquium-hosted-by-daniel-friedan-in-rutgers-university-2022">
+<a href="https://www.physics.rutgers.edu/colloqvid/GMT20221019.mp4" rel="external nofollow noopener" target="_blank">Physics colloquium</a> hosted by Daniel Friedan in Rutgers University, 2022</h3>
+
+<p>In October 2022, I gave the <a href="https://physics.rutgers.edu/events/events-calendar/icalrepeat.detail/2022/10/19/8148/-/the-argument-against-quantum-computers" rel="external nofollow noopener" target="_blank">physics colloquium</a> at Rutgers University. Here is <a href="https://www.physics.rutgers.edu/colloqvid/GMT20221019.mp4" rel="external nofollow noopener" target="_blank">the video recording</a>.</p>
+
+<p><strong>Q4</strong> <a href="https://www.physics.rutgers.edu/~coleman/" rel="external nofollow noopener" target="_blank">Pierre [Coleman]:</a> The crucial test for any theory in physics is whether it can be falsified. I did not see in all your proposals how we can test if your theory is correct or false. Do you have a proposed experiment?</p>
+
+<p><strong>Q5</strong> <a href="https://physics.rutgers.edu/people/faculty-list/faculty-profile/thomas-scott" rel="external nofollow noopener" target="_blank">Scott [Thomas]</a>: How do your ideas impact proposals for topological quantum computers?</p>
+
+<p><strong>Q6</strong> <a href="https://physics.rutgers.edu/people/faculty-list/faculty-profile/banks-tom" rel="external nofollow noopener" target="_blank">Tom Banks</a>: Why is it hard to compute permanents (in view of techniques that apply to Gaussian ensembles and are used for quantum field theory)?</p>
+
+<p><strong>Q7</strong> <a href="https://sites.rutgers.edu/ananda-roy/" rel="external nofollow noopener" target="_blank">Ananda Roy</a>: Isn’t <a href="https://gilkalai.wordpress.com/wp-content/uploads/2025/07/ldp2.jpg" rel="external nofollow noopener" target="_blank">the bulb</a> describing your computational class LDP getting larger and larger with smaller error rates?</p>
+
+<p><strong>Q8</strong> <a href="https://en.wikipedia.org/wiki/Daniel_Friedan" rel="external nofollow noopener" target="_blank">Daniel Friedan</a>: Physicists have a tendency to regard any mathematical theorem referring to their work as a challenge to evade the theorem’s assumptions. In this spirit, would a very special local form of noise for boson sampling evade the conclusion of your theorem?</p>
+
+<h2 id="the-quantum-duel-with-matthias-christandl">The Quantum Duel with Matthias Christandl</h2>
+
+<p><a href="https://gilkalai.wordpress.com/wp-content/uploads/2025/07/duel1.jpg" rel="external nofollow noopener" target="_blank"><img src="https://gilkalai.wordpress.com/wp-content/uploads/2025/07/duel1.jpg?w=640" alt=""></a></p>
+
+<p>Here are some questions from the duel. The <a href="https://www.learned.cz/en/activities/news/quantum-duel-quantum-computers-do-they-exist-20-may-2025.html" rel="external nofollow noopener" target="_blank">quantum duel with Matthias</a> and the entire week organized by the <a href="https://www.learned.cz/en/" rel="external nofollow noopener" target="_blank">Czech Learned Society</a> were thought-provoking, and I will devote a special post to it. <strong>Q9-Q23</strong> below were raised and discussed in the second hour of the debate.</p>
+
+<p><strong>Q9</strong> (from the audience to Gil): You claimed that there is a fundamental obstacle to quantum computation; it was not concrete, what is the nature of your objection.</p>
+
+<p><strong>Q10</strong>  (Matthias to Gil): You claim that noise will remain above a certain constant. If true this will be an obstacle. What is the number?! (Once we have the number, we have it now on tape, we can see in a few years if we beat this number, yes or no!</p>
+
+<p><strong>Q10</strong> (Follow-up question from Matthias): Now, that I got this number, how does this constant come from quantum physics (or from some modification of quantum mechanics)?!</p>
+
+<p><strong>Q11</strong> (<a href="https://kam.mff.cuni.cz/~loebl/" rel="external nofollow noopener" target="_blank">Martin Loebl</a>, our host, addressed  to both of us): Why do these quantum computers (and quantum error-correction) not exist in nature?</p>
+
+<p><strong>Q12</strong> <a href="https://en.wikipedia.org/wiki/Ronald_de_Wolf" rel="external nofollow noopener" target="_blank">Ronald de Wolf</a> to Gil (from chat): Noisy classical circuits are a special class of noisy quantum circuits. If noisy quantum circuits can only compute some low level complexity class then the same should be true for noisy classical circuits.  (In other words, if quantum computation is not possible why is classical computation possible?)</p>
+
+<p><strong>Q13</strong> (from chat to Mathias): Do you believe that Majorana Zero Modes can generate topological quantum qubits?</p>
+
+<p><strong>Q14</strong>: (Alexander Zykov): Let’s assume that the noisy quantum circuits will always remain noisy (above the threshold). Can we still use them for accelerating classical computation or achieving useful approximations?</p>
+
+<p><strong>Q15</strong> (to Gil): Do Google’s 2024 error correcting codes falsify your argument?</p>
+
+<p><strong>Q16</strong> to Matthias: Earlier you claimed that we are quantum computers. Can you please factor 1522605027922533360535618378132637429718068114961380688657908494580122963258952897654000350692006139?</p>
+
+<p><strong>Q17</strong> Implementations are energy-inefficient, at least for ion trapped quantum computation.  Wouldn’t this be a problem for scaling?</p>
+
+<p><strong>Q18</strong> Can “expectation bias”  cause researchers and the community to misjudge the quality of experiments?</p>
+
+<p><strong>Q19</strong> How large numbers can we factor in 10 years?</p>
+
+<p><strong>Q20</strong> (<a href="https://en.wikipedia.org/wiki/Marc_M%C3%A9zard" rel="external nofollow noopener" target="_blank">Marc Mézard</a>): We do have efficient quantum devices; Is it possible, then, that QC in the next 50 years will achieve only niche computation and not universal quantum computation?</p>
+
+<p><strong>Q21</strong> Given Gil’s argument about  NISQ systems,  Why isn’t it considered an open and shut case? Why do we still have debate? Why is this argument dismissed by the experts?</p>
+
+<p><strong>Q22</strong>  (to Gil:) What is the significance of the intermediate scale in your argument?</p>
+
+<p><strong>Q23</strong> (to Matthias) With quantum computers will we observe superposition of macroscopic systems?</p>
+
+<p>Some <a href="https://app.sli.do/event/arNRx6NJFsqSrPbdsk5UYZ/live/questions" rel="external nofollow noopener" target="_blank">additional questions</a> were asked in chat during the live streaming but we did not get to them in the debate itself. (I wrote my answers to some of them and they are presented in the <a href="https://www.learned.cz/en/activities/news/quantum-duel-gil-kalai-matthias-christandl-a-recording-of-the-debate.html" rel="external nofollow noopener" target="_blank">debate’s website</a>.)</p>
+
+<p><strong>Q 24</strong> (Addressed to both Gil and Matthias, from chat): Why do both of you regard the claims about quantum topological qubits as unconvincing.</p>
+
+<p><strong>Q25</strong> (to Gil): From what I understand, you believe this is an engineering challenge and not exactly a matter of physics (theoretical, to be precise). If yes, should not the debate involve a quantum engineer?</p>
+
+<p><strong>Q26</strong> (to both): Could you both debate more about where your models of quantum computers differ? How is it possible that you reach different conclusions?</p>
+
+<p><strong>Q27</strong>  (Addressed to both participants): Two-qubit gates always involve non-computational states, introducing a tradeoff between speed, leakage and errors (when “fixing” the leakage). That might be a microscopic origin of irreducible noise. Do we have definite knowledge about the impact of non-computational states on the error rates?</p>
+
+<p><strong>Q28</strong>   to Gil: in your answer to Ronald you mentioned that LDP of NISQ is not an obstacle to harder classical computation. Why may it also NOT be an obstacle to fault-tolerant quantum computation? What is your precise argument for why easiness of NISQ implies impossibility of quantum fault-tolerance?</p>
+
+<p><strong>Q29</strong> Jiří Kolafa to both: If we combine n physical qubits into one logical qubit, how does the noise reduce? As poly(1/n) or exp(-kn)? In the 2nd case, I believe q computing…</p>
+
+<p><strong>Q30</strong> “Dulwich Quantum” to both: Will quantum computers solve climate change?</p>
+
+<p><strong>Q31</strong> (to Gil):  Do I understand correctly that the claim that NISQ devices are limited to some computational class is based on experimental results from NISQ devices? Does this necessarily apply to all possible quantum hardware? Why would this imply that a fault tolerant computer couldn’t be built at all?</p>
+
+<p><strong>Q32:</strong> Prof. Kalai, I understand your argument as follows: because of an assumed complexity barrier, there is an engineering barrier. Is that correct? If so, assuming that fault-tolerant CQ are built, will it imply fundamental progress in complexity theory?</p>
+
+<p><strong>Q33</strong> (to Gil)<strong>:</strong> Large parts of computational complexity are based on certain computational complexity hypotheses. Isn’t it too brave to dismiss the existence of quantum computers based on something we are not sure is actually correct?</p>
+
+<h3 id="nextsilicon">NextSilicon</h3>
+
+<p>I gave a lecture on the quantum computing debate at <a href="https://www.nextsilicon.com/" rel="external nofollow noopener" target="_blank">NextSilicon</a>, hosted by <a href="https://www.linkedin.com/in/jdevor/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&amp;originalSubdomain=il" rel="external nofollow noopener" target="_blank">Jonathan Devor</a> and <a href="https://codeguru.co.il/classic/oded.html" rel="external nofollow noopener" target="_blank">Oded Margalit</a>, and there were many good questions both during the official (recorded) question period and afterwards. <a href="https://drive.google.com/file/d/1vc-6cgeJFN0GaGKK4KyKXBT1NZfv-D2-/view?usp=gmail" rel="external nofollow noopener" target="_blank">The video of the lecture is here</a>. Since I neglected to send a title and abstract, my hosts generously filled the gap with the dramatic headline: <em>“Doomed to Fail: Why Quantum Supremacy Is Not the Future of Computing.”</em> When <a href="https://gilkalai.wordpress.com/wp-content/uploads/2025/07/nson.png" rel="external nofollow noopener" target="_blank">I saw it</a> I suggested a more neutral title, but, apparently, for a few days, this title caused some small panic and led to protests from technology funds with investments in quantum computing.</p>
+
+<p><strong>Q34:</strong> Can you say a word or two on the Fourier analysis?</p>
+
+<p><strong>Q35:</strong> What about the recent declarations of experiments using the Google Willow quantum computers</p>
+
+<p><strong>Q36:</strong> Most of the applications of classical computers are based on heuristics. Do you expect heuristics that will allow further applications of quantum computers.</p>
+
+<p>Another question (<strong>Q37</strong>) that I was asked after the lecture was whether Gentry’s fully homomorphic encryption scheme can be a basis for quantum fault-tolerance methods.</p>
+
+<h3 id="ethereum-foundations-lecture">Ethereum Foundation’s lecture</h3>
+
+<p>Usually my policy is not to get involved in policy matters about quantum computation and let my papers speak for themselves. (I did make a small exception <a href="https://gilkalai.wordpress.com/2022/05/26/waging-war-on-quantum/" rel="external nofollow noopener" target="_blank">in this post</a> where I proposed to wait before any implementation of post-quantum cryptography until there is a firm demonstration of DiVincenzo stages 3–4.) However, when <a href="https://sites.google.com/view/matanprasmashomepage/about" rel="external nofollow noopener" target="_blank">Matan Prasma</a> asked me to talk at the <a href="https://ethereum.foundation/" rel="external nofollow noopener" target="_blank">Ethereum Foundation</a> in connection with the company’s hesitation about post-quantum cryptography, I decided to make another exception, largely because of my appreciation for Matan from his days as a brilliant student at HUJI. The lecture titled <a href="https://www.youtube.com/live/HhWWkTkaXSI" rel="external nofollow noopener" target="_blank">A Critical Look on Quantum Computing</a> (click for You Tube) briefly described both my assessment of where we stand now and my argument regarding what we can expect in the future.</p>
+
+<p><strong>Q38:</strong> When do you expect we will know with high assurance whether quantum computers are possible?</p>
+
+<p><strong>Q39:</strong> What is your opinion on recent progress on squeezing states and error correction?</p>
+
+<p><strong>Q40:</strong> More generally, from a risk management point of view, how should existing crypto systems prepare (or should they not) for quantum computing (being akin to meteorite risk: low probability, high impact)?”</p>
+
+<p><strong>Q41:</strong> Is it possible to build quantum computers outside the NISQ paradigm?</p>
+
+<p><strong>Q42:</strong> What would a compelling experiment look like to you, one that might start challenge your current beliefs?</p>
+
+<p><strong>Q43:</strong> what about the possibility of fantastic achievements that are kept secret for national security reasons?</p>
+
+<p><strong>Q44:</strong> Can you repeat the argument that NISQ systems are confined to a low complexity class LDP?</p>
+
+<p><strong>Q45:</strong> Can error-pruned noisy quantum computers still reduce the amount of work needed to break certain crypto systems or be useful for some other computational purposes? Can NISQ computers be useful before fault-tolerant quantum computers?</p>
+
+<p><strong>Q46:</strong> We heard that the progress in quantum computing depends on the engineering effort invested in the project and once we pass a certain limit we can expect a “Manhattan-type” investment. What do you think about that?</p>
+
+<p><strong>Q47:</strong> Gil, why do you think people working in this field disagree with you? <br>
+Why is it the case that experts in quantum computations are not convinced by your argument?</p>
+
+<h3 id="a-blast-from-the-past-facebook-discussion-with-aram-harrow-july-2025">A blast from the past: Facebook discussion with <a href="https://en.wikipedia.org/wiki/Aram_Harrow" rel="external nofollow noopener" target="_blank">Aram Harrow</a> (July, 2025)</h3>
+
+<p>Aram and I conducted a year-long debate in 2012 about quantum fault tolerance and later met in 2013 at MIT. We recently “met” in a Facebook discussion comparing randomness and quantumness and ended with a cozy exchange of remarks.</p>
+
+<p><strong>Q48</strong> (Aram to Gil): Are you saying that <a href="https://arxiv.org/abs/1409.3093" rel="external nofollow noopener" target="_blank">1409.3093</a> [Kalai-Kindler 2014] proved a lower bound on the achievable noise rate of linear optics?</p>
+
+<p>(Gil to Aram, abbreviated): <strong>Yes!</strong></p>
+
+<p>By Gil Kalai</p>
+
+<p><a href="https://gilkalai.wordpress.com/2025/07/30/some-questions-from-recent-quantum-events/" rel="external nofollow noopener" target="_blank">Read original post</a></p>
+
+    </div>
+  </article>
+
+
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2025 Gorav  Jindal. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+
+      </div>
+    </footer>
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+    
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js"></script>
+
+  <!-- Bootstrap Table -->
+  <link defer rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.css">
+  <script defer src="https://unpkg.com/bootstrap-table@1.21.3/dist/bootstrap-table.min.js"></script>
+
+  <!-- Load Common JS -->
+  <script src="/assets/js/no_defer.js"></script>
+  <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    
+    
+
+<!-- Scrolling Progress Bar -->
+<script type="text/javascript">
+  /*
+   * This JavaScript code has been adapted from the article 
+   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
+   * published on the website https://css-tricks.com on the 7th of May, 2014.
+   * Couple of changes were made to the original code to make it compatible 
+   * with the `al-foio` theme.
+   */
+  const progressBar = $("#progress");
+  /*
+   * We set up the bar after all elements are done loading.
+   * In some cases, if the images in the page are larger than the intended
+   * size they'll have on the page, they'll be resized via CSS to accomodate
+   * the desired size. This mistake, however, breaks the computations as the
+   * scroll size is computed as soon as the elements finish loading.
+   * To account for this, a minimal delay was introduced before computing the
+   * values.
+   */
+  window.onload = function () {
+    setTimeout(progressBarSetup, 50);
+  };
+  /*
+   * We set up the bar according to the browser.
+   * If the browser supports the progress element we use that.
+   * Otherwise, we resize the bar thru CSS styling
+   */
+  function progressBarSetup() {
+    if ("max" in document.createElement("progress")) {
+      initializeProgressElement();
+      $(document).on("scroll", function() {
+        progressBar.attr({ value: getCurrentScrollPosition() });
+      });
+      $(window).on("resize", initializeProgressElement);
+    } else {
+      resizeProgressBar();
+      $(document).on("scroll", resizeProgressBar);
+      $(window).on("resize", resizeProgressBar);
+    }
+  }
+  /*
+   * The vertical scroll position is the same as the number of pixels that
+   * are hidden from view above the scrollable area. Thus, a value > 0 is
+   * how much the user has scrolled from the top
+   */
+  function getCurrentScrollPosition() {
+    return $(window).scrollTop();
+  }
+
+  function initializeProgressElement() {
+    let navbarHeight = $("#navbar").outerHeight(true);
+    $("body").css({ "padding-top": navbarHeight });
+    $("progress-container").css({ "padding-top": navbarHeight });
+    progressBar.css({ top: navbarHeight });
+    progressBar.attr({
+      max: getDistanceToScroll(),
+      value: getCurrentScrollPosition(),
+    });
+  }
+  /*
+   * The offset between the html document height and the browser viewport
+   * height will be greater than zero if vertical scroll is possible.
+   * This is the distance the user can scroll
+   */
+  function getDistanceToScroll() {
+    return $(document).height() - $(window).height();
+  }
+
+  function resizeProgressBar() {
+    progressBar.css({ width: getWidthPercentage() + "%" });
+  }
+  // The scroll ratio equals the percentage to resize the bar
+  function getWidthPercentage() {
+    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+  }
+</script>
+
+  </body>
+</html>
