@@ -143,6 +143,31 @@
 <ul id="posts-list">
     
       <li>
+        <a href="/cstheoryrss/2025/08/01/property-testing-review-news-for-july-2025/">Property Testing Review: News for July 2025</a> — <small>2025-08-01</small>
+        <p>Finally, a post on the first! This month we have four papers, on understanding Nash Equilibria, deeper meditations on distribution testing, subline...</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/01/eccc-papers-tr25-108-efficient-randomized-strong-2-source-non-malleable-extractor-for-any-linear-min-entropy/">ECCC Papers: TR25-108 | Efficient randomized strong 2-source non-malleable extractor for any linear min-entropy. |</a> — <small>2025-08-01</small>
+        <p>Randomness is a fundamental requirement in cryptographic systems, enabling secure encryption, commitments, and zero-knowledge proofs. However, real...</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/01/cci-jobs-faculty-at-university-of-north-florida-apply-by-september-29-2025/">CCI: jobs: Faculty at University of North Florida (apply by September 29, 2025)</a> — <small>2025-08-01</small>
+        <p>Tenure-track Assistant Professor. Research in theoretical computer science preferred. Two courses per semester teaching load. The School of Computi...</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/01/decentralized-thoughts-graded-dispersal-with-perfect-security/">Decentralized Thoughts: Graded dispersal with perfect security</a> — <small>2025-08-01</small>
+        <p>In a previous post we covered the basics of Asynchronous Verifiable Information Dispersal (AVID) and the classic AVID of Cachin and Tessaro, 2004. ...</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/01/cci-jobs-postdoc-and-phd-student-in-graph-algorithms-at-tel-aviv-university-apply-by-november-1-2025/">CCI: jobs: Postdoc and PhD student in graph algorithms at Tel Aviv University (apply by November 1, 2025)</a> — <small>2025-08-01</small>
+        <p>Applications are invited for postdoc and PhD positions at the group of Shay Solomon, funded by an ERC starting grant. Candidates should have resear...</p>
+      </li>
+    
+      <li>
         <a href="/cstheoryrss/2025/08/01/scott-aaronson-quantum-complexity-theory-student-project-showcase-5-2025-edition/">Scott Aaronson: Quantum Complexity Theory Student Project Showcase #5 (2025 Edition)!</a> — <small>2025-08-01</small>
         <p>Sorry for the long blog-hiatus! I was completely occupied for weeks, teaching an intensive course on theoretical computer science to 11-year-olds (...</p>
       </li>
@@ -2767,6 +2792,36 @@ of any “grid” that respects the “symmetries” of the grid, and show that 
 
 <script>
   const posts = [
+    
+    {
+      "title": "Property Testing Review: News for July 2025",
+      "url": "/cstheoryrss/2025/08/01/property-testing-review-news-for-july-2025/",
+      "content": "Finally, a post on the first! This month we have four papers, on understanding Nash Equilibria, deeper meditations on distribution testing, sublinear average degree estimation, and a paper on degree distributions that I’m quite excited to see.\n\nProtocols for Verifying Smooth Strategies in Bandits and Games by Miranda Christ, Daniel Reichman, and Jonathan Shafer (arXiv). Consider a (k)-player game where each player has (n) options. Given a (mixed) strategy for each player, we would like to know if this is an approximate Nash equilibrium. But think of (n) as extremely large, so algorithms need to be sublinear in (n). This is a natural requirement, since in many real-world games, the independent options come from an extremely large space. This paper studies this setting from the verification perspective. Assume the algorithm/verifier can communicate with an all powerful prover, and has access to the game matrix/tensor. We want to verifier to make sublinear queries to the game and have sublinear communication (in bits) with the prover. The main result shows that, under some “smoothness” condition on the near equilibrium strategies, one can actually get such sublinear verifiers for Nash equilibria. The starting results in the paper are for the simpler multi-armed bandit setting, which are generalized to more complex games.\n\nFaster Estimation of the Average Degree of a Graph Using Random Edges and Structural Queries by Lorenzo Beretta, Deeparnab Chakrabarty, and C. Seshadhri (arXiv). The problem of estimating the average degree of a graph in sublinear time is an old and classic problem. In a seminal work, Goldreich-Ron gave ((1+\\varepsilon))-approximations with (\\widetilde{O}(\\sqrt{n})) queries, where (n) is the number of vertices. (Up to (\\log n, \\varepsilon) factors, the bound is optimal.) This works in the classic model where an algorithm can sample uar vertices, query degrees, and get neighbors. Suppose uar edges are also available. In that case, Motwani-Panigrahy-Xu give an algorithm that makes (\\widetilde{O}(n^{1/3})) queries. What if one can also query pairs to check if they are edges? This is a standard operation in sublinear graph algorithms. Interestingly, this paper gives an (\\widetilde{O}(n^{1/4})) query algorithm for this setting. And, if one can get the entire adjacency list in a single query (common in the study of web networks), then there is an (\\widetilde{O}(n^{1/5})) query algorithm for this setting. This paper, following Beretta-Tetek, also studies the case where the number of vertices (n) is unknown, in which case the previous complexities change. Overall, there is a nuanced picture of the complexity of estimating the average degree.\n\nTowards Tight Bounds for Estimating Degree Distribution in Streaming and Query Models by Arijit Bishnu, Debarshi Chanda, Gopinath Mishra (arXiv). In network science, which is study of real-world large graphs, probably one of the most important graph parameters studied is the degree distribution. Formally, let (N(d)) be the number of vertices of degree (d). The set ({N(d)}) is sometimes called the “degree distribution”, though to be precise, it is the “complementary cumulative degree histogram” (ccdh). There is a rich applied history of estimating the ccdh, but the only truly sublinear bound was given by Eden-Jain-Pinar-Ron-Seshadhri. The actual complexity was a little involved, and your truly had posed (in WOLA 2019) the question of determining the optimal bound. Which, I’m happy to say, this paper has nailed down. Ignoring log factors, the complexity is (\\Theta(m/h)), where (m) is the number of edges and (h) is the, well, (h)-index of the degree distribution (the largest number (k) such that there are at least (k) vertices of degree at least (k)). The algorithm, which is similar to the previous result, is eminently practical and uses a combination of vertex and edge sampling to estimate different part of the distribution. Moreover, the algorithm can be implemented in the streaming setting.\n\nLocation-Invariant Properties of Functions versus Properties of Distributions: United in Testing but Separated in Verification by Oded Goldreich and Guy Rothblum (ECCC). Let us build up the distribution testing context. Consider a distribution (\\mathcal{D}) over universe ([n]). In the standard distribution testing setup, the tester gets samples from this distribution and has to (approximately) decide some property. One could imagine that there is an underlying space/function that actually generates this distribution. So think of (f:[m] \\to [n]), where (\\mathcal{D}(i)) is the fraction of the domain values (j) where (f(j) = i). A distribution property can be translated to the property/set of functions that induce the desired distributions. In the latter setting, there is more power, since a tester can explicitly query (j \\in [m]) to get (f(j)). (While, in the distribution setting, the tester merely gets (f(j)) for a uar (j \\in [m]).) It turns out that property testing in both settings are basically equivalent. This paper shows, to the contrary, there is a gap between these settings for the verification problem. Consider “doubly sublinear interactive protocols”, so that verifer must run with queries sublinear to the vanilla testing complexity, and the honest prover must run in queries sublinear to the learning complexity. For the classic uniformity testing problem, there is no such interactive protocol in the distribution testing setting. But, interestingly, there is a “doubly sublinear interactive protocol” in the functional setting, where the tester can get (o(\\sqrt{n})) to verify uniformity.\n\nBy Seshadhri\n\nRead original post\n"
+    },
+    
+    {
+      "title": "ECCC Papers: TR25-108 | Efficient randomized strong 2-source non-malleable extractor for any linear min-entropy. |",
+      "url": "/cstheoryrss/2025/08/01/eccc-papers-tr25-108-efficient-randomized-strong-2-source-non-malleable-extractor-for-any-linear-min-entropy/",
+      "content": "Randomness is a fundamental requirement in cryptographic systems, enabling secure encryption, commitments, and zero-knowledge proofs. However, real-world randomness sources often suffer from weaknesses that adversaries can exploit, leading to significant security vulnerabilities. While deterministic randomness extraction from a single min-entropy source is impossible, two-source extractors provide a robust solution by generating nearly uniform randomness from two independent weak sources. Moreover, cryptographic systems must also be resilient to leakage and tampering attacks, necessitating the development of non-malleable two-source extractors.\nIn this work, we construct a two-source non-malleable extractor in the Common Reference String (CRS) model, where a random low-degree polynomial is sampled once and made accessible to independent random sources, the distinguisher, and the tamperer. Our extractor requires only linear min-entropy in both sources and doesn’t rely on strong computational assumptions, in contrast to prior constructions requiring computational assumptions such as sub-exponential hardness of the Decisional Diffie-Hellman (DDH) problem. Notably, our construction builds upon and relies on the recent breakthrough proof of the polynomial Freiman-Ruzsa conjecture. A connection of the Freiman-Ruzsa conjecture with two-source extractors was considered in prior work [ZBS11],[AGMR24], but their construction did not achieve non-malleability.\nOur results advance the state of non-malleable cryptographic primitives, with applications in secure storage, leakage-resilient cryptography, and privacy amplification. By eliminating the need for strong computational hardness assumptions, our techniques provide a more foundational and widely applicable method for randomness extraction.\nWe also show, that the requirements on CRS for our application are so mild that the CRS can be sampled with 2 party computation even when one of the parties is malicious (setting in which establishing unbiased coins is impossible).\n\nRead original post\n"
+    },
+    
+    {
+      "title": "CCI: jobs: Faculty at University of North Florida (apply by September 29, 2025)",
+      "url": "/cstheoryrss/2025/08/01/cci-jobs-faculty-at-university-of-north-florida-apply-by-september-29-2025/",
+      "content": "Tenure-track Assistant Professor. Research in theoretical computer science preferred. Two courses per semester teaching load. The School of Computing offers BS in computer science, data science, info. technology, info. science, FinTech, a Masters, and a PhD. See https://www.unf.edu/ccec/computing/\n\nSuccessful candidates must have earned Ph.D. degree by August 2026 in the field of Computing.\n\nWebsite: https://unf.wd5.myworkdayjobs.com/unfjobs/job/Jacksonville-FL/Assistant-Professor—School-of-Computing_JR102046\nEmail: sandeep.reddivari@unf.edu\n\nBy shacharlovett\n\nRead original post\n"
+    },
+    
+    {
+      "title": "Decentralized Thoughts: Graded dispersal with perfect security",
+      "url": "/cstheoryrss/2025/08/01/decentralized-thoughts-graded-dispersal-with-perfect-security/",
+      "content": "In a previous post we covered the basics of Asynchronous Verifiable Information Dispersal (AVID) and the classic AVID of Cachin and Tessaro, 2004. That protocol allows a sender to disperse a message of $O(n\\log n)$ bits at a cost of just $O(n^2 \\log^2 n)$ bits. However, It incurs a $O(\\log…\n\nRead original post\n"
+    },
+    
+    {
+      "title": "CCI: jobs: Postdoc and PhD student in graph algorithms at Tel Aviv University (apply by November 1, 2025)",
+      "url": "/cstheoryrss/2025/08/01/cci-jobs-postdoc-and-phd-student-in-graph-algorithms-at-tel-aviv-university-apply-by-november-1-2025/",
+      "content": "Applications are invited for postdoc and PhD positions at the group of Shay Solomon, funded by an ERC starting grant. Candidates should have research interests that overlap with our group.\nThe start date is flexible, solid travel grants are provided, and a remote option may also be possible.\nTo apply, send a CV and research statement, and arrange for three letters of recommendation.\n\nWebsite: https://sites.google.com/site/soloshay/\nEmail: shayso@tauex.tau.ac.il\n\nBy shacharlovett\n\nRead original post\n"
+    },
     
     {
       "title": "Scott Aaronson: Quantum Complexity Theory Student Project Showcase #5 (2025 Edition)!",
