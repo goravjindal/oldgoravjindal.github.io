@@ -143,6 +143,40 @@
 <ul id="posts-list">
     
       <li>
+        <a href="/cstheoryrss/2025/08/06/arxiv-data-structures-and-algorithms-when-is-string-reconstruction-using-de-bruijn-graphs-hard/">arXiv: Data Structures and Algorithms: When is String Reconstruction using de Bruijn Graphs Hard?</a> — <small>2025-08-06</small>
+        <p>Authors: Ben Bals, Sebastiaan van Krieken, Solon P. Pissis, Leen Stougie, Hilde Verbeek
+</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/06/arxiv-data-structures-and-algorithms-finding-colorings-in-one-sided-expanders/">arXiv: Data Structures and Algorithms: Finding Colorings in One-Sided Expanders</a> — <small>2025-08-06</small>
+        <p>Authors: Rares-Darius Buhai, Yiding Hua, David Steurer, Andor Vári-Kakas
+</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/06/arxiv-data-structures-and-algorithms-coloring-3-colorable-graphs-with-low-threshold-rank/">arXiv: Data Structures and Algorithms: Coloring 3-Colorable Graphs with Low Threshold Rank</a> — <small>2025-08-06</small>
+        <p>Authors: Jun-Ting Hsieh
+</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/06/arxiv-computational-complexity-thermodynamic-signature-of-logical-depth-in-quantum-circuits/">arXiv: Computational Complexity: Thermodynamic Signature of Logical Depth in Quantum Circuits</a> — <small>2025-08-06</small>
+        <p>Authors: Issam Ibnouhsein
+</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/05/eccc-papers-tr25-116-supercritical-tradeoff-between-size-and-depth-for-resolution-over-parities/">ECCC Papers: TR25-116 | Supercritical Tradeoff Between Size and Depth for Resolution over Parities |</a> — <small>2025-08-05</small>
+        <p>Alekseev and Itsykson (STOC 2025) proved the existence of an unsatisfiable CNF formula such that any resolution over parities (Res($\oplus$)) refut...</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/05/cci-jobs-full-professorship-w3-at-saarland-university-apply-by-september-18-2025/">CCI: jobs: Full professorship (W3) at Saarland University (apply by September 18, 2025)</a> — <small>2025-08-05</small>
+        <p>We seek candidates with a strong research record in theoretical computer science, with a focus on algorithms, computational complexity, algorithmic...</p>
+      </li>
+    
+      <li>
         <a href="/cstheoryrss/2025/08/05/scott-aaronson-chatgpt-and-the-meaning-of-life-guest-post-by-harvey-lederman/">Scott Aaronson: ChatGPT and the Meaning of Life: Guest Post by Harvey Lederman</a> — <small>2025-08-05</small>
         <p>
 </p>
@@ -2966,6 +3000,42 @@ of any “grid” that respects the “symmetries” of the grid, and show that 
 
 <script>
   const posts = [
+    
+    {
+      "title": "arXiv: Data Structures and Algorithms: When is String Reconstruction using de Bruijn Graphs Hard?",
+      "url": "/cstheoryrss/2025/08/06/arxiv-data-structures-and-algorithms-when-is-string-reconstruction-using-de-bruijn-graphs-hard/",
+      "content": "Authors: Ben Bals, Sebastiaan van Krieken, Solon P. Pissis, Leen Stougie, Hilde Verbeek\n\nThe reduction of the fragment assembly problem to (variations of) the\nclassical Eulerian trail problem [Pevzner et al., PNAS 2001] has led to\nremarkable progress in genome assembly. This reduction employs the notion of de\nBruijn graph $G=(V,E)$ of order $k$ over an alphabet $\\Sigma$. A single\nEulerian trail in $G$ represents a candidate genome reconstruction. Bernardini\net al. have also introduced the complementary idea in data privacy [ALENEX\n2020] based on $z$-anonymity.\nThe pressing question is: How hard is it to reconstruct a best string from a\nde Bruijn graph given a function that models domain knowledge? Such a function\nmaps every length-$k$ string to an interval of positions where it may occur in\nthe reconstructed string. By the above reduction to de Bruijn graphs, the\nlatter function translates into a function $c$ mapping every edge to an\ninterval where it may occur in an Eulerian trail. This gives rise to the\nfollowing basic problem on graphs: Given an instance $(G,c)$, can we\nefficiently compute an Eulerian trail respecting $c$? Hannenhalli et\nal.~[CABIOS 1996] formalized this problem and showed that it is NP-complete.\nWe focus on parametrization aiming to capture the quality of our domain\nknowledge in the complexity. Ben-Dor et al. developed an algorithm to solve the\nproblem on de Bruijn graphs in $O(m \\cdot w^{1.5} 4^{w})$ time, where $m=|E|$\nand $w$ is the maximum interval length over all edges. Bumpus and Meeks\n[Algorithmica 2023] rediscovered the same algorithm on temporal graphs,\nhighlighting the relevance of this problem in other contexts. We give\ncombinatorial insights that lead to exponential-time improvements over the\nstate-of-the-art. For the important class of de Bruijn graphs, we develop an\nalgorithm parametrized by $w (\\log w+1) /(k-1)$. Our improved algorithm shows\nthat it is enough when the range of positions is small relative to $k$.\n\nRead original post\n"
+    },
+    
+    {
+      "title": "arXiv: Data Structures and Algorithms: Finding Colorings in One-Sided Expanders",
+      "url": "/cstheoryrss/2025/08/06/arxiv-data-structures-and-algorithms-finding-colorings-in-one-sided-expanders/",
+      "content": "Authors: Rares-Darius Buhai, Yiding Hua, David Steurer, Andor Vári-Kakas\n\nWe establish new algorithmic guarantees with matching hardness results for\ncoloring and independent set problems in one-sided expanders and related\nclasses of graphs. For example, given a $3$-colorable regular one-sided\nexpander, we compute in polynomial time either an independent set of relative\nsize at least $1/2-o(1)$ or a proper $3$-coloring for all but an $o(1)$\nfraction of the vertices, where $o(1)$ stands for a function that tends to $0$\nwith the second largest eigenvalue of the normalized adjacency matrix. This\nresult improves on recent seminal work of Bafna, Hsieh, and Kothari (STOC 2025)\ndeveloping an algorithm that efficiently finds independent sets of relative\nsize at least $0.01$ in such graphs. We also obtain an efficient\n$1.6667$-factor approximation algorithm for VERTEX COVER in sufficiently strong\nregular one-sided expanders, improving over a previous $(2-\\epsilon)$-factor\napproximation in such graphs for an unspecified constant $\\epsilon&gt;0$.\nWe propose a new stratification of $k$-COLORING in terms of $k$-by-$k$\nmatrices akin to predicate sets for constraint satisfaction problems. We prove\nthat whenever this matrix has repeated rows, the corresponding coloring problem\nis NP-hard for one-sided expanders under the Unique Games Conjecture. On the\nother hand, if this matrix has no repeated rows, our algorithms can solve the\ncorresponding coloring problem on one-sided expanders in polynomial time.\nAs starting point for our algorithmic results, we show a property of graph\nspectra that, to the best of our knowledge, has not been observed before: The\nnumber of negative eigenvalues smaller than $-\\tau$ is at most $O(1/\\tau^{2})$\ntimes the number of eigenvalues larger than $\\tau^{2}/2$. While this result\nallows us to bound the number of eigenvalues bounded away from $0$ in one-sided\nspectral expanders, this property alone is insufficient for our algorithmic\nresults.\n\nRead original post\n"
+    },
+    
+    {
+      "title": "arXiv: Data Structures and Algorithms: Coloring 3-Colorable Graphs with Low Threshold Rank",
+      "url": "/cstheoryrss/2025/08/06/arxiv-data-structures-and-algorithms-coloring-3-colorable-graphs-with-low-threshold-rank/",
+      "content": "Authors: Jun-Ting Hsieh\n\nWe present a new algorithm for finding large independent sets in\n$3$-colorable graphs with small $1$-sided threshold rank. Specifically, given\nan $n$-vertex $3$-colorable graph whose uniform random walk matrix has at most\n$r$ eigenvalues larger than $\\varepsilon$, our algorithm finds a proper\n$3$-coloring on at least $(\\frac{1}{2}-O(\\varepsilon))n$ vertices in time\n$n^{O(r/\\varepsilon^2)}$. This extends and improves upon the result of Bafna,\nHsieh, and Kothari on $1$-sided expanders. Furthermore, an independent work by\nBuhai, Hua, Steurer, and V'ari-Kakas shows that it is UG-hard to properly\n$3$-color more than $(\\frac{1}{2}+\\varepsilon)n$ vertices, thus establishing\nthe tightness of our result.\nOur proof is short and simple, relying on the observation that for any\ndistribution over proper $3$-colorings, the correlation across an edge must be\nlarge if the marginals of the endpoints are not concentrated on any single\ncolor. Notably, this property fails for $4$-colorings, which is consistent with\nthe hardness result of [BHK25] for $4$-colorable $1$-sided expanders.\n\nRead original post\n"
+    },
+    
+    {
+      "title": "arXiv: Computational Complexity: Thermodynamic Signature of Logical Depth in Quantum Circuits",
+      "url": "/cstheoryrss/2025/08/06/arxiv-computational-complexity-thermodynamic-signature-of-logical-depth-in-quantum-circuits/",
+      "content": "Authors: Issam Ibnouhsein\n\nWe demonstrate that the internal logical structure of a quantum circuit can\nleave a distinct thermodynamic signature under progressive decoherence. By\ncomparing deep, conditionally branching circuits with shallow, uniform\ncounterparts-while controlling for overall halting probability and physical\nresources-we show that branching architectures induce greater entropy flow into\nthe environment. This effect is captured by a logical depth factor $L_d$, which\nquantifies entropy accumulation during environmental interactions. We validate\nour framework through detailed analysis of two 4-branch quantum circuits,\ndemonstrating greater entropy production with $L_d \\approx 1.615$ for\nconditional versus uniform architectures. An ancilla-based experimental\nprotocol using controlled-phase gates provides a concrete pathway for detecting\nthese thermodynamic signatures on current quantum platforms. Our results\nestablish logical depth as a physically measurable quantity with implications\nfor circuit design, compilation strategies, and verification protocols.\n\nRead original post\n"
+    },
+    
+    {
+      "title": "ECCC Papers: TR25-116 | Supercritical Tradeoff Between Size and Depth for Resolution over Parities |",
+      "url": "/cstheoryrss/2025/08/05/eccc-papers-tr25-116-supercritical-tradeoff-between-size-and-depth-for-resolution-over-parities/",
+      "content": "Alekseev and Itsykson (STOC 2025) proved the existence of an unsatisfiable CNF formula such that any resolution over parities (Res($\\oplus$)) refutation must either have exponential size (in the formula size) or superlinear depth (in the number of variables). In this paper, we extend this result by constructing a formula with the same hardness properties, but which additionally admits a resolution refutation of quasi-polynomial size. This establishes a supercritical tradeoff between size and depth for resolution over parities.\nThe proof builds on the framework of Alekseev and Itsykson and relies on a lifting argument applied to the supercritical tradeoff between width and depth in resolution, proposed by Buss and Thapen (IPL 2026).\n\nRead original post\n"
+    },
+    
+    {
+      "title": "CCI: jobs: Full professorship (W3) at Saarland University (apply by September 18, 2025)",
+      "url": "/cstheoryrss/2025/08/05/cci-jobs-full-professorship-w3-at-saarland-university-apply-by-september-18-2025/",
+      "content": "We seek candidates with a strong research record in theoretical computer science, with a focus on algorithms, computational complexity, algorithmic game theory, algorithms engineering or related areas. There are numerous opportunities for collaborative research with other institutes on campus, in particular with the algorithms and complexity group of the Max-Planck Institute.\n\nWebsite: https://www.uni-saarland.de/fileadmin/upload/verwaltung/stellen/Wissenschaftler/W2672_Professorship__W3__in_Algorithms_and_Complexity.pdf\nEmail: mblaeser@cs.uni-saarland.de\n\nBy shacharlovett\n\nRead original post\n"
+    },
     
     {
       "title": "Scott Aaronson: ChatGPT and the Meaning of Life: Guest Post by Harvey Lederman",
