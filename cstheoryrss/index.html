@@ -143,6 +143,11 @@
 <ul id="posts-list">
     
       <li>
+        <a href="/cstheoryrss/2025/08/08/decentralized-thoughts-whats-dag-got-to-do-with-it/">Decentralized Thoughts: Whats DAG got to do with it?</a> — <small>2025-08-08</small>
+        <p>Since 2018, blockchain research has seen a surge in DAG-based BFT protocols aimed at higher throughput. These protocols can be traced back to Hashg...</p>
+      </li>
+    
+      <li>
         <a href="/cstheoryrss/2025/08/08/arxiv-data-structures-and-algorithms-text-indexing-and-pattern-matching-with-ephemeral-edits/">arXiv: Data Structures and Algorithms: Text Indexing and Pattern Matching with Ephemeral Edits</a> — <small>2025-08-08</small>
         <p>Authors: Solon P. Pissis
 </p>
@@ -199,6 +204,18 @@
       <li>
         <a href="/cstheoryrss/2025/08/08/arxiv-data-structures-and-algorithms-a-refutation-of-elmasry-s-tilde-o-m-sqrt-n-time-algorithm-for/">arXiv: Data Structures and Algorithms: A Refutation of Elmasry's tilde{O}(m sqrt{n})-Time Algorithm for</a> — <small>2025-08-08</small>
         <p>Authors: Sunny Atalig, Marek Chrobak
+</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/08/arxiv-computational-geometry-gasp-a-gradient-aware-shortest-path-algorithm-for-boundary-confined/">arXiv: Computational Geometry: GASP: A Gradient-Aware Shortest Path Algorithm for Boundary-Confined</a> — <small>2025-08-08</small>
+        <p>Authors: Sefat Rahman, Tushar M. Athawale, Paul Rosen
+</p>
+      </li>
+    
+      <li>
+        <a href="/cstheoryrss/2025/08/08/arxiv-computational-geometry-an-improved-physically-based-surface-triangulation-method/">arXiv: Computational Geometry: An Improved Physically-Based Surface Triangulation Method</a> — <small>2025-08-08</small>
+        <p>Authors: Lei Shangyu, Fan Wei, Ren Hui
 </p>
       </li>
     
@@ -3161,6 +3178,12 @@ of any “grid” that respects the “symmetries” of the grid, and show that 
   const posts = [
     
     {
+      "title": "Decentralized Thoughts: Whats DAG got to do with it?",
+      "url": "/cstheoryrss/2025/08/08/decentralized-thoughts-whats-dag-got-to-do-with-it/",
+      "content": "Since 2018, blockchain research has seen a surge in DAG-based BFT protocols aimed at higher throughput. These protocols can be traced back to Hashgraph, 2018 and Aleph, 2019, theoretical work of All You Need is DAG, 2021 and systems papers Narwhal and Bullshark. In this post, we highlight 5 aspects…\n\nRead original post\n"
+    },
+    
+    {
       "title": "arXiv: Data Structures and Algorithms: Text Indexing and Pattern Matching with Ephemeral Edits",
       "url": "/cstheoryrss/2025/08/08/arxiv-data-structures-and-algorithms-text-indexing-and-pattern-matching-with-ephemeral-edits/",
       "content": "Authors: Solon P. Pissis\n\nA sequence $e_0,e_1,\\ldots$ of edit operations in a string $T$ is called\nephemeral if operation $e_i$ constructing string $T^i$, for all $i=2k$ with\n$k\\in\\mathbb{N}$, is reverted by operation $e_{i+1}$ that reconstructs $T$.\nSuch a sequence arises when processing a stream of independent edits or testing\nhypothetical edits.\nWe introduce text indexing with ephemeral substring edits, a new version of\ntext indexing. Our goal is to design a data structure over a given text that\nsupports subsequent pattern matching queries with ephemeral substring\ninsertions, deletions, or substitutions in the text; we require insertions and\nsubstitutions to be of constant length. In particular, we preprocess a text\n$T=T[0\\mathinner{.\\,.} n)$ over an integer alphabet $\\Sigma=[0,\\sigma)$ with\n$\\sigma=n^{\\mathcal{O}(1)}$ in $\\mathcal{O}(n)$ time. Then, we can preprocess\nany arbitrary pattern $P=P[0\\mathinner{.\\,.} m)$ given online in\n$\\mathcal{O}(m\\log\\log m)$ time and $\\mathcal{O}(m)$ space and allow any\nephemeral sequence of edit operations in $T$. Before reverting the $i$th\noperation, we report all Occ occurrences of $P$ in $T^i$ in\n$\\mathcal{O}(\\log\\log n + \\text{Occ})$ time.\nWe also introduce pattern matching with ephemeral edits. In particular, we\npreprocess two strings $T$ and $P$, each of length at most $n$, over an integer\nalphabet $\\Sigma=[0,\\sigma)$ with $\\sigma=n^{\\mathcal{O}(1)}$ in\n$\\mathcal{O}(n)$ time. Then, we allow any ephemeral sequence of edit operations\nin $T$. Before reverting the $i$th operation, we report all Occ occurrences of\n$P$ in $T^i$ in the optimal $\\mathcal{O}(\\text{Occ})$ time. Along our way to\nthis result, we also give an optimal solution for pattern matching with\nephemeral block deletions.\n\nRead original post\n"
@@ -3218,6 +3241,18 @@ of any “grid” that respects the “symmetries” of the grid, and show that 
       "title": "arXiv: Data Structures and Algorithms: A Refutation of Elmasry's tilde{O}(m sqrt{n})-Time Algorithm for",
       "url": "/cstheoryrss/2025/08/08/arxiv-data-structures-and-algorithms-a-refutation-of-elmasry-s-tilde-o-m-sqrt-n-time-algorithm-for/",
       "content": "Authors: Sunny Atalig, Marek Chrobak\n\nIn this note we examine the recent paper “Breaking the Bellman-Ford\nShortest-Path Bound” by Amr Elmasry, where he presents an algorithm for the\nsingle-source shortest path problem and claims that its running time complexity\nis $\\tilde{O}(m\\sqrt{n})$, where $n$ is the number of vertices and $m$ is the\nnumber of edges. We show that his analysis is incorrect, by providing an\nexample of a weighted graph on which the running time of his algorithm is\n$\\Omega(mn)$.\n\nRead original post\n"
+    },
+    
+    {
+      "title": "arXiv: Computational Geometry: GASP: A Gradient-Aware Shortest Path Algorithm for Boundary-Confined",
+      "url": "/cstheoryrss/2025/08/08/arxiv-computational-geometry-gasp-a-gradient-aware-shortest-path-algorithm-for-boundary-confined/",
+      "content": "Authors: Sefat Rahman, Tushar M. Athawale, Paul Rosen\n\nReeb graphs are an important tool for abstracting and representing the\ntopological structure of a function defined on a manifold. We have identified\nthree properties for faithfully representing Reeb graphs in a visualization.\nNamely, they should be constrained to the boundary, compact, and aligned with\nthe function gradient. Existing algorithms for drawing Reeb graphs are agnostic\nto or violate these properties. In this paper, we introduce an algorithm to\ngenerate Reeb graph visualizations, called \\textit{GASP}, that is cognizant of\nthese properties, thereby producing visualizations that are more representative\nof the underlying data. To demonstrate the improvements, the resulting Reeb\ngraphs are evaluated both qualitatively and quantitatively against the\ngeometric barycenter algorithm, using its implementation available in the\nTopology ToolKit (TTK), a widely adopted tool for calculating and visualizing\nReeb graphs.\n\nRead original post\n"
+    },
+    
+    {
+      "title": "arXiv: Computational Geometry: An Improved Physically-Based Surface Triangulation Method",
+      "url": "/cstheoryrss/2025/08/08/arxiv-computational-geometry-an-improved-physically-based-surface-triangulation-method/",
+      "content": "Authors: Lei Shangyu, Fan Wei, Ren Hui\n\nThis paper proposes improvements to the physically-based surface\ntriangulation method, bubble meshing. The method simulates physical bubbles to\nautomatically generate mesh vertices, resulting in high-quality Delaunay\ntriangles. Despite its flexibility in local mesh size control and the advantage\nof local re-meshing, bubble meshing is constrained by high computational costs\nand slow convergence on complex surfaces. The proposed approach employs\nconformal mapping to simplify surface bubble packing by flattening the surface\nonto a plane. Surface triangulation is induced from the planar mesh, avoiding\ndirect bubble movement on the surface. Optimizing bubble quantity control and\nseparating it from the relaxation process accelerates convergence, cutting\ncomputation time by over 70%. The enhanced method enables efficient\ntriangulation of disk topology surfaces, supports local size control, curvature\nadaptation, and re-meshing of discrete surfaces. Keywords: Adaptive\ntriangulation, Surface remeshing, Bubble meshing, Conformal parameterization,\nAlgorithm efficiency\n\nRead original post\n"
     },
     
     {
